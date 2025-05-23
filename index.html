@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Trends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .quiz-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .question h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .options label {
+            /* Styles for the box around each option */
+            display: flex; /* Use flexbox for alignment of radio button and text */
+            align-items: center; /* Vertically center content */
+            margin-bottom: 10px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #fff;
+            transition: background-color 0.2s, border-color 0.2s; /* Smooth transitions */
+        }
+        .options label:hover {
+            background-color: #e9f5ff; /* Light blue on hover */
+            border-color: #007bff; /* Blue border on hover */
+        }
+        .options input[type="radio"] {
+            /* Keep the default radio button visible */
+            margin-right: 10px; /* Space between radio and text */
+            flex-shrink: 0; /* Prevent radio button from shrinking */
+        }
+        .options label.selected {
+            background-color: #d0eaff; /* A shade of blue for selected */
+            border-color: #0056b3;
+        }
+
+        /* Styling for the native radio button when checked */
+        .options input[type="radio"]:checked {
+            accent-color: #007bff; /* Changes the color of the checked radio button */
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        .score-container {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 20px;
+            display: none; /* Hidden by default */
+        }
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: none; /* Hidden by default */
+        }
+        .highlight-error {
+            border: 1px solid red;
+        }
+        /* Specific styles for correct/incorrect choices */
+        .options label.correct {
+            background-color: #d4edda; /* Light green */
+            border-color: #28a745; /* Darker green */
+        }
+        .options label.incorrect {
+            background-color: #f8d7da; /* Light red */
+            border-color: #dc3545; /* Darker red */
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Nursing Trends </h2>
+        <form id="quizForm">
+            </form>
+
+        <div id="scoreContainer" class="score-container">
+            <h3>Your Score: <span id="score">0</span> / <span id="totalQuestions">0</span></h3>
+        </div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById('quizForm');
+        const scoreContainer = document.getElementById('scoreContainer');
+        const scoreSpan = document.getElementById('score');
+        const totalQuestionsSpan = document.getElementById('totalQuestions');
+
+        // Define questions and their correct answers.
+        const questionsData = [
+            {
+                id: 'q1',
+                question: '1. What is the definition of a trend in nursing?',
+                options: [
+                    'A random change in healthcare practices',
+                    'A specific law that governs nursing practice',
+                    'A general direction in which healthcare or nursing is moving',
+                    'A temporary fad in the medical field'
+                ],
+                correctAnswer: 'A general direction in which healthcare or nursing is moving'
+            },
+            {
+                id: 'q2',
+                question: '2. What is one major reason for the continued nurse shortage?',
+                options: [
+                    'Decrease in patient numbers',
+                    'One-third of nurses are nearing retirement age',
+                    'Increase in the number of medical schools',
+                    'Decrease in healthcare funding'
+                ],
+                correctAnswer: 'One-third of nurses are nearing retirement age'
+            },
+            {
+                id: 'q3',
+                question: '3. Which trend is contributing to the growth of telehealth nursing?',
+                options: [
+                    'A decrease in technology adoption',
+                    'Patients\' reliance on virtual consultations',
+                    'Reduction in healthcare accessibility',
+                    'Decrease in nursing jobs'
+                ],
+                correctAnswer: 'Patients\' reliance on virtual consultations'
+            },
+            {
+                id: 'q4',
+                question: '4. Which technological advancement has significantly improved nursing education?',
+                options: [
+                    'Online and distance learning programs',
+                    'A reduction in nursing school admission rates',
+                    'Increased reliance on in-person lectures',
+                    'The elimination of virtual patient simulations'
+                ],
+                correctAnswer: 'Online and distance learning programs'
+            },
+            {
+                id: 'q5',
+                question: '5. What is one major challenge of implementing technology in nursing?',
+                options: [
+                    'High cost of technological advances',
+                    'Decreased accuracy in patient monitoring',
+                    'Reduced communication between nurses and doctors',
+                    'Increased paperwork'
+                ],
+                correctAnswer: 'High cost of technological advances'
+            },
+            {
+                id: 'q6',
+                question: '6. A nurse caring for patients in a primary care setting submits paperwork for reimbursement from managed care plans for services performed. Which purpose best describes managed care as a framework for health care?',
+                options: [
+                    'A design to control the cost of care while maintaining the quality of care',
+                    'Care coordination to maximize positive outcomes to contain costs',
+                    'The delivery of services from initial contact through ongoing care',
+                    'Based on a philosophy of ensuring death in comfort and dignity'
+                ],
+                correctAnswer: 'A design to control the cost of care while maintaining the quality of care'
+            },
+            {
+                id: 'q7',
+                question: '7. Organizations and initiatives focused on preventing disease and promoting health at a community or population level is an ……',
+                options: [
+                    'health care facilities',
+                    'public health',
+                    'health insurance',
+                    'health equipment\'s'
+                ],
+                correctAnswer: 'public health'
+            },
+            {
+                id: 'q8',
+                question: '8. Health care system in which people pay a fee to a fund that in turn pays health care activities',
+                options: [
+                    'Bicmarck',
+                    'universal system',
+                    'Beveridg',
+                    'National Health Insurance Model'
+                ],
+                correctAnswer: 'National Health Insurance Model'
+            },
+            {
+                id: 'q9',
+                question: '9. Which of the following describes the Beveridge Model?',
+                options: [
+                    'Funded by employer and employee contributions',
+                    'Government finances and provides healthcare services',
+                    'A mix of private providers and government insurance',
+                    'Individuals pay directly for healthcare services'
+                ],
+                correctAnswer: 'Government finances and provides healthcare services'
+            },
+            {
+                id: 'q10',
+                question: '10. Who is credited with establishing nursing as a distinct profession during the Crimean War?',
+                options: [
+                    'Virginia Henderson',
+                    'Jean Watson',
+                    'Florence Nightingale',
+                    'Clara Barton'
+                ],
+                correctAnswer: 'Florence Nightingale'
+            },
+            {
+                id: 'q11',
+                question: '11. Which of the following is NOT a role that evolved in nursing during the 21st century?',
+                options: [
+                    'Nurse practitioners (NPs)',
+                    'Clinical nurse specialists (CNSs)',
+                    'Family caregivers',
+                    'Nurse anesthetists (CRNAs)'
+                ],
+                correctAnswer: 'Family caregivers'
+            },
+            {
+                id: 'q12',
+                question: '12. Who is known as the founder of modern nursing?',
+                options: [
+                    'Virginia Henderson',
+                    'Jean Watson',
+                    'Florence Nightingale',
+                    'Clara Barton'
+                ],
+                correctAnswer: 'Florence Nightingale'
+            },
+            {
+                id: 'q13',
+                question: '13. Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?',
+                options: [
+                    'Only technical skills',
+                    'Both technical and communication skills',
+                    'Patient mobility skills',
+                    'Traditional bedside skills only'
+                ],
+                correctAnswer: 'Both technical and communication skills'
+            },
+            {
+                id: 'q14',
+                question: '14. What does health informatics focus on?',
+                options: [
+                    'Studying ancient medical practices',
+                    'Using data analytics and digital records to improve healthcare',
+                    'Reducing nursing education programs',
+                    'Eliminating the need for patient records'
+                ],
+                correctAnswer: 'Using data analytics and digital records to improve healthcare'
+            },
+            {
+                id: 'q15',
+                question: '15. In which of the following areas has technology become an integral part of nursing practice?',
+                options: [
+                    'Hygienic practices only',
+                    'Manual record-keeping',
+                    'Patient diagnosis and telehealth',
+                    'Physical assistance in surgeries'
+                ],
+                correctAnswer: 'Patient diagnosis and telehealth'
+            },
+            {
+                id: 'q16',
+                question: '16. Which skill is essential for nurses working with Digital Health and Health Informatics?',
+                options: [
+                    'Only clinical skills',
+                    'Analytical and technical skills',
+                    'Only physical assessment skills',
+                    'Primarily interpersonal skills'
+                ],
+                correctAnswer: 'Analytical and technical skills'
+            },
+            {
+                id: 'q17',
+                question: '17. Which nursing trend focuses on addressing health disparities and providing resources to underserved populations?',
+                options: [
+                    'Research and Evidence-Based Practice',
+                    'Advocacy and Policy Development',
+                    'Telemedicine and Telehealth',
+                    'Community and Public Health Initiatives'
+                ],
+                correctAnswer: 'Community and Public Health Initiatives'
+            },
+            {
+                id: 'q18',
+                question: '18. What did the Florence Nightingale School of Nursing, founded in 1860, signify?',
+                options: [
+                    'The beginning of nursing practice',
+                    'The start of formal nursing education',
+                    'The start of telehealth nursing',
+                    'The rise of digital health'
+                ],
+                correctAnswer: 'The start of formal nursing education'
+            },
+            {
+                id: 'q19',
+                question: '19. In advocating for their profession, how can nurses influence healthcare policies?',
+                options: [
+                    'Focusing solely on clinical practice',
+                    'Writing articles and engaging with policymakers',
+                    'Avoiding public healthcare meetings',
+                    'Ignoring patient advocacy groups'
+                ],
+                correctAnswer: 'Writing articles and engaging with policymakers'
+            },
+            {
+                id: 'q20',
+                question: '20. Which skill is vital for nurses to ensure privacy and security during telehealth consultations?',
+                options: [
+                    'Time management',
+                    'Communication and digital security understanding',
+                    'Hands-on clinical skills',
+                    'Physical assessment techniques'
+                ],
+                correctAnswer: 'Communication and digital security understanding'
+            },
+            {
+                id: 'q21',
+                question: '21. Which future direction for nursing involves the use of data to support decision-making and patient outcome predictions?',
+                options: [
+                    'Global Health',
+                    'Personalized Medicine',
+                    'AI and Machine Learning',
+                    'Health Informatics'
+                ],
+                correctAnswer: 'AI and Machine Learning'
+            },
+            {
+                id: 'q22',
+                question: '22. It is the backbone of the globalization',
+                options: [
+                    'social globalization',
+                    'culture globalization',
+                    'economical globalization',
+                    'political globalization'
+                ],
+                correctAnswer: 'economical globalization'
+            },
+            {
+                id: 'q23',
+                question: '23. Climate change or wildlife reserves that span several countries is example of……',
+                options: [
+                    'ecological globalization',
+                    'culture globalization',
+                    'economical globalization',
+                    'political globalization'
+                ],
+                correctAnswer: 'ecological globalization'
+            },
+            {
+                id: 'q24',
+                question: '24. People can have better choice to satisfy their need',
+                options: [
+                    'Proper use of resources',
+                    'multiple choice',
+                    'Creates Employment',
+                    'technology'
+                ],
+                correctAnswer: 'multiple choice'
+            },
+            {
+                id: 'q25',
+                question: '25. ……… is an Organization main priorities for the achievement of the Sustainable',
+                options: [
+                    'WHO',
+                    'UNESEF',
+                    'UNISCO',
+                    'ANA'
+                ],
+                correctAnswer: 'WHO'
+            },
+            {
+                id: 'q26',
+                question: '26. ………is the reduction of the worldwide incidence of a disease to zero',
+                options: [
+                    'Elimination',
+                    'mortality',
+                    'morbidity',
+                    'Eradication'
+                ],
+                correctAnswer: 'Eradication'
+            },
+            {
+                id: 'q27',
+                question: '27. Which of the following is an example of ecological globalization?',
+                options: [
+                    'Trade exchange',
+                    'Climate change treaties',
+                    'Spread of democratic ideals',
+                    'Expansion of multinational corporations'
+                ],
+                correctAnswer: 'Climate change treaties'
+            },
+            {
+                id: 'q28',
+                question: '28. What is a major advantage of globalization?',
+                options: [
+                    'Decrease in employment opportunities',
+                    'Spread of democratic ideals',
+                    'Increase in cultural barriers',
+                    'Decrease in technological advancements'
+                ],
+                correctAnswer: 'Spread of democratic ideals'
+            },
+            {
+                id: 'q29',
+                question: '29. According to WHO, how many nurses are needed globally to meet healthcare requirements by 2030?',
+                options: [
+                    '10 million',
+                    '6 million',
+                    '28 million',
+                    '5 million'
+                ],
+                correctAnswer: '28 million'
+            },
+            {
+                id: 'q30',
+                question: '30. What is the primary benefit of Electronic Health Records (EHR) in nursing practice?',
+                options: [
+                    'Increased paperwork',
+                    'Streamlined documentation',
+                    'Longer patient wait times',
+                    'Reduced patient engagement'
+                ],
+                correctAnswer: 'Streamlined documentation'
+            },
+            {
+                id: 'q31',
+                question: '31. Which technology allows nurses to monitor patients’ health remotely?',
+                options: [
+                    'Telehealth',
+                    'Mobile phones',
+                    'Fax machines',
+                    'Paper charts'
+                ],
+                correctAnswer: 'Telehealth'
+            },
+            {
+                id: 'q32',
+                question: '32. Clinical Decision Support Systems (CDSS) are designed to:',
+                options: [
+                    'Replace nurses in clinical settings',
+                    'Provide evidence-based recommendations to improve patient care',
+                    'Increase the complexity of patient data',
+                    'Limit communication among healthcare providers'
+                ],
+                correctAnswer: 'Provide evidence-based recommendations to improve patient care'
+            },
+            {
+                id: 'q33',
+                question: '33. Mobile health applications primarily aim to:',
+                options: [
+                    'Reduce the number of patients seen by nurses',
+                    'Enhance patient engagement and self-management',
+                    'Increase hospital admissions',
+                    'Replace face-to-face consultations'
+                ],
+                correctAnswer: 'Enhance patient engagement and self-management'
+            },
+            {
+                id: 'q34',
+                question: '34. What is a key advantage of using data analytics in nursing?',
+                options: [
+                    'Predicting patient outcomes and optimizing resource allocation',
+                    'Increasing the workload for nurses',
+                    'Making patient data less accessible',
+                    'Limiting the use of clinical guidelines'
+                ],
+                correctAnswer: 'Predicting patient outcomes and optimizing resource allocation'
+            },
+            {
+                id: 'q35',
+                question: '35. Simulation technology in nursing education is used to:',
+                options: [
+                    'Provide theoretical knowledge only',
+                    'Allow practice of clinical skills in a safe environment',
+                    'Replace traditional clinical placements',
+                    'Teach only administrative tasks'
+                ],
+                correctAnswer: 'Allow practice of clinical skills in a safe environment'
+            },
+            {
+                id: 'q36',
+                question: '36. Which of these technological advancements is aimed at improving hospital design and patient safety?',
+                options: [
+                    'Air conditioning',
+                    'Pharmacological advances',
+                    'Laparoscopic surgery tools',
+                    'Effusion pumps'
+                ],
+                correctAnswer: 'Effusion pumps'
+            },
+            {
+                id: 'q37',
+                question: '37. Interprofessional collaboration tools are designed to:',
+                options: [
+                    'Isolate different healthcare teams',
+                    'Facilitate better teamwork among healthcare providers',
+                    'Reduce communication in healthcare settings',
+                    'Create competition among professionals'
+                ],
+                correctAnswer: 'Facilitate better teamwork among healthcare providers'
+            },
+            {
+                id: 'q38',
+                question: '38. The primary focus of HIMSS is to:',
+                options: [
+                    'Increase healthcare costs',
+                    'Promote the effective use of health information technology',
+                    'Limit access to health information',
+                    'Focus solely on administrative practices'
+                ],
+                correctAnswer: 'Promote the effective use of health information technology'
+            },
+            {
+                id: 'q39',
+                question: '39. What is the primary benefit of technology in nursing education?',
+                options: [
+                    'Reducing interaction between students and learning materials',
+                    'Limiting students’ access to information',
+                    'Assisting in critical thinking development in patient care',
+                    'Restricting self-directed learning'
+                ],
+                correctAnswer: 'Assisting in critical thinking development in patient care'
+            },
+            {
+                id: 'q40',
+                question: '40. Which nursing trend is associated with providing care remotely using digital tools?',
+                options: [
+                    'Traveling Nurses',
+                    'Nursing Home Staffing Regulation',
+                    'Virtual Nursing',
+                    'Entrepreneurship in Nursing'
+                ],
+                correctAnswer: 'Virtual Nursing'
+            },
+            {
+                id: 'q41',
+                question: '41. Identify a potential issue of technology in nursing education.',
+                options: [
+                    'Low costs of equipment',
+                    'Increased in-person communication',
+                    'Shortage of trained educators to handle new technology',
+                    'Technology reducing the workload for teachers'
+                ],
+                correctAnswer: 'Shortage of trained educators to handle new technology'
+            },
+            {
+                id: 'q42',
+                question: '42. What should be Mr. Ali\'s first priority upon hearing sounds from a patient’s ventilator while he has a scheduled meeting?',
+                options: [
+                    'Attend the meeting with the head of the unit',
+                    'Ignore the ventilator sound as it is not urgent',
+                    'Address the issue with the ventilator immediately',
+                    'Wait for another nurse to assist the patient'
+                ],
+                correctAnswer: 'Address the issue with the ventilator immediately'
+            },
+            {
+                id: 'q43',
+                question: '43. What has led to an increased expectation for nurses to utilize technology effectively in the workforce?',
+                options: [
+                    'Growth in patient numbers',
+                    'Technological advancements and virtual learning',
+                    'Increased demand for in-person classes',
+                    'Shortage of nursing faculty'
+                ],
+                correctAnswer: 'Technological advancements and virtual learning'
+            },
+            {
+                id: 'q44',
+                question: '44. How are higher education institutions expected to benefit from integrating technology into nursing education?',
+                options: [
+                    'By increasing students’ technical knowledge only',
+                    'By improving scores on certification exams and preparing students for real-world practice',
+                    'By replacing in-person instruction completely',
+                    'By eliminating the need for faculty members'
+                ],
+                correctAnswer: 'By improving scores on certification exams and preparing students for real-world practice'
+            },
+            {
+                id: 'q45',
+                question: '45. What is a potential benefit of using virtual reality in nursing education?',
+                options: [
+                    'It allows students to complete coursework without guidance.',
+                    'It encourages deeper learning through project-based experiences.',
+                    'It eliminates the need for clinical practice.',
+                    'It replaces traditional lab classes entirely.'
+                ],
+                correctAnswer: 'It encourages deeper learning through project-based experiences.'
+            },
+            {
+                id: 'q46',
+                question: '46. Which of the following is an emerging trend that improves nursing students\' access to learning?',
+                options: [
+                    'Replacing hands-on labs with written exams',
+                    'Upgrading wireless bandwidth and 3D content for simulations',
+                    'Increasing the number of in-person classes',
+                    'Requiring students to attend more lectures'
+                ],
+                correctAnswer: 'Upgrading wireless bandwidth and 3D content for simulations'
+            },
+            {
+                id: 'q47',
+                question: '47. What was one effect of the COVID-19 pandemic on nursing education?',
+                options: [
+                    'A return to traditional classroom-only teaching methods',
+                    'A move away from technology use in teaching',
+                    'Accelerated adoption of remote and online instruction',
+                    'Increased restrictions on virtual learning'
+                ],
+                correctAnswer: 'Accelerated adoption of remote and online instruction'
+            },
+            {
+                id: 'q48',
+                question: '48. Which tool mentioned in the document is used for virtual patient assessments?',
+                options: [
+                    'Virtual Reality Simulation',
+                    'Shadow Health’s Digital Clinical Experience',
+                    'Telehealth Consultations',
+                    'ExamSoft'
+                ],
+                correctAnswer: 'Shadow Health’s Digital Clinical Experience'
+            },
+            {
+                id: 'q49',
+                question: '49. Why is remote monitoring important in nursing telehealth practices?',
+                options: [
+                    'It eliminates the need for patient interaction.',
+                    'It allows nurses to track patients’ vital signs and intervene early if needed.',
+                    'It replaces the need for physical exams.',
+                    'It only benefits patients in emergency situations.'
+                ],
+                correctAnswer: 'It allows nurses to track patients’ vital signs and intervene early if needed.'
+            },
+            {
+                id: 'q50',
+                question: '50. What challenge is associated with virtual exams in telehealth for nurses?',
+                options: [
+                    'Inability to interpret body language and physical appearance cues effectively',
+                    'Increased costs compared to in-person exams',
+                    'Lack of technology to conduct exams virtually',
+                    'Requirement of more physical space for exams'
+                ],
+                correctAnswer: 'Inability to interpret body language and physical appearance cues effectively'
+            },
+            {
+                id: 'q51',
+                question: '51. Which organization recommended that nurse practitioners learn telehealth skills?',
+                options: [
+                    'American Association of Colleges of Nursing',
+                    'National Organization of Nurse Practitioner Faculties (NONPF)',
+                    'National League for Nursing',
+                    'American Medical Association'
+                ],
+                correctAnswer: 'National Organization of Nurse Practitioner Faculties (NONPF)'
+            },
+            {
+                id: 'q52',
+                question: '52. Duquesne University offers an online post-master’s certificate in nursing education for students who:',
+                options: [
+                    'Have completed a bachelor’s degree in nursing',
+                    'Have not yet completed any clinical practice',
+                    'Have already earned their MSN',
+                    'Are new to virtual learning platforms'
+                ],
+                correctAnswer: 'Have already earned their MSN'
+            },
+            {
+                id: 'q53',
+                question: '53. What is the primary focus of Evidence-Based Nursing (EBN)?',
+                options: [
+                    'Increasing administrative efficiency in nursing',
+                    'Reducing the cost of medical supplies',
+                    'Integrating research evidence with clinical expertise and patient preferences',
+                    'Promoting independent decision-making by nurses'
+                ],
+                correctAnswer: 'Integrating research evidence with clinical expertise and patient preferences'
+            },
+            {
+                id: 'q54',
+                question: '54. Which of the following is NOT an objective of Evidence-Based Practice (EBP) in nursing?',
+                options: [
+                    'Improving patient outcomes',
+                    'Reducing patient participation in decision-making',
+                    'Promoting continuous learning among nurses',
+                    'Enhancing patient safety'
+                ],
+                correctAnswer: 'Reducing patient participation in decision-making'
+            },
+            {
+                id: 'q55',
+                question: '55. What is the first step in the Evidence-Based Practice process?',
+                options: [
+                    'Assessing outcomes of new practices',
+                    'Applying new information',
+                    'Asking an appropriate question',
+                    'Analyzing information'
+                ],
+                correctAnswer: 'Asking an appropriate question'
+            },
+            {
+                id: 'q56',
+                question: '56. Which of the following resources is specifically designed to summarize clinically useful studies for nurses?',
+                options: [
+                    'Clinical trial databases',
+                    'Evidence-based journals',
+                    'Hospital patient records',
+                    'General nursing websites'
+                ],
+                correctAnswer: 'Evidence-based journals'
+            },
+            {
+                id: 'q57',
+                question: '57. One barrier to implementing Evidence-Based Nursing (EBN) is:',
+                options: [
+                    'Excessive availability of resources',
+                    'Limited understanding of research methods by practitioners',
+                    'High levels of clinical expertise among all nurses',
+                    'Universal support from healthcare organizations'
+                ],
+                correctAnswer: 'Limited understanding of research methods by practitioners'
+            },
+            {
+                id: 'q58',
+                question: '58. Which of the following best defines Evidence-Based Nursing (EBN)?',
+                options: [
+                    'A process that relies solely on a nurse’s personal experience',
+                    'Combining research evidence, clinical expertise, and patient preferences in care decisions',
+                    'Prioritizing organizational policies over patient-centered care',
+                    'Relying on traditional practices without considering current evidence'
+                ],
+                correctAnswer: 'Combining research evidence, clinical expertise, and patient preferences in care decisions'
+            },
+            {
+                id: 'q59',
+                question: '59. Which of these resources is specifically intended to help nurses stay updated on clinically relevant studies?',
+                options: [
+                    'Hospital policy manuals',
+                    'Systematic reviews',
+                    'Evidence-based journals',
+                    'Standard medical textbooks'
+                ],
+                correctAnswer: 'Evidence-based journals'
+            },
+            {
+                id: 'q60',
+                question: '60. What is the first step in the Evidence-Based Practice (EBP) process?',
+                options: [
+                    'Applying new information',
+                    'Analyzing the outcomes',
+                    'Asking appropriate questions',
+                    'Assessing new practices'
+                ],
+                correctAnswer: 'Asking appropriate questions'
+            },
+            {
+                id: 'q61',
+                question: '61. Which component of Emotional Intelligence involves understanding and managing your own emotions?',
+                options: [
+                    'Empathy',
+                    'Self-Awareness',
+                    'Social Skills',
+                    'Motivation'
+                ],
+                correctAnswer: 'Self-Awareness'
+            },
+            {
+                id: 'q62',
+                question: '62. High emotional intelligence is often associated with:',
+                options: [
+                    'Reduced mental health',
+                    'Better conflict resolution skills',
+                    'Poor workplace relationships',
+                    'Decreased adaptability to challenges'
+                ],
+                correctAnswer: 'Better conflict resolution skills'
+            },
+            {
+                id: 'q63',
+                question: '63. Which of the following is an application of AI in healthcare?',
+                options: [
+                    'Diagnosis and treatment planning',
+                    'Conducting therapy sessions',
+                    'Replacing human healthcare providers entirely',
+                    'Providing nutritional counseling'
+                ],
+                correctAnswer: 'Diagnosis and treatment planning'
+            },
+            {
+                id: 'q64',
+                question: '64. A major concern with implementing AI in healthcare is:',
+                options: [
+                    'Reduced efficiency',
+                    'Lack of data availability',
+                    'Bias in AI models',
+                    'Inability to process large datasets'
+                ],
+                correctAnswer: 'Bias in AI models'
+            }
+        ];
+
+        // Function to shuffle an array (Fisher-Yates algorithm)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Function to render the quiz questions
+        function renderQuiz() {
+            quizForm.innerHTML = ''; // Clear existing questions
+            questionsData.forEach(qData => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question';
+                questionDiv.id = qData.id;
+
+                const questionText = document.createElement('h3');
+                questionText.textContent = qData.question;
+                questionDiv.appendChild(questionText);
+
+                const optionsDiv = document.createElement('div');
+                optionsDiv.className = 'options';
+
+                const shuffledOptions = [...qData.options]; // Create a copy to shuffle
+                shuffleArray(shuffledOptions);
+
+                const optionLetters = ['A', 'B', 'C', 'D']; // For dynamic labeling
+
+                shuffledOptions.forEach((option, index) => {
+                    const label = document.createElement('label');
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+                    input.name = qData.id;
+                    input.value = option; // Store the actual option text as the value
+
+                    const span = document.createElement('span'); // Use a span for the text content
+                    span.textContent = `${optionLetters[index]}. ${option}`;
+
+                    // Add event listener to hide error message and apply 'selected' class on selection
+                    input.addEventListener('change', function() {
+                        // Remove 'selected' class from all labels in this question
+                        this.closest('.options').querySelectorAll('label').forEach(lbl => {
+                            lbl.classList.remove('selected');
+                        });
+                        // Add 'selected' class to the currently chosen label
+                        this.closest('label').classList.add('selected');
+
+                        // Hide error message and remove highlight
+                        this.closest('.question').classList.remove('highlight-error');
+                        this.closest('.question').querySelector('.error-message').style.display = 'none';
+                    });
+
+                    label.appendChild(input);
+                    label.appendChild(span); // Append the span with text
+                    optionsDiv.appendChild(label);
+                });
+
+                questionDiv.appendChild(optionsDiv);
+
+                const errorMessage = document.createElement('div');
+                errorMessage.className = 'error-message';
+                errorMessage.textContent = 'Please select an option for this question.';
+                questionDiv.appendChild(errorMessage);
+
+                quizForm.appendChild(questionDiv);
+            });
+
+            // Append the submit button at the end
+            const submitButton = document.createElement('button');
+            submitButton.type = 'submit';
+            submitButton.className = 'submit-btn';
+            submitButton.textContent = 'Submit Quiz';
+            quizForm.appendChild(submitButton);
+        }
+
+        // Render the quiz when the page loads
+        document.addEventListener('DOMContentLoaded', renderQuiz);
+
+
+        quizForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            let score = 0;
+            let firstUnansweredQuestion = null;
+            const questionDivs = document.querySelectorAll('.question');
+
+            // Reset previous feedback and errors
+            questionDivs.forEach(questionDiv => {
+                questionDiv.classList.remove('highlight-error');
+                questionDiv.querySelector('.error-message').style.display = 'none';
+                const radios = questionDiv.querySelectorAll('input[type="radio"]');
+                radios.forEach(radio => {
+                    const label = radio.closest('label');
+                    label.classList.remove('correct', 'incorrect', 'selected'); // Also remove 'selected' class
+                });
+            });
+
+            // Check answers and validate
+            questionsData.forEach(qData => {
+                const selectedOption = document.querySelector(`input[name="${qData.id}"]:checked`);
+                const questionDiv = document.getElementById(qData.id);
+
+                if (!selectedOption) {
+                    if (!firstUnansweredQuestion) {
+                        firstUnansweredQuestion = questionDiv; // Store the first unanswered question
+                    }
+                    questionDiv.classList.add('highlight-error');
+                    questionDiv.querySelector('.error-message').style.display = 'block';
+                } else {
+                    const userAnswer = selectedOption.value; // Get the actual option text
+                    const correctAnswer = qData.correctAnswer; // Compare with the actual correct answer text
+                    const label = selectedOption.closest('label');
+
+                    if (userAnswer === correctAnswer) {
+                        score++;
+                        label.classList.add('correct');
+                    } else {
+                        label.classList.add('incorrect');
+                        // Highlight the correct answer. Need to find the label that contains the correct answer text.
+                        const correctLabel = Array.from(questionDiv.querySelectorAll('.options label')).find(lbl =>
+                            lbl.querySelector('span').textContent.includes(correctAnswer) // Look inside the span now
+                        );
+                        if (correctLabel) {
+                            correctLabel.classList.add('correct');
+                        }
+                    }
+                }
+            });
+
+            if (firstUnansweredQuestion) {
+                // If there's an unanswered question, scroll to it
+                firstUnansweredQuestion.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return; // Stop execution here, don't show score yet
+            }
+
+            // Display score (only if all questions are answered)
+            totalQuestionsSpan.textContent = questionsData.length;
+            scoreSpan.textContent = score;
+            scoreContainer.style.display = 'block';
+
+            // Scroll to top of score
+            scoreContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
