@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nursing Trends and Healthcare Quiz</title>
+    <title> QUIZ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,11 +39,11 @@
             border-radius: 5px;
             cursor: pointer;
             background-color: #fff;
-            transition: background-color 0.2s, border-color 0.2s; /* Smooth transitions */
+            transition: background-color 0.2s, border-color 0.2s;
         }
         .options label:hover {
-            background-color: #e9f5ff; /* Light blue on hover */
-            border-color: #007bff; /* Blue border on hover */
+            background-color: #e9f5ff;
+            border-color: #007bff;
         }
         .options input[type="radio"] {
             /* Keep the default radio button visible */
@@ -51,13 +51,13 @@
             flex-shrink: 0; /* Prevent radio button from shrinking */
         }
         .options label.selected {
-            background-color: #d0eaff; /* A shade of blue for selected */
+            background-color: #d0eaff;
             border-color: #0056b3;
         }
 
         /* Styling for the native radio button when checked */
         .options input[type="radio"]:checked {
-            accent-color: #007bff; /* Changes the color of the checked radio button */
+            accent-color: #007bff;
         }
 
         .submit-btn {
@@ -73,16 +73,6 @@
         .submit-btn:hover {
             background-color: #0056b3;
         }
-        .feedback {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .correct {
-            color: green;
-        }
-        .incorrect {
-            color: red;
-        }
         .score-container {
             margin-top: 30px;
             padding: 20px;
@@ -90,18 +80,17 @@
             border-radius: 8px;
             text-align: center;
             font-size: 20px;
-            display: none; /* Hidden by default */
+            display: none;
         }
         .error-message {
             color: red;
             font-size: 0.9em;
             margin-top: 5px;
-            display: none; /* Hidden by default */
+            display: none;
         }
         .highlight-error {
             border: 1px solid red;
         }
-        /* Specific styles for correct/incorrect choices */
         .options label.correct {
             background-color: #d4edda; /* Light green */
             border-color: #28a745; /* Darker green */
@@ -114,9 +103,946 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h2>Nursing Trends and Healthcare Quiz</h2>
+        <h2> Quiz</h2>
         <form id="quizForm">
-            </form>
+
+            <div class="question" id="q1">
+                <h3>1. What is the definition of a trend in nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A random change in healthcare practices"> <span>A. A random change in healthcare practices</span></label>
+                    <label><input type="radio" name="q1" value="A specific law that governs nursing practice"> <span>B. A specific law that governs nursing practice</span></label>
+                    <label><input type="radio" name="q1" value="A general direction in which healthcare or nursing is moving"> <span>C. A general direction in which healthcare or nursing is moving</span></label>
+                    <label><input type="radio" name="q1" value="A temporary fad in the medical field"> <span>D. A temporary fad in the medical field</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q2">
+                <h3>2. What is one major reason for the continued nurse shortage?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="Decrease in patient numbers"> <span>A. Decrease in patient numbers</span></label>
+                    <label><input type="radio" name="q2" value="One-third of nurses are nearing retirement age"> <span>B. One-third of nurses are nearing retirement age</span></label>
+                    <label><input type="radio" name="q2" value="Increase in the number of medical schools"> <span>C. Increase in the number of medical schools</span></label>
+                    <label><input type="radio" name="q2" value="Decrease in healthcare funding"> <span>D. Decrease in healthcare funding</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q3">
+                <h3>3. Which trend is contributing to the growth of telehealth nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A decrease in technology adoption"> <span>A. A decrease in technology adoption</span></label>
+                    <label><input type="radio" name="q3" value="Patients' reliance on virtual consultations"> <span>B. Patients' reliance on virtual consultations</span></label>
+                    <label><input type="radio" name="q3" value="Reduction in healthcare accessibility"> <span>C. Reduction in healthcare accessibility</span></label>
+                    <label><input type="radio" name="q3" value="Decrease in nursing jobs"> <span>D. Decrease in nursing jobs</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q4">
+                <h3>4. Which technological advancement has significantly improved nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="Online and distance learning programs"> <span>A. Online and distance learning programs</span></label>
+                    <label><input type="radio" name="q4" value="A reduction in nursing school admission rates"> <span>B. A reduction in nursing school admission rates</span></label>
+                    <label><input type="radio" name="q4" value="Increased reliance on in-person lectures"> <span>C. Increased reliance on in-person lectures</span></label>
+                    <label><input type="radio" name="q4" value="The elimination of virtual patient simulations"> <span>D. The elimination of virtual patient simulations</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q5">
+                <h3>5. What is one major challenge of implementing technology in nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="High cost of technological advances"> <span>A. High cost of technological advances</span></label>
+                    <label><input type="radio" name="q5" value="Decreased accuracy in patient monitoring"> <span>B. Decreased accuracy in patient monitoring</span></label>
+                    <label><input type="radio" name="q5" value="Reduced communication between nurses and doctors"> <span>C. Reduced communication between nurses and doctors</span></label>
+                    <label><input type="radio" name="q5" value="Increased paperwork"> <span>D. Increased paperwork</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q6">
+                <h3>6. A nurse caring for patients in a primary care setting submits paperwork for reimbursement from managed care plans for services performed. Which purpose best describes managed care as a framework for health care?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="A design to control the cost of care while maintaining the quality of care"> <span>A. A design to control the cost of care while maintaining the quality of care</span></label>
+                    <label><input type="radio" name="q6" value="Care coordination to maximize positive outcomes to contain costs"> <span>B. Care coordination to maximize positive outcomes to contain costs</span></label>
+                    <label><input type="radio" name="q6" value="The delivery of services from initial contact through ongoing care"> <span>C. The delivery of services from initial contact through ongoing care</span></label>
+                    <label><input type="radio" name="q6" value="Based on a philosophy of ensuring death in comfort and dignity"> <span>D. Based on a philosophy of ensuring death in comfort and dignity</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q7">
+                <h3>7. Organizations and initiatives focused on preventing disease and promoting health at a community or population level is an ……?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="health care facilities"> <span>A. health care facilities</span></label>
+                    <label><input type="radio" name="q7" value="public health"> <span>B. public health</span></label>
+                    <label><input type="radio" name="q7" value="health insurance"> <span>C. health insurance</span></label>
+                    <label><input type="radio" name="q7" value="health equipment's"> <span>D. health equipment's</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q8">
+                <h3>8. health care system in which people pay a fee to a fund that in turn pays health care activities?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="Bicmarck"> <span>A. Bicmarck</span></label>
+                    <label><input type="radio" name="q8" value="universal system"> <span>B. universal system</span></label>
+                    <label><input type="radio" name="q8" value="Beveridg"> <span>C. Beveridg</span></label>
+                    <label><input type="radio" name="q8" value="National Health Insurance Model"> <span>D. National Health Insurance Model</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q9">
+                <h3>9. Which statements describe current U.S. health care delivery practices? Select all that apply.</h3>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="Access to care depends only on the ability to pay, not the availability of services."> <span>A. Access to care depends only on the ability to pay, not the availability of services.</span></label>
+                    <label><input type="radio" name="q9" value="The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations."> <span>B. The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations.</span></label>
+                    <label><input type="radio" name="q9" value="Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits."> <span>C. Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.</span></label>
+                    <label><input type="radio" name="q9" value="The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay."> <span>D. The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay.</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q10">
+                <h3>10. Which of the following describes the Beveridge Model?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="Funded by employer and employee contributions"> <span>A. Funded by employer and employee contributions</span></label>
+                    <label><input type="radio" name="q10" value="Government finances and provides healthcare services"> <span>B. Government finances and provides healthcare services</span></label>
+                    <label><input type="radio" name="q10" value="A mix of private providers and government insurance"> <span>C. A mix of private providers and government insurance</span></label>
+                    <label><input type="radio" name="q10" value="Individuals pay directly for healthcare services"> <span>D. Individuals pay directly for healthcare services</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q11">
+                <h3>11. Who is credited with establishing nursing as a distinct profession during the Crimean War?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="Virginia Henderson"> <span>A. Virginia Henderson</span></label>
+                    <label><input type="radio" name="q11" value="Jean Watson"> <span>B. Jean Watson</span></label>
+                    <label><input type="radio" name="q11" value="Florence Nightingale"> <span>C. Florence Nightingale</span></label>
+                    <label><input type="radio" name="q11" value="Clara Barton"> <span>D. Clara Barton</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q12">
+                <h3>12. Which of the following is NOT a role that evolved in nursing during the 21st century?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="Nurse practitioners (NPs)"> <span>A. Nurse practitioners (NPs)</span></label>
+                    <label><input type="radio" name="q12" value="Clinical nurse specialists (CNSs)"> <span>B. Clinical nurse specialists (CNSs)</span></label>
+                    <label><input type="radio" name="q12" value="Family caregivers"> <span>C. Family caregivers</span></label>
+                    <label><input type="radio" name="q12" value="Nurse anesthetists (CRNAs)"> <span>D. Nurse anesthetists (CRNAs)</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q13">
+                <h3>13. Who is known as the founder of modern nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="Virginia Henderson"> <span>A. Virginia Henderson</span></label>
+                    <label><input type="radio" name="q13" value="Jean Watson"> <span>B. Jean Watson</span></label>
+                    <label><input type="radio" name="q13" value="Florence Nightingale"> <span>C. Florence Nightingale</span></label>
+                    <label><input type="radio" name="q13" value="Clara Barton"> <span>D. Clara Barton</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q14">
+                <h3>14. Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="Only technical skills"> <span>A. Only technical skills</span></label>
+                    <label><input type="radio" name="q14" value="Both technical and communication skills"> <span>B. Both technical and communication skills</span></label>
+                    <label><input type="radio" name="q14" value="Patient mobility skills"> <span>C. Patient mobility skills</span></label>
+                    <label><input type="radio" name="q14" value="Traditional bedside skills only"> <span>D. Traditional bedside skills only</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q15">
+                <h3>15. What does health informatics focus on?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="Studying ancient medical practices"> <span>A. Studying ancient medical practices</span></label>
+                    <label><input type="radio" name="q15" value="Using data analytics and digital records to improve healthcare"> <span>B. Using data analytics and digital records to improve healthcare</span></label>
+                    <label><input type="radio" name="q15" value="Reducing nursing education programs"> <span>C. Reducing nursing education programs</span></label>
+                    <label><input type="radio" name="q15" value="Eliminating the need for patient records"> <span>D. Eliminating the need for patient records</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q16">
+                <h3>16. In which of the following areas has technology become an integral part of nursing practice?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="Hygienic practices only"> <span>A. Hygienic practices only</span></label>
+                    <label><input type="radio" name="q16" value="Manual record-keeping"> <span>B. Manual record-keeping</span></label>
+                    <label><input type="radio" name="q16" value="Patient diagnosis and telehealth"> <span>C. Patient diagnosis and telehealth</span></label>
+                    <label><input type="radio" name="q16" value="Physical assistance in surgeries"> <span>D. Physical assistance in surgeries</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q17">
+                <h3>17. Which skill is essential for nurses working with Digital Health and Health Informatics?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="Only clinical skills"> <span>A. Only clinical skills</span></label>
+                    <label><input type="radio" name="q17" value="Analytical and technical skills"> <span>B. Analytical and technical skills</span></label>
+                    <label><input type="radio" name="q17" value="Only physical assessment skills"> <span>C. Only physical assessment skills</span></label>
+                    <label><input type="radio" name="q17" value="Primarily interpersonal skills"> <span>D. Primarily interpersonal skills</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q18">
+                <h3>18. Which nursing trend focuses on addressing health disparities and providing resources to underserved populations?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="Research and Evidence-Based Practice"> <span>A. Research and Evidence-Based Practice</span></label>
+                    <label><input type="radio" name="q18" value="Advocacy and Policy Development"> <span>B. Advocacy and Policy Development</span></label>
+                    <label><input type="radio" name="q18" value="Telemedicine and Telehealth"> <span>C. Telemedicine and Telehealth</span></label>
+                    <label><input type="radio" name="q18" value="Community and Public Health Initiatives"> <span>D. Community and Public Health Initiatives</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q19">
+                <h3>19. What did the Florence Nightingale School of Nursing, founded in 1860, signify?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="The beginning of nursing practice"> <span>A. The beginning of nursing practice</span></label>
+                    <label><input type="radio" name="q19" value="The start of formal nursing education"> <span>B. The start of formal nursing education</span></label>
+                    <label><input type="radio" name="q19" value="The start of telehealth nursing"> <span>C. The start of telehealth nursing</span></label>
+                    <label><input type="radio" name="q19" value="The rise of digital health"> <span>D. The rise of digital health</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q20">
+                <h3>20. In advocating for their profession, how can nurses influence healthcare policies?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="Focusing solely on clinical practice"> <span>A. Focusing solely on clinical practice</span></label>
+                    <label><input type="radio" name="q20" value="Writing articles and engaging with policymakers"> <span>B. Writing articles and engaging with policymakers</span></label>
+                    <label><input type="radio" name="q20" value="Avoiding public healthcare meetings"> <span>C. Avoiding public healthcare meetings</span></label>
+                    <label><input type="radio" name="q20" value="Ignoring patient advocacy groups"> <span>D. Ignoring patient advocacy groups</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q21">
+                <h3>21. Which skill is vital for nurses to ensure privacy and security during telehealth consultations?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q21" value="Time management"> <span>A. Time management</span></label>
+                    <label><input type="radio" name="q21" value="Communication and digital security understanding"> <span>B. Communication and digital security understanding</span></label>
+                    <label><input type="radio" name="q21" value="Hands-on clinical skills"> <span>C. Hands-on clinical skills</span></label>
+                    <label><input type="radio" name="q21" value="Physical assessment techniques"> <span>D. Physical assessment techniques</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q22">
+                <h3>22. Which future direction for nursing involves the use of data to support decisionmaking and patient outcome predictions?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q22" value="Global Health"> <span>A. Global Health</span></label>
+                    <label><input type="radio" name="q22" value="Personalized Medicine"> <span>B. Personalized Medicine</span></label>
+                    <label><input type="radio" name="q22" value="AI and Machine Learning"> <span>C. AI and Machine Learning</span></label>
+                    <label><input type="radio" name="q22" value="Health Informatics"> <span>D. Health Informatics</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q23">
+                <h3>23. It is the backbone of the globalization?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q23" value="social globalization"> <span>A. social globalization</span></label>
+                    <label><input type="radio" name="q23" value="culture globalization"> <span>B. culture globalization</span></label>
+                    <label><input type="radio" name="q23" value="economical globalization"> <span>C. economical globalization</span></label>
+                    <label><input type="radio" name="q23" value="political globalization"> <span>D. political globalization</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q24">
+                <h3>24. climate change or wildlife reserves that span several countries is example of……</h3>
+                <div class="options">
+                    <label><input type="radio" name="q24" value="ecological globalization"> <span>A. ecological globalization</span></label>
+                    <label><input type="radio" name="q24" value="culture globalization"> <span>B. culture globalization</span></label>
+                    <label><input type="radio" name="q24" value="economical globalization"> <span>C. economical globalization</span></label>
+                    <label><input type="radio" name="q24" value="political globalization"> <span>D. political globalization</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q25">
+                <h3>25. people can have better choice to satisfy their need?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q25" value="Proper use of resources"> <span>A. Proper use of resources</span></label>
+                    <label><input type="radio" name="q25" value="multiple choice"> <span>B. multiple choice</span></label>
+                    <label><input type="radio" name="q25" value="Creates Employment"> <span>C. Creates Employment</span></label>
+                    <label><input type="radio" name="q25" value="technology"> <span>D. technology</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q26">
+                <h3>26. ……… is an Organization main priorities for the achievement of the Sustainable?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q26" value="WHO"> <span>A. WHO</span></label>
+                    <label><input type="radio" name="q26" value="UNESEF"> <span>B. UNESEF</span></label>
+                    <label><input type="radio" name="q26" value="UNISCO"> <span>C. UNISCO</span></label>
+                    <label><input type="radio" name="q26" value="ANA"> <span>D. ANA</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q27">
+                <h3>27. ………is the reduction of the worldwide incidence of a disease to zero?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q27" value="Elimination"> <span>A. Elimination</span></label>
+                    <label><input type="radio" name="q27" value="mortality"> <span>B. mortality</span></label>
+                    <label><input type="radio" name="q27" value="morbidity"> <span>C. morbidity</span></label>
+                    <label><input type="radio" name="q27" value="Eradication"> <span>D. Eradication</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q28">
+                <h3>28. Which of the following is an example of ecological globalization?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q28" value="Trade exchange"> <span>A. Trade exchange</span></label>
+                    <label><input type="radio" name="q28" value="Climate change treaties"> <span>B. Climate change treaties</span></label>
+                    <label><input type="radio" name="q28" value="Spread of democratic ideals"> <span>C. Spread of democratic ideals</span></label>
+                    <label><input type="radio" name="q28" value="Expansion of multinational corporations"> <span>D. Expansion of multinational corporations</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q29">
+                <h3>29. What is a major advantage of globalization?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q29" value="Decrease in employment opportunities"> <span>A. Decrease in employment opportunities</span></label>
+                    <label><input type="radio" name="q29" value="Spread of democratic ideals"> <span>B. Spread of democratic ideals</span></label>
+                    <label><input type="radio" name="q29" value="Increase in cultural barriers"> <span>C. Increase in cultural barriers</span></label>
+                    <label><input type="radio" name="q29" value="Decrease in technological advancements"> <span>D. Decrease in technological advancements</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q30">
+                <h3>30. According to WHO, how many nurses are needed globally to meet healthcare requirements by 2030?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q30" value="10 million"> <span>A. 10 million</span></label>
+                    <label><input type="radio" name="q30" value="6 million"> <span>B. 6 million</span></label>
+                    <label><input type="radio" name="q30" value="28 million"> <span>C. 28 million</span></label>
+                    <label><input type="radio" name="q30" value="5 million"> <span>D. 5 million</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q31">
+                <h3>31. What is the primary benefit of Electronic Health Records (EHR) in nursing practice?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q31" value="Increased paperwork"> <span>A. Increased paperwork</span></label>
+                    <label><input type="radio" name="q31" value="Streamlined documentation"> <span>B. Streamlined documentation</span></label>
+                    <label><input type="radio" name="q31" value="Longer patient wait times"> <span>C. Longer patient wait times</span></label>
+                    <label><input type="radio" name="q31" value="Reduced patient engagement"> <span>D. Reduced patient engagement</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q32">
+                <h3>32. Which technology allows nurses to monitor patients’ health remotely?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q32" value="Telehealth"> <span>A. Telehealth</span></label>
+                    <label><input type="radio" name="q32" value="Mobile phones"> <span>B. Mobile phones</span></label>
+                    <label><input type="radio" name="q32" value="Fax machines"> <span>C. Fax machines</span></label>
+                    <label><input type="radio" name="q32" value="Paper charts"> <span>D. Paper charts</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q33">
+                <h3>33. Clinical Decision Support Systems (CDSS) are designed to:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q33" value="Replace nurses in clinical settings"> <span>A. Replace nurses in clinical settings</span></label>
+                    <label><input type="radio" name="q33" value="Provide evidence-based recommendations to improve patient care"> <span>B. Provide evidence-based recommendations to improve patient care</span></label>
+                    <label><input type="radio" name="q33" value="Increase the complexity of patient data"> <span>C. Increase the complexity of patient data</span></label>
+                    <label><input type="radio" name="q33" value="Limit communication among healthcare providers"> <span>D. Limit communication among healthcare providers</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q34">
+                <h3>34. Mobile health applications primarily aim to:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q34" value="Reduce the number of patients seen by nurses"> <span>A. Reduce the number of patients seen by nurses</span></label>
+                    <label><input type="radio" name="q34" value="Enhance patient engagement and self-management"> <span>B. Enhance patient engagement and self-management</span></label>
+                    <label><input type="radio" name="q34" value="Increase hospital admissions"> <span>C. Increase hospital admissions</span></label>
+                    <label><input type="radio" name="q34" value="Replace face-to-face consultations"> <span>D. Replace face-to-face consultations</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q35">
+                <h3>35. What is a key advantage of using data analytics in nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q35" value="Predicting patient outcomes and optimizing resource allocation"> <span>A. Predicting patient outcomes and optimizing resource allocation</span></label>
+                    <label><input type="radio" name="q35" value="Increasing the workload for nurses"> <span>B. Increasing the workload for nurses</span></label>
+                    <label><input type="radio" name="q35" value="Making patient data less accessible"> <span>C. Making patient data less accessible</span></label>
+                    <label><input type="radio" name="q35" value="Limiting the use of clinical guidelines"> <span>D. Limiting the use of clinical guidelines</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q36">
+                <h3>36. Simulation technology in nursing education is used to:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q36" value="Provide theoretical knowledge only"> <span>A. Provide theoretical knowledge only</span></label>
+                    <label><input type="radio" name="q36" value="Allow practice of clinical skills in a safe environment"> <span>B. Allow practice of clinical skills in a safe environment</span></label>
+                    <label><input type="radio" name="q36" value="Replace traditional clinical placements"> <span>C. Replace traditional clinical placements</span></label>
+                    <label><input type="radio" name="q36" value="Teach only administrative tasks"> <span>D. Teach only administrative tasks</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q37">
+                <h3>37. Which of these technological advancements is aimed at improving hospital design and patient safety?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q37" value="Air conditioning"> <span>A. Air conditioning</span></label>
+                    <label><input type="radio" name="q37" value="Pharmacological advances"> <span>B. Pharmacological advances</span></label>
+                    <label><input type="radio" name="q37" value="Laparoscopic surgery tools"> <span>C. Laparoscopic surgery tools</span></label>
+                    <label><input type="radio" name="q37" value="Effusion pumps"> <span>D. Effusion pumps</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q38">
+                <h3>38. Interprofessional collaboration tools are designed to:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q38" value="Isolate different healthcare teams"> <span>A. Isolate different healthcare teams</span></label>
+                    <label><input type="radio" name="q38" value="Facilitate better teamwork among healthcare providers"> <span>B. Facilitate better teamwork among healthcare providers</span></label>
+                    <label><input type="radio" name="q38" value="Reduce communication in healthcare settings"> <span>C. Reduce communication in healthcare settings</span></label>
+                    <label><input type="radio" name="q38" value="Create competition among professionals"> <span>D. Create competition among professionals</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q39">
+                <h3>39. The primary focus of HIMSS is to:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q39" value="Increase healthcare costs"> <span>A. Increase healthcare costs</span></label>
+                    <label><input type="radio" name="q39" value="Promote the effective use of health information technology"> <span>B. Promote the effective use of health information technology</span></label>
+                    <label><input type="radio" name="q39" value="Limit access to health information"> <span>C. Limit access to health information</span></label>
+                    <label><input type="radio" name="q39" value="Focus solely on administrative practices"> <span>D. Focus solely on administrative practices</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q40">
+                <h3>40. What is the primary benefit of technology in nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q40" value="Reducing interaction between students and learning materials"> <span>A. Reducing interaction between students and learning materials</span></label>
+                    <label><input type="radio" name="q40" value="Limiting students’ access to information"> <span>B. Limiting students’ access to information</span></label>
+                    <label><input type="radio" name="q40" value="Assisting in critical thinking development in patient care"> <span>C. Assisting in critical thinking development in patient care</span></label>
+                    <label><input type="radio" name="q40" value="Restricting self-directed learning"> <span>D. Restricting self-directed learning</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q41">
+                <h3>41. Which nursing trend is associated with providing care remotely using digital tools?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q41" value="Traveling Nurses"> <span>A. Traveling Nurses</span></label>
+                    <label><input type="radio" name="q41" value="Nursing Home Staffing Regulation"> <span>B. Nursing Home Staffing Regulation</span></label>
+                    <label><input type="radio" name="q41" value="Virtual Nursing"> <span>C. Virtual Nursing</span></label>
+                    <label><input type="radio" name="q41" value="Entrepreneurship in Nursing"> <span>D. Entrepreneurship in Nursing</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q42">
+                <h3>42. Identify a potential issue of technology in nursing education.</h3>
+                <div class="options">
+                    <label><input type="radio" name="q42" value="Low costs of equipment"> <span>A. Low costs of equipment</span></label>
+                    <label><input type="radio" name="q42" value="Increased in-person communication"> <span>B. Increased in-person communication</span></label>
+                    <label><input type="radio" name="q42" value="Shortage of trained educators to handle new technology"> <span>C. Shortage of trained educators to handle new technology</span></label>
+                    <label><input type="radio" name="q42" value="Technology reducing the workload for teachers"> <span>D. Technology reducing the workload for teachers</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q43">
+                <h3>43. What should be Mr. Ali's first priority upon hearing sounds from a patient’s ventilator while he has a scheduled meeting?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q43" value="Attend the meeting with the head of the unit"> <span>A. Attend the meeting with the head of the unit</span></label>
+                    <label><input type="radio" name="q43" value="Ignore the ventilator sound as it is not urgent"> <span>B. Ignore the ventilator sound as it is not urgent</span></label>
+                    <label><input type="radio" name="q43" value="Address the issue with the ventilator immediately"> <span>C. Address the issue with the ventilator immediately</span></label>
+                    <label><input type="radio" name="q43" value="Wait for another nurse to assist the patient's"> <span>D. Wait for another nurse to assist the patient's</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q44">
+                <h3>44. Who is credited with establishing nursing as a distinct profession during the Crimean War?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q44" value="Virginia Henderson"> <span>A. Virginia Henderson</span></label>
+                    <label><input type="radio" name="q44" value="Jean Watson"> <span>B. Jean Watson</span></label>
+                    <label><input type="radio" name="q44" value="Florence Nightingale"> <span>C. Florence Nightingale</span></label>
+                    <label><input type="radio" name="q44" value="Clara Barton"> <span>D. Clara Barton</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q45">
+                <h3>45. Which of the following is NOT a role that evolved in nursing during the 21st century?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q45" value="Nurse practitioners (NPs)"> <span>A. Nurse practitioners (NPs)</span></label>
+                    <label><input type="radio" name="q45" value="Clinical nurse specialists (CNSs)"> <span>B. Clinical nurse specialists (CNSs)</span></label>
+                    <label><input type="radio" name="q45" value="Family caregivers"> <span>C. Family caregivers</span></label>
+                    <label><input type="radio" name="q45" value="Nurse anesthetists (CRNAs)"> <span>D. Nurse anesthetists (CRNAs)</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q46">
+                <h3>46. Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q46" value="Only technical skills"> <span>A. Only technical skills</span></label>
+                    <label><input type="radio" name="q46" value="Both technical and communication skills"> <span>B. Both technical and communication skills</span></label>
+                    <label><input type="radio" name="q46" value="Patient mobility skills"> <span>C. Patient mobility skills</span></label>
+                    <label><input type="radio" name="q46" value="Traditional bedside skills only"> <span>D. Traditional bedside skills only</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q47">
+                <h3>47. In which of the following areas has technology become an integral part of nursing practice?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q47" value="Hygienic practices only"> <span>A. Hygienic practices only</span></label>
+                    <label><input type="radio" name="q47" value="Manual record-keeping"> <span>B. Manual record-keeping</span></label>
+                    <label><input type="radio" name="q47" value="Patient diagnosis and telehealth"> <span>C. Patient diagnosis and telehealth</span></label>
+                    <label><input type="radio" name="q47" value="Physical assistance in surgeries"> <span>D. Physical assistance in surgeries</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q48">
+                <h3>48. Which skill is essential for nurses working with Digital Health and Health Informatics?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q48" value="Only clinical skills"> <span>A. Only clinical skills</span></label>
+                    <label><input type="radio" name="q48" value="Analytical and technical skills"> <span>B. Analytical and technical skills</span></label>
+                    <label><input type="radio" name="q48" value="Only physical assessment skills"> <span>C. Only physical assessment skills</span></label>
+                    <label><input type="radio" name="q48" value="Primarily interpersonal skills"> <span>D. Primarily interpersonal skills</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q49">
+                <h3>49. Which nursing trend focuses on addressing health disparities and providing resources to underserved populations?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q49" value="Research and Evidence-Based Practice"> <span>A. Research and Evidence-Based Practice</span></label>
+                    <label><input type="radio" name="q49" value="Advocacy and Policy Development"> <span>B. Advocacy and Policy Development</span></label>
+                    <label><input type="radio" name="q49" value="Telemedicine and Telehealth"> <span>C. Telemedicine and Telehealth</span></label>
+                    <label><input type="radio" name="q49" value="Community and Public Health Initiatives"> <span>D. Community and Public Health Initiatives</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q50">
+                <h3>50. What did the Florence Nightingale School of Nursing, founded in 1860, signify?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q50" value="The beginning of nursing practice"> <span>A. The beginning of nursing practice</span></label>
+                    <label><input type="radio" name="q50" value="The start of formal nursing education"> <span>B. The start of formal nursing education</span></label>
+                    <label><input type="radio" name="q50" value="The start of telehealth nursing"> <span>C. The start of telehealth nursing</span></label>
+                    <label><input type="radio" name="q50" value="The rise of digital health"> <span>D. The rise of digital health</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q51">
+                <h3>51. In advocating for their profession, how can nurses influence healthcare policies?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q51" value="Focusing solely on clinical practice"> <span>A. Focusing solely on clinical practice</span></label>
+                    <label><input type="radio" name="q51" value="Writing articles and engaging with policymakers"> <span>B. Writing articles and engaging with policymakers</span></label>
+                    <label><input type="radio" name="q51" value="Avoiding public healthcare meetings"> <span>C. Avoiding public healthcare meetings</span></label>
+                    <label><input type="radio" name="q51" value="Ignoring patient advocacy groups"> <span>D. Ignoring patient advocacy groups</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q52">
+                <h3>52. What is the definition of a trend in nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q52" value="A random change in healthcare practices"> <span>A. A random change in healthcare practices</span></label>
+                    <label><input type="radio" name="q52" value="A specific law that governs nursing practice"> <span>B. A specific law that governs nursing practice</span></label>
+                    <label><input type="radio" name="q52" value="A general direction in which healthcare or nursing is moving"> <span>C. A general direction in which healthcare or nursing is moving</span></label>
+                    <label><input type="radio" name="q52" value="A temporary fad in the medical field"> <span>D. A temporary fad in the medical field</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q53">
+                <h3>53. What is one major reason for the continued nurse shortage?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q53" value="Decrease in patient numbers"> <span>A. Decrease in patient numbers</span></label>
+                    <label><input type="radio" name="q53" value="One-third of nurses are nearing retirement age"> <span>B. One-third of nurses are nearing retirement age</span></label>
+                    <label><input type="radio" name="q53" value="Increase in the number of medical schools"> <span>C. Increase in the number of medical schools</span></label>
+                    <label><input type="radio" name="q53" value="Decrease in healthcare funding"> <span>D. Decrease in healthcare funding</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q54">
+                <h3>54. Which trend is contributing to the growth of telehealth nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q54" value="A decrease in technology adoption"> <span>A. A decrease in technology adoption</span></label>
+                    <label><input type="radio" name="q54" value="Patients' reliance on virtual consultations"> <span>B. Patients' reliance on virtual consultations</span></label>
+                    <label><input type="radio" name="q54" value="Reduction in healthcare accessibility"> <span>C. Reduction in healthcare accessibility</span></label>
+                    <label><input type="radio" name="q54" value="Decrease in nursing jobs"> <span>D. Decrease in nursing jobs</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q55">
+                <h3>55. Which technological advancement has significantly improved nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q55" value="Online and distance learning programs"> <span>A. Online and distance learning programs</span></label>
+                    <label><input type="radio" name="q55" value="A reduction in nursing school admission rates"> <span>B. A reduction in nursing school admission rates</span></label>
+                    <label><input type="radio" name="q55" value="Increased reliance on in-person lectures"> <span>C. Increased reliance on in-person lectures</span></label>
+                    <label><input type="radio" name="q55" value="The elimination of virtual patient simulations"> <span>D. The elimination of virtual patient simulations</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q56">
+                <h3>56. What is one major challenge of implementing technology in nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q56" value="High cost of technological advances"> <span>A. High cost of technological advances</span></label>
+                    <label><input type="radio" name="q56" value="Decreased accuracy in patient monitoring"> <span>B. Decreased accuracy in patient monitoring</span></label>
+                    <label><input type="radio" name="q56" value="Reduced communication between nurses and doctors"> <span>C. Reduced communication between nurses and doctors</span></label>
+                    <label><input type="radio" name="q56" value="Increased paperwork"> <span>D. Increased paperwork</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q57">
+                <h3>57. A nurse caring for patients in a primary care setting submits paperwork for reimbursement from managed care plans for services performed. Which purpose best describes managed care as a framework for health care?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q57" value="A design to control the cost of care while maintaining the quality of care"> <span>A. A design to control the cost of care while maintaining the quality of care</span></label>
+                    <label><input type="radio" name="q57" value="Care coordination to maximize positive outcomes to contain costs"> <span>B. Care coordination to maximize positive outcomes to contain costs</span></label>
+                    <label><input type="radio" name="q57" value="The delivery of services from initial contact through ongoing care"> <span>C. The delivery of services from initial contact through ongoing care</span></label>
+                    <label><input type="radio" name="q57" value="Based on a philosophy of ensuring death in comfort and dignity"> <span>D. Based on a philosophy of ensuring death in comfort and dignity</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q58">
+                <h3>58. Organizations and initiatives focused on preventing disease and promoting health at a community or population level is an ……?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q58" value="health care facilities"> <span>A. health care facilities</span></label>
+                    <label><input type="radio" name="q58" value="public health"> <span>B. public health</span></label>
+                    <label><input type="radio" name="q58" value="health insurance"> <span>C. health insurance</span></label>
+                    <label><input type="radio" name="q58" value="health equipment's"> <span>D. health equipment's</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q59">
+                <h3>59. health care system in which people pay a fee to a fund that in turn pays health care activities?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q59" value="Bicmarck"> <span>A. Bicmarck</span></label>
+                    <label><input type="radio" name="q59" value="universal system"> <span>B. universal system</span></label>
+                    <label><input type="radio" name="q59" value="Beveridg"> <span>C. Beveridg</span></label>
+                    <label><input type="radio" name="q59" value="National Health Insurance Model"> <span>D. National Health Insurance Model</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q60">
+                <h3>60. Which statements describe current U.S. health care delivery practices? Select all that apply.</h3>
+                <div class="options">
+                    <label><input type="radio" name="q60" value="Access to care depends only on the ability to pay, not the availability of services."> <span>A. Access to care depends only on the ability to pay, not the availability of services.</span></label>
+                    <label><input type="radio" name="q60" value="The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations."> <span>B. The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations.</span></label>
+                    <label><input type="radio" name="q60" value="Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits."> <span>C. Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.</span></label>
+                    <label><input type="radio" name="q60" value="The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay."> <span>D. The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay.</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q61">
+                <h3>61. Which of the following describes the Beveridge Model?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q61" value="Funded by employer and employee contributions"> <span>A. Funded by employer and employee contributions</span></label>
+                    <label><input type="radio" name="q61" value="Government finances and provides healthcare services"> <span>B. Government finances and provides healthcare services</span></label>
+                    <label><input type="radio" name="q61" value="A mix of private providers and government insurance"> <span>C. A mix of private providers and government insurance</span></label>
+                    <label><input type="radio" name="q61" value="Individuals pay directly for healthcare services"> <span>D. Individuals pay directly for healthcare services</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q62">
+                <h3>62. What has led to an increased expectation for nurses to utilize technology effectively in the workforce?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q62" value="Growth in patient numbers"> <span>A. Growth in patient numbers</span></label>
+                    <label><input type="radio" name="q62" value="Technological advancements and virtual learning"> <span>B. Technological advancements and virtual learning</span></label>
+                    <label><input type="radio" name="q62" value="Increased demand for in-person classes"> <span>C. Increased demand for in-person classes</span></label>
+                    <label><input type="radio" name="q62" value="Shortage of nursing faculty"> <span>D. Shortage of nursing faculty</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q63">
+                <h3>63. How are higher education institutions expected to benefit from integrating technology into nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q63" value="By increasing students’ technical knowledge only"> <span>A. By increasing students’ technical knowledge only</span></label>
+                    <label><input type="radio" name="q63" value="By improving scores on certification exams and preparing students for real-world practice"> <span>B. By improving scores on certification exams and preparing students for real-world practice</span></label>
+                    <label><input type="radio" name="q63" value="By replacing in-person instruction completely"> <span>C. By replacing in-person instruction completely</span></label>
+                    <label><input type="radio" name="q63" value="By eliminating the need for faculty members"> <span>D. By eliminating the need for faculty members</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q64">
+                <h3>64. What is a potential benefit of using virtual reality in nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q64" value="It allows students to complete coursework without guidance."> <span>A. It allows students to complete coursework without guidance.</span></label>
+                    <label><input type="radio" name="q64" value="It encourages deeper learning through project-based experiences."> <span>B. It encourages deeper learning through project-based experiences.</span></label>
+                    <label><input type="radio" name="q64" value="It eliminates the need for clinical practice."> <span>C. It eliminates the need for clinical practice.</span></label>
+                    <label><input type="radio" name="q64" value="It replaces traditional lab classes entirely."> <span>D. It replaces traditional lab classes entirely.</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q65">
+                <h3>65. Which of the following is an emerging trend that improves nursing students' access to learning?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q65" value="Replacing hands-on labs with written exams"> <span>A. Replacing hands-on labs with written exams</span></label>
+                    <label><input type="radio" name="q65" value="Upgrading wireless bandwidth and 3D content for simulations"> <span>B. Upgrading wireless bandwidth and 3D content for simulations</span></label>
+                    <label><input type="radio" name="q65" value="Increasing the number of in-person classes"> <span>C. Increasing the number of in-person classes</span></label>
+                    <label><input type="radio" name="q65" value="Requiring students to attend more lectures"> <span>D. Requiring students to attend more lectures</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q66">
+                <h3>66. What was one effect of the COVID-19 pandemic on nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q66" value="A return to traditional classroom-only teaching methods"> <span>A. A return to traditional classroom-only teaching methods</span></label>
+                    <label><input type="radio" name="q66" value="A move away from technology use in teaching"> <span>B. A move away from technology use in teaching</span></label>
+                    <label><input type="radio" name="q66" value="Accelerated adoption of remote and online instruction"> <span>C. Accelerated adoption of remote and online instruction</span></label>
+                    <label><input type="radio" name="q66" value="Increased restrictions on virtual learning"> <span>D. Increased restrictions on virtual learning</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q67">
+                <h3>67. Which tool mentioned in the document is used for virtual patient assessments?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q67" value="Virtual Reality Simulation"> <span>A. Virtual Reality Simulation</span></label>
+                    <label><input type="radio" name="q67" value="Shadow Health’s Digital Clinical Experience"> <span>B. Shadow Health’s Digital Clinical Experience</span></label>
+                    <label><input type="radio" name="q67" value="Telehealth Consultations"> <span>C. Telehealth Consultations</span></label>
+                    <label><input type="radio" name="q67" value="ExamSoft"> <span>D. ExamSoft</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q68">
+                <h3>68. Why is remote monitoring important in nursing telehealth practices?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q68" value="It eliminates the need for patient interaction."> <span>A. It eliminates the need for patient interaction.</span></label>
+                    <label><input type="radio" name="q68" value="It allows nurses to track patients’ vital signs and intervene early if needed."> <span>B. It allows nurses to track patients’ vital signs and intervene early if needed.</span></label>
+                    <label><input type="radio" name="q68" value="It replaces the need for physical exams."> <span>C. It replaces the need for physical exams.</span></label>
+                    <label><input type="radio" name="q68" value="It only benefits patients in emergency situations."> <span>D. It only benefits patients in emergency situations.</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q69">
+                <h3>69. What challenge is associated with virtual exams in telehealth for nurses?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q69" value="Inability to interpret body language and physical appearance cues effectively"> <span>A. Inability to interpret body language and physical appearance cues effectively</span></label>
+                    <label><input type="radio" name="q69" value="Increased costs compared to in-person exams"> <span>B. Increased costs compared to in-person exams</span></label>
+                    <label><input type="radio" name="q69" value="Lack of technology to conduct exams virtually"> <span>C. Lack of technology to conduct exams virtually</span></label>
+                    <label><input type="radio" name="q69" value="Requirement of more physical space for exams"> <span>D. Requirement of more physical space for exams</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q70">
+                <h3>70. Which organization recommended that nurse practitioners learn telehealth skills?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q70" value="American Association of Colleges of Nursing"> <span>A. American Association of Colleges of Nursing</span></label>
+                    <label><input type="radio" name="q70" value="National Organization of Nurse Practitioner Faculties (NONPF)"> <span>B. National Organization of Nurse Practitioner Faculties (NONPF)</span></label>
+                    <label><input type="radio" name="q70" value="National League for Nursing"> <span>C. National League for Nursing</span></label>
+                    <label><input type="radio" name="q70" value="American Medical Association"> <span>D. American Medical Association</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q71">
+                <h3>71. Duquesne University offers an online post-master’s certificate in nursing education for students who:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q71" value="Have completed a bachelor’s degree in nursing"> <span>A. Have completed a bachelor’s degree in nursing</span></label>
+                    <label><input type="radio" name="q71" value="Have not yet completed any clinical practice"> <span>B. Have not yet completed any clinical practice</span></label>
+                    <label><input type="radio" name="q71" value="Have already earned their MSN"> <span>C. Have already earned their MSN</span></label>
+                    <label><input type="radio" name="q71" value="Are new to virtual learning platforms"> <span>D. Are new to virtual learning platforms</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q72">
+                <h3>72. What is the primary focus of Evidence-Based Nursing (EBN)?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q72" value="Increasing administrative efficiency in nursing"> <span>A. Increasing administrative efficiency in nursing</span></label>
+                    <label><input type="radio" name="q72" value="Reducing the cost of medical supplies"> <span>B. Reducing the cost of medical supplies</span></label>
+                    <label><input type="radio" name="q72" value="Integrating research evidence with clinical expertise and patient preferences"> <span>C. Integrating research evidence with clinical expertise and patient preferences</span></label>
+                    <label><input type="radio" name="q72" value="Promoting independent decision-making by nurses"> <span>D. Promoting independent decision-making by nurses</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q73">
+                <h3>73. Which of the following is NOT an objective of Evidence-Based Practice (EBP) in nursing?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q73" value="Improving patient outcomes"> <span>A. Improving patient outcomes</span></label>
+                    <label><input type="radio" name="q73" value="Reducing patient participation in decision-making"> <span>B. Reducing patient participation in decision-making</span></label>
+                    <label><input type="radio" name="q73" value="Promoting continuous learning among nurses"> <span>C. Promoting continuous learning among nurses</span></label>
+                    <label><input type="radio" name="q73" value="Enhancing patient safety"> <span>D. Enhancing patient safety</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q74">
+                <h3>74. What is the first step in the Evidence-Based Practice process?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q74" value="Assessing outcomes of new practices"> <span>A. Assessing outcomes of new practices</span></label>
+                    <label><input type="radio" name="q74" value="Applying new information"> <span>B. Applying new information</span></label>
+                    <label><input type="radio" name="q74" value="Asking an appropriate question"> <span>C. Asking an appropriate question</span></label>
+                    <label><input type="radio" name="q74" value="Analyzing information"> <span>D. Analyzing information</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q75">
+                <h3>75. Which of the following resources is specifically designed to summarize clinically useful studies for nurses?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q75" value="Clinical trial databases"> <span>A. Clinical trial databases</span></label>
+                    <label><input type="radio" name="q75" value="Evidence-based journals"> <span>B. Evidence-based journals</span></label>
+                    <label><input type="radio" name="q75" value="Hospital patient records"> <span>C. Hospital patient records</span></label>
+                    <label><input type="radio" name="q75" value="General nursing websites"> <span>D. General nursing websites</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q76">
+                <h3>76. One barrier to implementing Evidence-Based Nursing (EBN) is:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q76" value="Excessive availability of resources"> <span>A. Excessive availability of resources</span></label>
+                    <label><input type="radio" name="q76" value="Limited understanding of research methods by practitioners"> <span>B. Limited understanding of research methods by practitioners</span></label>
+                    <label><input type="radio" name="q76" value="High levels of clinical expertise among all nurses"> <span>C. High levels of clinical expertise among all nurses</span></label>
+                    <label><input type="radio" name="q76" value="Universal support from healthcare organizations"> <span>D. Universal support from healthcare organizations</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q77">
+                <h3>77. Which of the following best defines Evidence-Based Nursing (EBN)?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q77" value="A process that relies solely on a nurse’s personal experience"> <span>A. A process that relies solely on a nurse’s personal experience</span></label>
+                    <label><input type="radio" name="q77" value="Combining research evidence, clinical expertise, and patient preferences in care decisions"> <span>B. Combining research evidence, clinical expertise, and patient preferences in care decisions</span></label>
+                    <label><input type="radio" name="q77" value="Prioritizing organizational policies over patient-centered care"> <span>C. Prioritizing organizational policies over patient-centered care</span></label>
+                    <label><input type="radio" name="q77" value="Relying on traditional practices without considering current evidence"> <span>D. Relying on traditional practices without considering current evidence</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q78">
+                <h3>78. Which of these resources is specifically intended to help nurses stay updated on clinically relevant studies?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q78" value="Hospital policy manuals"> <span>A. Hospital policy manuals</span></label>
+                    <label><input type="radio" name="q78" value="Systematic reviews"> <span>B. Systematic reviews</span></label>
+                    <label><input type="radio" name="q78" value="Evidence-based journals"> <span>C. Evidence-based journals</span></label>
+                    <label><input type="radio" name="q78" value="Standard medical textbooks"> <span>D. Standard medical textbooks</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q79">
+                <h3>79. What is the first step in the Evidence-Based Practice (EBP) process?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q79" value="Applying new information"> <span>A. Applying new information</span></label>
+                    <label><input type="radio" name="q79" value="Analyzing the outcomes"> <span>B. Analyzing the outcomes</span></label>
+                    <label><input type="radio" name="q79" value="Asking appropriate questions"> <span>C. Asking appropriate questions</span></label>
+                    <label><input type="radio" name="q79" value="Assessing new practices"> <span>D. Assessing new practices</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q80">
+                <h3>80. Which component of Emotional Intelligence involves understanding and managing your own emotions?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q80" value="Empathy"> <span>A. Empathy</span></label>
+                    <label><input type="radio" name="q80" value="Self-Awareness"> <span>B. Self-Awareness</span></label>
+                    <label><input type="radio" name="q80" value="Social Skills"> <span>C. Social Skills</span></label>
+                    <label><input type="radio" name="q80" value="Motivation"> <span>D. Motivation</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q81">
+                <h3>81. High emotional intelligence is often associated with:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q81" value="Reduced mental health"> <span>A. Reduced mental health</span></label>
+                    <label><input type="radio" name="q81" value="Better conflict resolution skills"> <span>B. Better conflict resolution skills</span></label>
+                    <label><input type="radio" name="q81" value="Poor workplace relationships"> <span>C. Poor workplace relationships</span></label>
+                    <label><input type="radio" name="q81" value="Decreased adaptability to challenges"> <span>D. Decreased adaptability to challenges</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q82">
+                <h3>82. Which of the following is an application of AI in healthcare?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q82" value="Diagnosis and treatment planning"> <span>A. Diagnosis and treatment planning</span></label>
+                    <label><input type="radio" name="q82" value="Conducting therapy sessions"> <span>B. Conducting therapy sessions</span></label>
+                    <label><input type="radio" name="q82" value="Replacing human healthcare providers entirely"> <span>C. Replacing human healthcare providers entirely</span></label>
+                    <label><input type="radio" name="q82" value="Providing nutritional counseling"> <span>D. Providing nutritional counseling</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q83">
+                <h3>83. A major concern with implementing AI in healthcare is:</h3>
+                <div class="options">
+                    <label><input type="radio" name="q83" value="Reduced efficiency"> <span>A. Reduced efficiency</span></label>
+                    <label><input type="radio" name="q83" value="Lack of data availability"> <span>B. Lack of data availability</span></label>
+                    <label><input type="radio" name="q83" value="Bias in AI models"> <span>C. Bias in AI models</span></label>
+                    <label><input type="radio" name="q83" value="Inability to process large datasets"> <span>D. Inability to process large datasets</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q84">
+                <h3>84. What has led to an increased expectation for nurses to utilize technology effectively in the workforce?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q84" value="Growth in patient numbers"> <span>A. Growth in patient numbers</span></label>
+                    <label><input type="radio" name="q84" value="Technological advancements and virtual learning"> <span>B. Technological advancements and virtual learning</span></label>
+                    <label><input type="radio" name="q84" value="Increased demand for in-person classes"> <span>C. Increased demand for in-person classes</span></label>
+                    <label><input type="radio" name="q84" value="Shortage of nursing faculty"> <span>D. Shortage of nursing faculty</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <div class="question" id="q85">
+                <h3>85. What is a potential benefit of using virtual reality in nursing education?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q85" value="It allows students to complete coursework without guidance."> <span>A. It allows students to complete coursework without guidance.</span></label>
+                    <label><input type="radio" name="q85" value="It encourages deeper learning through project-based experiences."> <span>B. It encourages deeper learning through project-based experiences.</span></label>
+                    <label><input type="radio" name="q85" value="It eliminates the need for clinical practice."> <span>C. It eliminates the need for clinical practice.</span></label>
+                    <label><input type="radio" name="q85" value="It replaces traditional lab classes entirely."> <span>D. It replaces traditional lab classes entirely.</span></label>
+                </div>
+                <div class="error-message">Please select an option for this question.</div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+        </form>
 
         <div id="scoreContainer" class="score-container">
             <h3>Your Score: <span id="score">0</span> / <span id="totalQuestions">0</span></h3>
@@ -124,968 +1050,178 @@
     </div>
 
     <script>
+        // Mapping of question IDs to their correct answers (full text of the option)
+        const correctAnswers = {
+            q1: 'A general direction in which healthcare or nursing is moving',
+            q2: 'One-third of nurses are nearing retirement age',
+            q3: 'Patients\' reliance on virtual consultations',
+            q4: 'Online and distance learning programs',
+            q5: 'High cost of technological advances',
+            q6: 'A design to control the cost of care while maintaining the quality of care',
+            q7: 'public health',
+            q8: 'Bicmarck', // CORRECTED ANSWER
+            q9: 'Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.', // Remains single choice
+            q10: 'Government finances and provides healthcare services',
+            q11: 'Florence Nightingale',
+            q12: 'Family caregivers',
+            q13: 'Florence Nightingale', // This question text ("Who is known as the founder of modern nursing?") is a duplicate of Q11 in your provided list. If you intend a different question for Q13, please clarify. I'm keeping the given answer based on the text.
+            q14: 'Both technical and communication skills', // Based on context from prior exchanges
+            q15: 'Using data analytics and digital records to improve healthcare',
+            q16: 'Patient diagnosis and telehealth',
+            q17: 'Analytical and technical skills',
+            q18: 'Community and Public Health Initiatives',
+            q19: 'The start of formal nursing education',
+            q20: 'Writing articles and engaging with policymakers',
+            q21: 'Communication and digital security understanding',
+            q22: 'AI and Machine Learning',
+            q23: 'economical globalization',
+            q24: 'ecological globalization',
+            q25: 'multiple choice',
+            q26: 'UNISCO', // CORRECTED ANSWER
+            q27: 'Eradication',
+            q28: 'Climate change treaties',
+            q29: 'Decrease in technological advancements', // CORRECTED ANSWER
+            q30: '10 million', // CORRECTED ANSWER
+            q31: 'Streamlined documentation',
+            q32: 'Telehealth',
+            q33: 'Provide evidence-based recommendations to improve patient care',
+            q34: 'Enhance patient engagement and self-management',
+            q35: 'Predicting patient outcomes and optimizing resource allocation',
+            q36: 'Allow practice of clinical skills in a safe environment',
+            q37: 'Air conditioning', // CORRECTED ANSWER
+            q38: 'Facilitate better teamwork among healthcare providers',
+            q39: 'Promote the effective use of health information technology',
+            q40: 'Assisting in critical thinking development in patient care',
+            q41: 'Virtual Nursing',
+            q42: 'Shortage of trained educators to handle new technology',
+            q43: 'Address the issue with the ventilator immediately',
+            q44: 'Florence Nightingale',
+            q45: 'Family caregivers',
+            q46: 'Both technical and communication skills',
+            q47: 'Patient diagnosis and telehealth',
+            q48: 'Analytical and technical skills',
+            q49: 'Community and Public Health Initiatives',
+            q50: 'The start of formal nursing education',
+            q51: 'Writing articles and engaging with policymakers',
+            q52: 'A general direction in which healthcare or nursing is moving',
+            q53: 'One-third of nurses are nearing retirement age',
+            q54: 'Patients\' reliance on virtual consultations',
+            q55: 'Online and distance learning programs',
+            q56: 'High cost of technological advances',
+            q57: 'A design to control the cost of care while maintaining the quality of care',
+            q58: 'public health',
+            q59: 'National Health Insurance Model', // This is a duplicate of Q8, which you corrected to Bicmarck. I'm keeping the original Q59 answer as National Health Insurance Model based on your initial prompt where it was the implied answer for this text. If Q59 should also be Bicmarck, let me know.
+            q60: 'Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.', // Remains single correct answer
+            q61: 'Government finances and provides healthcare services',
+            q62: 'Technological advancements and virtual learning',
+            q63: 'By improving scores on certification exams and preparing students for real-world practice',
+            q64: 'It encourages deeper learning through project-based experiences.',
+            q65: 'Upgrading wireless bandwidth and 3D content for simulations',
+            q66: 'Accelerated adoption of remote and online instruction',
+            q67: 'Shadow Health’s Digital Clinical Experience',
+            q68: 'It allows nurses to track patients’ vital signs and intervene early if needed.',
+            q69: 'Inability to interpret body language and physical appearance cues effectively',
+            q70: 'National Organization of Nurse Practitioner Faculties (NONPF)',
+            q71: 'Have already earned their MSN',
+            q72: 'Integrating research evidence with clinical expertise and patient preferences',
+            q73: 'Reducing patient participation in decision-making',
+            q74: 'Asking an appropriate question',
+            q75: 'Evidence-based journals',
+            q76: 'Limited understanding of research methods by practitioners',
+            q77: 'Combining research evidence, clinical expertise, and patient preferences in care decisions',
+            q78: 'Evidence-based journals',
+            q79: 'Asking appropriate questions',
+            q80: 'Self-Awareness',
+            q81: 'Better conflict resolution skills',
+            q82: 'Diagnosis and treatment planning',
+            q83: 'Bias in AI models',
+            q84: 'Technological advancements and virtual learning',
+            q85: 'It encourages deeper learning through project-based experiences.'
+        };
+
+
         const quizForm = document.getElementById('quizForm');
         const scoreContainer = document.getElementById('scoreContainer');
         const scoreSpan = document.getElementById('score');
         const totalQuestionsSpan = document.getElementById('totalQuestions');
+        const questionIds = Object.keys(correctAnswers); // Get all question IDs from the correctAnswers map
 
-        // Define questions and their correct answers.
-        const questionsData = [
-            {
-                id: 'q1',
-                question: '1. What is the definition of a trend in nursing?',
-                options: [
-                    'A random change in healthcare practices',
-                    'A specific law that governs nursing practice',
-                    'A general direction in which healthcare or nursing is moving',
-                    'A temporary fad in the medical field'
-                ],
-                correctAnswer: 'A general direction in which healthcare or nursing is moving'
-            },
-            {
-                id: 'q2',
-                question: '2. What is one major reason for the continued nurse shortage?',
-                options: [
-                    'Decrease in patient numbers',
-                    'One-third of nurses are nearing retirement age',
-                    'Increase in the number of medical schools',
-                    'Decrease in healthcare funding'
-                ],
-                correctAnswer: 'One-third of nurses are nearing retirement age'
-            },
-            {
-                id: 'q3',
-                question: '3. Which trend is contributing to the growth of telehealth nursing?',
-                options: [
-                    'A decrease in technology adoption',
-                    'Patients\' reliance on virtual consultations',
-                    'Reduction in healthcare accessibility',
-                    'Decrease in nursing jobs'
-                ],
-                correctAnswer: 'Patients\' reliance on virtual consultations'
-            },
-            {
-                id: 'q4',
-                question: '4. Which technological advancement has significantly improved nursing education?',
-                options: [
-                    'Online and distance learning programs',
-                    'A reduction in nursing school admission rates',
-                    'Increased reliance on in-person lectures',
-                    'The elimination of virtual patient simulations'
-                ],
-                correctAnswer: 'Online and distance learning programs'
-            },
-            {
-                id: 'q5',
-                question: '5. What is one major challenge of implementing technology in nursing?',
-                options: [
-                    'High cost of technological advances',
-                    'Decreased accuracy in patient monitoring',
-                    'Reduced communication between nurses and doctors',
-                    'Increased paperwork'
-                ],
-                correctAnswer: 'High cost of technological advances'
-            },
-            {
-                id: 'q6',
-                question: '6. A nurse caring for patients in a primary care setting submits paperwork for reimbursement from managed care plans for services performed. Which purpose best describes managed care as a framework for health care?',
-                options: [
-                    'A design to control the cost of care while maintaining the quality of care',
-                    'Care coordination to maximize positive outcomes to contain costs',
-                    'The delivery of services from initial contact through ongoing care',
-                    'Based on a philosophy of ensuring death in comfort and dignity'
-                ],
-                correctAnswer: 'A design to control the cost of care while maintaining the quality of care'
-            },
-            {
-                id: 'q7',
-                question: '7. Organizations and initiatives focused on preventing disease and promoting health at a community or population level is an ……',
-                options: [
-                    'health care facilities',
-                    'public health',
-                    'health insurance',
-                    'health equipment\'s'
-                ],
-                correctAnswer: 'public health'
-            },
-            {
-                id: 'q8',
-                question: '8. Health care system in which people pay a fee to a fund that in turn pays health care activities',
-                options: [
-                    'Bicmarck',
-                    'universal system',
-                    'Beveridg',
-                    'National Health Insurance Model'
-                ],
-                correctAnswer: 'National Health Insurance Model'
-            },
-            {
-                id: 'q9',
-                question: '9. Which of the following describes the Beveridge Model?',
-                options: [
-                    'Funded by employer and employee contributions',
-                    'Government finances and provides healthcare services',
-                    'A mix of private providers and government insurance',
-                    'Individuals pay directly for healthcare services'
-                ],
-                correctAnswer: 'Government finances and provides healthcare services'
-            },
-            {
-                id: 'q10',
-                question: '10. Who is credited with establishing nursing as a distinct profession during the Crimean War?',
-                options: [
-                    'Virginia Henderson',
-                    'Jean Watson',
-                    'Florence Nightingale',
-                    'Clara Barton'
-                ],
-                correctAnswer: 'Florence Nightingale'
-            },
-            {
-                id: 'q11',
-                question: '11. Which of the following is NOT a role that evolved in nursing during the 21st century?',
-                options: [
-                    'Nurse practitioners (NPs)',
-                    'Clinical nurse specialists (CNSs)',
-                    'Family caregivers',
-                    'Nurse anesthetists (CRNAs)'
-                ],
-                correctAnswer: 'Family caregivers'
-            },
-            {
-                id: 'q12',
-                question: '12. Who is known as the founder of modern nursing?',
-                options: [
-                    'Virginia Henderson',
-                    'Jean Watson',
-                    'Florence Nightingale',
-                    'Clara Barton'
-                ],
-                correctAnswer: 'Florence Nightingale'
-            },
-            {
-                id: 'q13',
-                question: '13. Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?',
-                options: [
-                    'Only technical skills',
-                    'Both technical and communication skills',
-                    'Patient mobility skills',
-                    'Traditional bedside skills only'
-                ],
-                correctAnswer: 'Both technical and communication skills'
-            },
-            {
-                id: 'q14',
-                question: '14. What does health informatics focus on?',
-                options: [
-                    'Studying ancient medical practices',
-                    'Using data analytics and digital records to improve healthcare',
-                    'Reducing nursing education programs',
-                    'Eliminating the need for patient records'
-                ],
-                correctAnswer: 'Using data analytics and digital records to improve healthcare'
-            },
-            {
-                id: 'q15',
-                question: '15. In which of the following areas has technology become an integral part of nursing practice?',
-                options: [
-                    'Hygienic practices only',
-                    'Manual record-keeping',
-                    'Patient diagnosis and telehealth',
-                    'Physical assistance in surgeries'
-                ],
-                correctAnswer: 'Patient diagnosis and telehealth'
-            },
-            {
-                id: 'q16',
-                question: '16. Which skill is essential for nurses working with Digital Health and Health Informatics?',
-                options: [
-                    'Only clinical skills',
-                    'Analytical and technical skills',
-                    'Only physical assessment skills',
-                    'Primarily interpersonal skills'
-                ],
-                correctAnswer: 'Analytical and technical skills'
-            },
-            {
-                id: 'q17',
-                question: '17. Which nursing trend focuses on addressing health disparities and providing resources to underserved populations?',
-                options: [
-                    'Research and Evidence-Based Practice',
-                    'Advocacy and Policy Development',
-                    'Telemedicine and Telehealth',
-                    'Community and Public Health Initiatives'
-                ],
-                correctAnswer: 'Community and Public Health Initiatives'
-            },
-            {
-                id: 'q18',
-                question: '18. What did the Florence Nightingale School of Nursing, founded in 1860, signify?',
-                options: [
-                    'The beginning of nursing practice',
-                    'The start of formal nursing education',
-                    'The start of telehealth nursing',
-                    'The rise of digital health'
-                ],
-                correctAnswer: 'The start of formal nursing education'
-            },
-            {
-                id: 'q19',
-                question: '19. In advocating for their profession, how can nurses influence healthcare policies?',
-                options: [
-                    'Focusing solely on clinical practice',
-                    'Writing articles and engaging with policymakers',
-                    'Avoiding public healthcare meetings',
-                    'Ignoring patient advocacy groups'
-                ],
-                correctAnswer: 'Writing articles and engaging with policymakers'
-            },
-            {
-                id: 'q20',
-                question: '20. Which skill is vital for nurses to ensure privacy and security during telehealth consultations?',
-                options: [
-                    'Time management',
-                    'Communication and digital security understanding',
-                    'Hands-on clinical skills',
-                    'Physical assessment techniques'
-                ],
-                correctAnswer: 'Communication and digital security understanding'
-            },
-            {
-                id: 'q21',
-                question: '21. Which future direction for nursing involves the use of data to support decision-making and patient outcome predictions?',
-                options: [
-                    'Global Health',
-                    'Personalized Medicine',
-                    'AI and Machine Learning',
-                    'Health Informatics'
-                ],
-                correctAnswer: 'AI and Machine Learning'
-            },
-            {
-                id: 'q22',
-                question: '22. It is the backbone of the globalization',
-                options: [
-                    'social globalization',
-                    'culture globalization',
-                    'economical globalization',
-                    'political globalization'
-                ],
-                correctAnswer: 'economical globalization'
-            },
-            {
-                id: 'q23',
-                question: '23. Climate change or wildlife reserves that span several countries is example of……',
-                options: [
-                    'ecological globalization',
-                    'culture globalization',
-                    'economical globalization',
-                    'political globalization'
-                ],
-                correctAnswer: 'ecological globalization'
-            },
-            {
-                id: 'q24',
-                question: '24. People can have better choice to satisfy their need',
-                options: [
-                    'Proper use of resources',
-                    'multiple choice',
-                    'Creates Employment',
-                    'technology'
-                ],
-                correctAnswer: 'multiple choice'
-            },
-            {
-                id: 'q25',
-                question: '25. ……… is an Organization main priorities for the achievement of the Sustainable',
-                options: [
-                    'WHO',
-                    'UNESEF',
-                    'UNISCO',
-                    'ANA'
-                ],
-                correctAnswer: 'WHO'
-            },
-            {
-                id: 'q26',
-                question: '26. ………is the reduction of the worldwide incidence of a disease to zero',
-                options: [
-                    'Elimination',
-                    'mortality',
-                    'morbidity',
-                    'Eradication'
-                ],
-                correctAnswer: 'Eradication'
-            },
-            {
-                id: 'q27',
-                question: '27. Which of the following is an example of ecological globalization?',
-                options: [
-                    'Trade exchange',
-                    'Climate change treaties',
-                    'Spread of democratic ideals',
-                    'Expansion of multinational corporations'
-                ],
-                correctAnswer: 'Climate change treaties'
-            },
-            {
-                id: 'q28',
-                question: '28. What is a major advantage of globalization?',
-                options: [
-                    'Decrease in employment opportunities',
-                    'Spread of democratic ideals',
-                    'Increase in cultural barriers',
-                    'Decrease in technological advancements'
-                ],
-                correctAnswer: 'Spread of democratic ideals'
-            },
-            {
-                id: 'q29',
-                question: '29. According to WHO, how many nurses are needed globally to meet healthcare requirements by 2030?',
-                options: [
-                    '10 million',
-                    '6 million',
-                    '28 million',
-                    '5 million'
-                ],
-                correctAnswer: '28 million'
-            },
-            {
-                id: 'q30',
-                question: '30. What is the primary benefit of Electronic Health Records (EHR) in nursing practice?',
-                options: [
-                    'Increased paperwork',
-                    'Streamlined documentation',
-                    'Longer patient wait times',
-                    'Reduced patient engagement'
-                ],
-                correctAnswer: 'Streamlined documentation'
-            },
-            {
-                id: 'q31',
-                question: '31. Which technology allows nurses to monitor patients’ health remotely?',
-                options: [
-                    'Telehealth',
-                    'Mobile phones',
-                    'Fax machines',
-                    'Paper charts'
-                ],
-                correctAnswer: 'Telehealth'
-            },
-            {
-                id: 'q32',
-                question: '32. Clinical Decision Support Systems (CDSS) are designed to:',
-                options: [
-                    'Replace nurses in clinical settings',
-                    'Provide evidence-based recommendations to improve patient care',
-                    'Increase the complexity of patient data',
-                    'Limit communication among healthcare providers'
-                ],
-                correctAnswer: 'Provide evidence-based recommendations to improve patient care'
-            },
-            {
-                id: 'q33',
-                question: '33. Mobile health applications primarily aim to:',
-                options: [
-                    'Reduce the number of patients seen by nurses',
-                    'Enhance patient engagement and self-management',
-                    'Increase hospital admissions',
-                    'Replace face-to-face consultations'
-                ],
-                correctAnswer: 'Enhance patient engagement and self-management'
-            },
-            {
-                id: 'q34',
-                question: '34. What is a key advantage of using data analytics in nursing?',
-                options: [
-                    'Predicting patient outcomes and optimizing resource allocation',
-                    'Increasing the workload for nurses',
-                    'Making patient data less accessible',
-                    'Limiting the use of clinical guidelines'
-                ],
-                correctAnswer: 'Predicting patient outcomes and optimizing resource allocation'
-            },
-            {
-                id: 'q35',
-                question: '35. Simulation technology in nursing education is used to:',
-                options: [
-                    'Provide theoretical knowledge only',
-                    'Allow practice of clinical skills in a safe environment',
-                    'Replace traditional clinical placements',
-                    'Teach only administrative tasks'
-                ],
-                correctAnswer: 'Allow practice of clinical skills in a safe environment'
-            },
-            {
-                id: 'q36',
-                question: '36. Which of these technological advancements is aimed at improving hospital design and patient safety?',
-                options: [
-                    'Air conditioning',
-                    'Pharmacological advances',
-                    'Laparoscopic surgery tools',
-                    'Effusion pumps'
-                ],
-                correctAnswer: 'Effusion pumps'
-            },
-            {
-                id: 'q37',
-                question: '37. Interprofessional collaboration tools are designed to:',
-                options: [
-                    'Isolate different healthcare teams',
-                    'Facilitate better teamwork among healthcare providers',
-                    'Reduce communication in healthcare settings',
-                    'Create competition among professionals'
-                ],
-                correctAnswer: 'Facilitate better teamwork among healthcare providers'
-            },
-            {
-                id: 'q38',
-                question: '38. The primary focus of HIMSS is to:',
-                options: [
-                    'Increase healthcare costs',
-                    'Promote the effective use of health information technology',
-                    'Limit access to health information',
-                    'Focus solely on administrative practices'
-                ],
-                correctAnswer: 'Promote the effective use of health information technology'
-            },
-            {
-                id: 'q39',
-                question: '39. What is the primary benefit of technology in nursing education?',
-                options: [
-                    'Reducing interaction between students and learning materials',
-                    'Limiting students’ access to information',
-                    'Assisting in critical thinking development in patient care',
-                    'Restricting self-directed learning'
-                ],
-                correctAnswer: 'Assisting in critical thinking development in patient care'
-            },
-            {
-                id: 'q40',
-                question: '40. Which nursing trend is associated with providing care remotely using digital tools?',
-                options: [
-                    'Traveling Nurses',
-                    'Nursing Home Staffing Regulation',
-                    'Virtual Nursing',
-                    'Entrepreneurship in Nursing'
-                ],
-                correctAnswer: 'Virtual Nursing'
-            },
-            {
-                id: 'q41',
-                question: '41. Identify a potential issue of technology in nursing education.',
-                options: [
-                    'Low costs of equipment',
-                    'Increased in-person communication',
-                    'Shortage of trained educators to handle new technology',
-                    'Technology reducing the workload for teachers'
-                ],
-                correctAnswer: 'Shortage of trained educators to handle new technology'
-            },
-            {
-                id: 'q42',
-                question: '42. What should be Mr. Ali\'s first priority upon hearing sounds from a patient’s ventilator while he has a scheduled meeting?',
-                options: [
-                    'Attend the meeting with the head of the unit',
-                    'Ignore the ventilator sound as it is not urgent',
-                    'Address the issue with the ventilator immediately',
-                    'Wait for another nurse to assist the patient'
-                ],
-                correctAnswer: 'Address the issue with the ventilator immediately'
-            },
-            {
-                id: 'q43',
-                question: '43. What has led to an increased expectation for nurses to utilize technology effectively in the workforce?',
-                options: [
-                    'Growth in patient numbers',
-                    'Technological advancements and virtual learning',
-                    'Increased demand for in-person classes',
-                    'Shortage of nursing faculty'
-                ],
-                correctAnswer: 'Technological advancements and virtual learning'
-            },
-            {
-                id: 'q44',
-                question: '44. How are higher education institutions expected to benefit from integrating technology into nursing education?',
-                options: [
-                    'By increasing students’ technical knowledge only',
-                    'By improving scores on certification exams and preparing students for real-world practice',
-                    'By replacing in-person instruction completely',
-                    'By eliminating the need for faculty members'
-                ],
-                correctAnswer: 'By improving scores on certification exams and preparing students for real-world practice'
-            },
-            {
-                id: 'q45',
-                question: '45. What is a potential benefit of using virtual reality in nursing education?',
-                options: [
-                    'It allows students to complete coursework without guidance.',
-                    'It encourages deeper learning through project-based experiences.',
-                    'It eliminates the need for clinical practice.',
-                    'It replaces traditional lab classes entirely.'
-                ],
-                correctAnswer: 'It encourages deeper learning through project-based experiences.'
-            },
-            {
-                id: 'q46',
-                question: '46. Which of the following is an emerging trend that improves nursing students\' access to learning?',
-                options: [
-                    'Replacing hands-on labs with written exams',
-                    'Upgrading wireless bandwidth and 3D content for simulations',
-                    'Increasing the number of in-person classes',
-                    'Requiring students to attend more lectures'
-                ],
-                correctAnswer: 'Upgrading wireless bandwidth and 3D content for simulations'
-            },
-            {
-                id: 'q47',
-                question: '47. What was one effect of the COVID-19 pandemic on nursing education?',
-                options: [
-                    'A return to traditional classroom-only teaching methods',
-                    'A move away from technology use in teaching',
-                    'Accelerated adoption of remote and online instruction',
-                    'Increased restrictions on virtual learning'
-                ],
-                correctAnswer: 'Accelerated adoption of remote and online instruction'
-            },
-            {
-                id: 'q48',
-                question: '48. Which tool mentioned in the document is used for virtual patient assessments?',
-                options: [
-                    'Virtual Reality Simulation',
-                    'Shadow Health’s Digital Clinical Experience',
-                    'Telehealth Consultations',
-                    'ExamSoft'
-                ],
-                correctAnswer: 'Shadow Health’s Digital Clinical Experience'
-            },
-            {
-                id: 'q49',
-                question: '49. Why is remote monitoring important in nursing telehealth practices?',
-                options: [
-                    'It eliminates the need for patient interaction.',
-                    'It allows nurses to track patients’ vital signs and intervene early if needed.',
-                    'It replaces the need for physical exams.',
-                    'It only benefits patients in emergency situations.'
-                ],
-                correctAnswer: 'It allows nurses to track patients’ vital signs and intervene early if needed.'
-            },
-            {
-                id: 'q50',
-                question: '50. What challenge is associated with virtual exams in telehealth for nurses?',
-                options: [
-                    'Inability to interpret body language and physical appearance cues effectively',
-                    'Increased costs compared to in-person exams',
-                    'Lack of technology to conduct exams virtually',
-                    'Requirement of more physical space for exams'
-                ],
-                correctAnswer: 'Inability to interpret body language and physical appearance cues effectively'
-            },
-            {
-                id: 'q51',
-                question: '51. Which organization recommended that nurse practitioners learn telehealth skills?',
-                options: [
-                    'American Association of Colleges of Nursing',
-                    'National Organization of Nurse Practitioner Faculties (NONPF)',
-                    'National League for Nursing',
-                    'American Medical Association'
-                ],
-                correctAnswer: 'National Organization of Nurse Practitioner Faculties (NONPF)'
-            },
-            {
-                id: 'q52',
-                question: '52. Duquesne University offers an online post-master’s certificate in nursing education for students who:',
-                options: [
-                    'Have completed a bachelor’s degree in nursing',
-                    'Have not yet completed any clinical practice',
-                    'Have already earned their MSN',
-                    'Are new to virtual learning platforms'
-                ],
-                correctAnswer: 'Have already earned their MSN'
-            },
-            {
-                id: 'q53',
-                question: '53. What is the primary focus of Evidence-Based Nursing (EBN)?',
-                options: [
-                    'Increasing administrative efficiency in nursing',
-                    'Reducing the cost of medical supplies',
-                    'Integrating research evidence with clinical expertise and patient preferences',
-                    'Promoting independent decision-making by nurses'
-                ],
-                correctAnswer: 'Integrating research evidence with clinical expertise and patient preferences'
-            },
-            {
-                id: 'q54',
-                question: '54. Which of the following is NOT an objective of Evidence-Based Practice (EBP) in nursing?',
-                options: [
-                    'Improving patient outcomes',
-                    'Reducing patient participation in decision-making',
-                    'Promoting continuous learning among nurses',
-                    'Enhancing patient safety'
-                ],
-                correctAnswer: 'Reducing patient participation in decision-making'
-            },
-            {
-                id: 'q55',
-                question: '55. What is the first step in the Evidence-Based Practice process?',
-                options: [
-                    'Assessing outcomes of new practices',
-                    'Applying new information',
-                    'Asking an appropriate question',
-                    'Analyzing information'
-                ],
-                correctAnswer: 'Asking an appropriate question'
-            },
-            {
-                id: 'q56',
-                question: '56. Which of the following resources is specifically designed to summarize clinically useful studies for nurses?',
-                options: [
-                    'Clinical trial databases',
-                    'Evidence-based journals',
-                    'Hospital patient records',
-                    'General nursing websites'
-                ],
-                correctAnswer: 'Evidence-based journals'
-            },
-            {
-                id: 'q57',
-                question: '57. One barrier to implementing Evidence-Based Nursing (EBN) is:',
-                options: [
-                    'Excessive availability of resources',
-                    'Limited understanding of research methods by practitioners',
-                    'High levels of clinical expertise among all nurses',
-                    'Universal support from healthcare organizations'
-                ],
-                correctAnswer: 'Limited understanding of research methods by practitioners'
-            },
-            {
-                id: 'q58',
-                question: '58. Which of the following best defines Evidence-Based Nursing (EBN)?',
-                options: [
-                    'A process that relies solely on a nurse’s personal experience',
-                    'Combining research evidence, clinical expertise, and patient preferences in care decisions',
-                    'Prioritizing organizational policies over patient-centered care',
-                    'Relying on traditional practices without considering current evidence'
-                ],
-                correctAnswer: 'Combining research evidence, clinical expertise, and patient preferences in care decisions'
-            },
-            {
-                id: 'q59',
-                question: '59. Which of these resources is specifically intended to help nurses stay updated on clinically relevant studies?',
-                options: [
-                    'Hospital policy manuals',
-                    'Systematic reviews',
-                    'Evidence-based journals',
-                    'Standard medical textbooks'
-                ],
-                correctAnswer: 'Evidence-based journals'
-            },
-            {
-                id: 'q60',
-                question: '60. What is the first step in the Evidence-Based Practice (EBP) process?',
-                options: [
-                    'Applying new information',
-                    'Analyzing the outcomes',
-                    'Asking appropriate questions',
-                    'Assessing new practices'
-                ],
-                correctAnswer: 'Asking appropriate questions'
-            },
-            {
-                id: 'q61',
-                question: '61. Which component of Emotional Intelligence involves understanding and managing your own emotions?',
-                options: [
-                    'Empathy',
-                    'Self-Awareness',
-                    'Social Skills',
-                    'Motivation'
-                ],
-                correctAnswer: 'Self-Awareness'
-            },
-            {
-                id: 'q62',
-                question: '62. High emotional intelligence is often associated with:',
-                options: [
-                    'Reduced mental health',
-                    'Better conflict resolution skills',
-                    'Poor workplace relationships',
-                    'Decreased adaptability to challenges'
-                ],
-                correctAnswer: 'Better conflict resolution skills'
-            },
-            {
-                id: 'q63',
-                question: '63. Which of the following is an application of AI in healthcare?',
-                options: [
-                    'Diagnosis and treatment planning',
-                    'Conducting therapy sessions',
-                    'Replacing human healthcare providers entirely',
-                    'Providing nutritional counseling'
-                ],
-                correctAnswer: 'Diagnosis and treatment planning'
-            },
-            {
-                id: 'q64',
-                question: '64. A major concern with implementing AI in healthcare is:',
-                options: [
-                    'Reduced efficiency',
-                    'Lack of data availability',
-                    'Bias in AI models',
-                    'Inability to process large datasets'
-                ],
-                correctAnswer: 'Bias in AI models'
-            },
-            {
-                id: 'q65',
-                question: '65. What is the definition of health disparity?',
-                options: [
-                    'Differences in healthcare access and quality among different populations',
-                    'Equal distribution of health resources globally',
-                    'A uniform standard of health across all demographics',
-                    'Differences in medical costs between countries'
-                ],
-                correctAnswer: 'Differences in healthcare access and quality among different populations'
-            },
-            {
-                id: 'q66',
-                question: '66. Which nursing role is most directly involved in community health initiatives?',
-                options: [
-                    'Operating room nurse',
-                    'Public health nurse',
-                    'Intensive care unit nurse',
-                    'Forensic nurse'
-                ],
-                correctAnswer: 'Public health nurse'
-            },
-            {
-                id: 'q67',
-                question: '67. What is a key goal of global health initiatives?',
-                options: [
-                    'To exclusively address health issues in developed nations',
-                    'To reduce health inequalities worldwide',
-                    'To promote independent healthcare systems in each country',
-                    'To increase the profit margins of pharmaceutical companies'
-                ],
-                correctAnswer: 'To reduce health inequalities worldwide'
-            },
-            {
-                id: 'q68',
-                question: '68. Which factor is most likely to exacerbate health disparities?',
-                options: [
-                    'Increased public health funding',
-                    'Socioeconomic status',
-                    'Universal healthcare coverage',
-                    'Advancements in medical technology'
-                ],
-                correctAnswer: 'Socioeconomic status'
-            },
-            {
-                id: 'q69',
-                question: '69. What is the role of nurses in advocating for health policy changes?',
-                options: [
-                    'To only provide direct patient care',
-                    'To abstain from political involvement',
-                    'To inform policymakers about patient needs and healthcare challenges',
-                    'To solely focus on administrative tasks'
-                ],
-                correctAnswer: 'To inform policymakers about patient needs and healthcare challenges'
-            },
-            {
-                id: 'q70',
-                question: '70. Which international organization plays a major role in global health efforts?',
-                options: [
-                    'World Trade Organization (WTO)',
-                    'United Nations Educational, Scientific and Cultural Organization (UNESCO)',
-                    'World Health Organization (WHO)',
-                    'International Monetary Fund (IMF)'
-                ],
-                correctAnswer: 'World Health Organization (WHO)'
-            },
-            {
-                id: 'q71',
-                question: '71. How can nurses promote health equity in their daily practice?',
-                options: [
-                    'By providing care only to insured patients',
-                    'By prioritizing patients based on their ability to pay',
-                    'By advocating for culturally competent care and accessible resources',
-                    'By limiting information sharing with patients from diverse backgrounds'
-                ],
-                correctAnswer: 'By advocating for culturally competent care and accessible resources'
-            },
-            {
-                id: 'q72',
-                question: '72. What does community health nursing primarily focus on?',
-                options: [
-                    'Individual patient care in hospitals',
-                    'Disease prevention and health promotion for entire populations',
-                    'Surgical assistance in operating rooms',
-                    'Managing hospital finances'
-                ],
-                correctAnswer: 'Disease prevention and health promotion for entire populations'
-            },
-            {
-                id: 'q73',
-                question: '73. Which of the following best describes the concept of "health equity"?',
-                options: [
-                    'Everyone achieving the same health outcomes',
-                    'Fair and just opportunity for everyone to attain their highest level of health',
-                    'Providing the same healthcare services to everyone regardless of need',
-                    'Healthcare access determined solely by economic status'
-                ],
-                correctAnswer: 'Fair and just opportunity for everyone to attain their highest level of health'
-            },
-            {
-                id: 'q74',
-                question: '74. What is a core principle of patient-centered care?',
-                options: [
-                    'Healthcare decisions are made solely by the physician',
-                    'The patient is actively involved in their care decisions',
-                    'Care is standardized for all patients without individualization',
-                    'Emphasis is placed primarily on cost reduction'
-                ],
-                correctAnswer: 'The patient is actively involved in their care decisions'
-            },
-            {
-                id: 'q75',
-                question: '75. How does technology support patient-centered care?',
-                options: [
-                    'By increasing administrative burdens on patients',
-                    'By limiting patient access to their health information',
-                    'By enabling telehealth, patient portals, and remote monitoring',
-                    'By replacing direct human interaction in care'
-                ],
-                correctAnswer: 'By enabling telehealth, patient portals, and remote monitoring'
-            },
-            {
-                id: 'q76',
-                question: '76. What is the primary purpose of a patient portal?',
-                options: [
-                    'To schedule appointments only',
-                    'To allow patients to access their medical records and communicate with providers',
-                    'To replace emergency room visits',
-                    'To serve as a marketing tool for hospitals'
-                ],
-                correctAnswer: 'To allow patients to access their medical records and communicate with providers'
-            },
-            {
-                id: 'q77',
-                question: '77. Which ethical principle is crucial in patient-centered care?',
-                options: [
-                    'Beneficence (acting in the patient\'s best interest)',
-                    'Non-maleficence (doing no harm)',
-                    'Autonomy (respecting patient\'s decisions)',
-                    'All of the above'
-                ],
-                correctAnswer: 'All of the above'
-            },
-            {
-                id: 'q78',
-                question: '78. How can nurses ensure cultural sensitivity in patient-centered care?',
-                options: [
-                    'By assuming all patients have the same beliefs and values',
-                    'By imposing their own cultural norms on patients',
-                    'By understanding and respecting diverse cultural backgrounds',
-                    'By avoiding discussions about cultural practices'
-                ],
-                correctAnswer: 'By understanding and respecting diverse cultural backgrounds'
-            },
-            {
-                id: 'q79',
-                question: '79. What is a major benefit of shared decision-making in nursing?',
-                options: [
-                    'It reduces the nurse\'s workload',
-                    'It leads to better patient adherence to treatment plans',
-                    'It allows nurses to make all decisions independently',
-                    'It increases hospital revenue'
-                ],
-                correctAnswer: 'It leads to better patient adherence to treatment plans'
-            },
-            {
-                id: 'q80',
-                question: '80. Which trend directly supports personalized medicine?',
-                options: [
-                    'Mass production of generic drugs',
-                    'One-size-fits-all treatment approaches',
-                    'Genomic sequencing and bioinformatics',
-                    'Decreased focus on individual patient data'
-                ],
-                correctAnswer: 'Genomic sequencing and bioinformatics'
-            },
-            {
-                id: 'q81',
-                question: '81. How does nursing research contribute to evidence-based practice?',
-                options: [
-                    'It creates new theories without practical application',
-                    'It provides the scientific evidence needed to guide clinical decisions',
-                    'It replaces the need for clinical judgment',
-                    'It focuses solely on historical nursing practices'
-                ],
-                correctAnswer: 'It provides the scientific evidence needed to guide clinical decisions'
-            },
-            {
-                id: 'q82',
-                question: '82. What is the primary role of a nurse in evidence-based practice?',
-                options: [
-                    'To follow traditional nursing practices without question',
-                    'To conduct all research studies independently',
-                    'To integrate the best available research evidence with clinical expertise and patient values',
-                    'To only rely on physician orders for patient care'
-                ],
-                correctAnswer: 'To integrate the best available research evidence with clinical expertise and patient values'
-            },
-            {
-                id: 'q83',
-                question: '83. Which of the following is a barrier to implementing evidence-based practice in nursing?',
-                options: [
-                    'Abundance of relevant research',
-                    'Lack of access to research databases',
-                    'Strong organizational support for EBP',
-                    'Sufficient time for nurses to conduct research'
-                ],
-                correctAnswer: 'Lack of access to research databases'
-            },
-            {
-                id: 'q84',
-                question: '84. What is the final step in the evidence-based practice process?',
-                options: [
-                    'Asking a clinical question',
-                    'Evaluating the outcomes of the practice change',
-                    'Searching for evidence',
-                    'Appraising the evidence'
-                ],
-                correctAnswer: 'Evaluating the outcomes of the practice change'
-            },
-            {
-                id: 'q85',
-                question: '85. What does the term "translational research" refer to in nursing?',
-                options: [
-                    'Research conducted only in foreign countries',
-                    'Research that translates findings from basic science into clinical practice',
-                    'Research that focuses on language translation in healthcare',
-                    'Research that is purely theoretical and has no practical use'
-                ],
-                correctAnswer: 'Research that translates findings from basic science into clinical practice'
-            }
-        ];
-
-        // Function to shuffle an array (Fisher-Yates algorithm)
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
+        // Function to shuffle the children of a DOM element (the options div)
+        function shuffleOptions(containerElement) {
+            for (let i = containerElement.children.length; i >= 0; i--) {
+                containerElement.appendChild(containerElement.children[Math.random() * i | 0]);
             }
         }
 
-        // Function to render the quiz questions
-        function renderQuiz() {
-            quizForm.innerHTML = ''; // Clear existing questions
-            questionsData.forEach(qData => {
-                const questionDiv = document.createElement('div');
-                questionDiv.className = 'question';
-                questionDiv.id = qData.id;
+        // Run this when the page loads to shuffle options for each question
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.question .options').forEach(optionsDiv => {
+                shuffleOptions(optionsDiv);
+            });
+        });
 
-                const questionText = document.createElement('h3');
-                questionText.textContent = qData.question;
-                questionDiv.appendChild(questionText);
+        quizForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
 
-                const option
+            let score = 0;
+            let firstUnansweredQuestion = null;
+            const questionElements = document.querySelectorAll('.question');
+
+            // Reset previous feedback and errors
+            questionElements.forEach(questionDiv => {
+                questionDiv.classList.remove('highlight-error');
+                questionDiv.querySelector('.error-message').style.display = 'none';
+                questionDiv.querySelectorAll('label').forEach(label => {
+                    label.classList.remove('correct', 'incorrect', 'selected');
+                });
+            });
+
+            // Check answers and validate
+            questionIds.forEach(qId => { // Iterate through the known question IDs
+                const selectedOption = document.querySelector(`input[name="${qId}"]:checked`);
+                const questionDiv = document.getElementById(qId);
+
+                if (!selectedOption) {
+                    if (!firstUnansweredQuestion) {
+                        firstUnansweredQuestion = questionDiv; // Store the first unanswered question
+                    }
+                    questionDiv.classList.add('highlight-error');
+                    questionDiv.querySelector('.error-message').style.display = 'block';
+                } else {
+                    const userAnswer = selectedOption.value;
+                    const correctAnswer = correctAnswers[qId];
+                    const label = selectedOption.closest('label');
+
+                    if (userAnswer === correctAnswer) {
+                        score++;
+                        label.classList.add('correct');
+                    } else {
+                        label.classList.add('incorrect');
+                        // Find and highlight the correct answer using its exact text value
+                        const correctLabel = Array.from(questionDiv.querySelectorAll('.options label')).find(lbl =>
+                            lbl.querySelector('input').value === correctAnswer
+                        );
+                        if (correctLabel) {
+                            correctLabel.classList.add('correct');
+                        }
+                    }
+                }
+            });
+
+            if (firstUnansweredQuestion) {
+                // If there's an unanswered question, scroll to it
+                firstUnansweredQuestion.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return; // Stop execution here, don't show score yet
+            }
+
+            // Display score (only if all questions are answered)
+            totalQuestionsSpan.textContent = questionIds.length;
+            scoreSpan.textContent = score;
+            scoreContainer.style.display = 'block';
+
+            // Scroll to top of score
+            scoreContainer.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
