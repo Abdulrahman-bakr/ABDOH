@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> QUIZ</title>
+    <title>Trends</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,7 +30,6 @@
             color: #333;
         }
         .options label {
-            /* Styles for the box around each option */
             display: flex; /* Use flexbox for alignment of radio button and text */
             align-items: center; /* Vertically center content */
             margin-bottom: 10px;
@@ -46,16 +45,14 @@
             border-color: #007bff;
         }
         .options input[type="radio"] {
-            /* Keep the default radio button visible */
-            margin-right: 10px; /* Space between radio and text */
-            flex-shrink: 0; /* Prevent radio button from shrinking */
+            margin-right: 10px;
+            flex-shrink: 0;
         }
         .options label.selected {
             background-color: #d0eaff;
             border-color: #0056b3;
         }
 
-        /* Styling for the native radio button when checked */
         .options input[type="radio"]:checked {
             accent-color: #007bff;
         }
@@ -103,16 +100,16 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h2> Quiz</h2>
+        <h2>Trends</h2>
         <form id="quizForm">
 
             <div class="question" id="q1">
                 <h3>1. What is the definition of a trend in nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q1" value="A random change in healthcare practices"> <span>A. A random change in healthcare practices</span></label>
-                    <label><input type="radio" name="q1" value="A specific law that governs nursing practice"> <span>B. A specific law that governs nursing practice</span></label>
-                    <label><input type="radio" name="q1" value="A general direction in which healthcare or nursing is moving"> <span>C. A general direction in which healthcare or nursing is moving</span></label>
-                    <label><input type="radio" name="q1" value="A temporary fad in the medical field"> <span>D. A temporary fad in the medical field</span></label>
+                    <label><input type="radio" name="q1" value="A random change in healthcare practices"> <span>A random change in healthcare practices</span></label>
+                    <label><input type="radio" name="q1" value="A specific law that governs nursing practice"> <span>A specific law that governs nursing practice</span></label>
+                    <label><input type="radio" name="q1" value="A general direction in which healthcare or nursing is moving"> <span>A general direction in which healthcare or nursing is moving</span></label>
+                    <label><input type="radio" name="q1" value="A temporary fad in the medical field"> <span>A temporary fad in the medical field</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -120,10 +117,10 @@
             <div class="question" id="q2">
                 <h3>2. What is one major reason for the continued nurse shortage?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q2" value="Decrease in patient numbers"> <span>A. Decrease in patient numbers</span></label>
-                    <label><input type="radio" name="q2" value="One-third of nurses are nearing retirement age"> <span>B. One-third of nurses are nearing retirement age</span></label>
-                    <label><input type="radio" name="q2" value="Increase in the number of medical schools"> <span>C. Increase in the number of medical schools</span></label>
-                    <label><input type="radio" name="q2" value="Decrease in healthcare funding"> <span>D. Decrease in healthcare funding</span></label>
+                    <label><input type="radio" name="q2" value="Decrease in patient numbers"> <span>Decrease in patient numbers</span></label>
+                    <label><input type="radio" name="q2" value="One-third of nurses are nearing retirement age"> <span>One-third of nurses are nearing retirement age</span></label>
+                    <label><input type="radio" name="q2" value="Increase in the number of medical schools"> <span>Increase in the number of medical schools</span></label>
+                    <label><input type="radio" name="q2" value="Decrease in healthcare funding"> <span>Decrease in healthcare funding</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -131,10 +128,10 @@
             <div class="question" id="q3">
                 <h3>3. Which trend is contributing to the growth of telehealth nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q3" value="A decrease in technology adoption"> <span>A. A decrease in technology adoption</span></label>
-                    <label><input type="radio" name="q3" value="Patients' reliance on virtual consultations"> <span>B. Patients' reliance on virtual consultations</span></label>
-                    <label><input type="radio" name="q3" value="Reduction in healthcare accessibility"> <span>C. Reduction in healthcare accessibility</span></label>
-                    <label><input type="radio" name="q3" value="Decrease in nursing jobs"> <span>D. Decrease in nursing jobs</span></label>
+                    <label><input type="radio" name="q3" value="A decrease in technology adoption"> <span>A decrease in technology adoption</span></label>
+                    <label><input type="radio" name="q3" value="Patients' reliance on virtual consultations"> <span>Patients' reliance on virtual consultations</span></label>
+                    <label><input type="radio" name="q3" value="Reduction in healthcare accessibility"> <span>Reduction in healthcare accessibility</span></label>
+                    <label><input type="radio" name="q3" value="Decrease in nursing jobs"> <span>Decrease in nursing jobs</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -142,10 +139,10 @@
             <div class="question" id="q4">
                 <h3>4. Which technological advancement has significantly improved nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q4" value="Online and distance learning programs"> <span>A. Online and distance learning programs</span></label>
-                    <label><input type="radio" name="q4" value="A reduction in nursing school admission rates"> <span>B. A reduction in nursing school admission rates</span></label>
-                    <label><input type="radio" name="q4" value="Increased reliance on in-person lectures"> <span>C. Increased reliance on in-person lectures</span></label>
-                    <label><input type="radio" name="q4" value="The elimination of virtual patient simulations"> <span>D. The elimination of virtual patient simulations</span></label>
+                    <label><input type="radio" name="q4" value="Online and distance learning programs"> <span>Online and distance learning programs</span></label>
+                    <label><input type="radio" name="q4" value="A reduction in nursing school admission rates"> <span>A reduction in nursing school admission rates</span></label>
+                    <label><input type="radio" name="q4" value="Increased reliance on in-person lectures"> <span>Increased reliance on in-person lectures</span></label>
+                    <label><input type="radio" name="q4" value="The elimination of virtual patient simulations"> <span>The elimination of virtual patient simulations</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -153,10 +150,10 @@
             <div class="question" id="q5">
                 <h3>5. What is one major challenge of implementing technology in nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q5" value="High cost of technological advances"> <span>A. High cost of technological advances</span></label>
-                    <label><input type="radio" name="q5" value="Decreased accuracy in patient monitoring"> <span>B. Decreased accuracy in patient monitoring</span></label>
-                    <label><input type="radio" name="q5" value="Reduced communication between nurses and doctors"> <span>C. Reduced communication between nurses and doctors</span></label>
-                    <label><input type="radio" name="q5" value="Increased paperwork"> <span>D. Increased paperwork</span></label>
+                    <label><input type="radio" name="q5" value="High cost of technological advances"> <span>High cost of technological advances</span></label>
+                    <label><input type="radio" name="q5" value="Decreased accuracy in patient monitoring"> <span>Decreased accuracy in patient monitoring</span></label>
+                    <label><input type="radio" name="q5" value="Reduced communication between nurses and doctors"> <span>Reduced communication between nurses and doctors</span></label>
+                    <label><input type="radio" name="q5" value="Increased paperwork"> <span>Increased paperwork</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -164,10 +161,10 @@
             <div class="question" id="q6">
                 <h3>6. A nurse caring for patients in a primary care setting submits paperwork for reimbursement from managed care plans for services performed. Which purpose best describes managed care as a framework for health care?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q6" value="A design to control the cost of care while maintaining the quality of care"> <span>A. A design to control the cost of care while maintaining the quality of care</span></label>
-                    <label><input type="radio" name="q6" value="Care coordination to maximize positive outcomes to contain costs"> <span>B. Care coordination to maximize positive outcomes to contain costs</span></label>
-                    <label><input type="radio" name="q6" value="The delivery of services from initial contact through ongoing care"> <span>C. The delivery of services from initial contact through ongoing care</span></label>
-                    <label><input type="radio" name="q6" value="Based on a philosophy of ensuring death in comfort and dignity"> <span>D. Based on a philosophy of ensuring death in comfort and dignity</span></label>
+                    <label><input type="radio" name="q6" value="A design to control the cost of care while maintaining the quality of care"> <span>A design to control the cost of care while maintaining the quality of care</span></label>
+                    <label><input type="radio" name="q6" value="Care coordination to maximize positive outcomes to contain costs"> <span>Care coordination to maximize positive outcomes to contain costs</span></label>
+                    <label><input type="radio" name="q6" value="The delivery of services from initial contact through ongoing care"> <span>The delivery of services from initial contact through ongoing care</span></label>
+                    <label><input type="radio" name="q6" value="Based on a philosophy of ensuring death in comfort and dignity"> <span>Based on a philosophy of ensuring death in comfort and dignity</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -175,10 +172,10 @@
             <div class="question" id="q7">
                 <h3>7. Organizations and initiatives focused on preventing disease and promoting health at a community or population level is an ……?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q7" value="health care facilities"> <span>A. health care facilities</span></label>
-                    <label><input type="radio" name="q7" value="public health"> <span>B. public health</span></label>
-                    <label><input type="radio" name="q7" value="health insurance"> <span>C. health insurance</span></label>
-                    <label><input type="radio" name="q7" value="health equipment's"> <span>D. health equipment's</span></label>
+                    <label><input type="radio" name="q7" value="health care facilities"> <span>health care facilities</span></label>
+                    <label><input type="radio" name="q7" value="public health"> <span>public health</span></label>
+                    <label><input type="radio" name="q7" value="health insurance"> <span>health insurance</span></label>
+                    <label><input type="radio" name="q7" value="health equipment's"> <span>health equipment's</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -186,10 +183,10 @@
             <div class="question" id="q8">
                 <h3>8. health care system in which people pay a fee to a fund that in turn pays health care activities?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q8" value="Bicmarck"> <span>A. Bicmarck</span></label>
-                    <label><input type="radio" name="q8" value="universal system"> <span>B. universal system</span></label>
-                    <label><input type="radio" name="q8" value="Beveridg"> <span>C. Beveridg</span></label>
-                    <label><input type="radio" name="q8" value="National Health Insurance Model"> <span>D. National Health Insurance Model</span></label>
+                    <label><input type="radio" name="q8" value="Bicmarck"> <span>Bicmarck</span></label>
+                    <label><input type="radio" name="q8" value="universal system"> <span>universal system</span></label>
+                    <label><input type="radio" name="q8" value="Beveridg"> <span>Beveridg</span></label>
+                    <label><input type="radio" name="q8" value="National Health Insurance Model"> <span>National Health Insurance Model</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -197,10 +194,10 @@
             <div class="question" id="q9">
                 <h3>9. Which statements describe current U.S. health care delivery practices? Select all that apply.</h3>
                 <div class="options">
-                    <label><input type="radio" name="q9" value="Access to care depends only on the ability to pay, not the availability of services."> <span>A. Access to care depends only on the ability to pay, not the availability of services.</span></label>
-                    <label><input type="radio" name="q9" value="The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations."> <span>B. The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations.</span></label>
-                    <label><input type="radio" name="q9" value="Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits."> <span>C. Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.</span></label>
-                    <label><input type="radio" name="q9" value="The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay."> <span>D. The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay.</span></label>
+                    <label><input type="radio" name="q9" value="Access to care depends only on the ability to pay, not the availability of services."> <span>Access to care depends only on the ability to pay, not the availability of services.</span></label>
+                    <label><input type="radio" name="q9" value="The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations."> <span>The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations.</span></label>
+                    <label><input type="radio" name="q9" value="Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits."> <span>Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.</span></label>
+                    <label><input type="radio" name="q9" value="The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay."> <span>The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay.</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -208,10 +205,10 @@
             <div class="question" id="q10">
                 <h3>10. Which of the following describes the Beveridge Model?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q10" value="Funded by employer and employee contributions"> <span>A. Funded by employer and employee contributions</span></label>
-                    <label><input type="radio" name="q10" value="Government finances and provides healthcare services"> <span>B. Government finances and provides healthcare services</span></label>
-                    <label><input type="radio" name="q10" value="A mix of private providers and government insurance"> <span>C. A mix of private providers and government insurance</span></label>
-                    <label><input type="radio" name="q10" value="Individuals pay directly for healthcare services"> <span>D. Individuals pay directly for healthcare services</span></label>
+                    <label><input type="radio" name="q10" value="Funded by employer and employee contributions"> <span>Funded by employer and employee contributions</span></label>
+                    <label><input type="radio" name="q10" value="Government finances and provides healthcare services"> <span>Government finances and provides healthcare services</span></label>
+                    <label><input type="radio" name="q10" value="A mix of private providers and government insurance"> <span>A mix of private providers and government insurance</span></label>
+                    <label><input type="radio" name="q10" value="Individuals pay directly for healthcare services"> <span>Individuals pay directly for healthcare services</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -219,10 +216,10 @@
             <div class="question" id="q11">
                 <h3>11. Who is credited with establishing nursing as a distinct profession during the Crimean War?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q11" value="Virginia Henderson"> <span>A. Virginia Henderson</span></label>
-                    <label><input type="radio" name="q11" value="Jean Watson"> <span>B. Jean Watson</span></label>
-                    <label><input type="radio" name="q11" value="Florence Nightingale"> <span>C. Florence Nightingale</span></label>
-                    <label><input type="radio" name="q11" value="Clara Barton"> <span>D. Clara Barton</span></label>
+                    <label><input type="radio" name="q11" value="Virginia Henderson"> <span>Virginia Henderson</span></label>
+                    <label><input type="radio" name="q11" value="Jean Watson"> <span>Jean Watson</span></label>
+                    <label><input type="radio" name="q11" value="Florence Nightingale"> <span>Florence Nightingale</span></label>
+                    <label><input type="radio" name="q11" value="Clara Barton"> <span>Clara Barton</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -230,10 +227,10 @@
             <div class="question" id="q12">
                 <h3>12. Which of the following is NOT a role that evolved in nursing during the 21st century?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q12" value="Nurse practitioners (NPs)"> <span>A. Nurse practitioners (NPs)</span></label>
-                    <label><input type="radio" name="q12" value="Clinical nurse specialists (CNSs)"> <span>B. Clinical nurse specialists (CNSs)</span></label>
-                    <label><input type="radio" name="q12" value="Family caregivers"> <span>C. Family caregivers</span></label>
-                    <label><input type="radio" name="q12" value="Nurse anesthetists (CRNAs)"> <span>D. Nurse anesthetists (CRNAs)</span></label>
+                    <label><input type="radio" name="q12" value="Nurse practitioners (NPs)"> <span>Nurse practitioners (NPs)</span></label>
+                    <label><input type="radio" name="q12" value="Clinical nurse specialists (CNSs)"> <span>Clinical nurse specialists (CNSs)</span></label>
+                    <label><input type="radio" name="q12" value="Family caregivers"> <span>Family caregivers</span></label>
+                    <label><input type="radio" name="q12" value="Nurse anesthetists (CRNAs)"> <span>Nurse anesthetists (CRNAs)</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -241,10 +238,10 @@
             <div class="question" id="q13">
                 <h3>13. Who is known as the founder of modern nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q13" value="Virginia Henderson"> <span>A. Virginia Henderson</span></label>
-                    <label><input type="radio" name="q13" value="Jean Watson"> <span>B. Jean Watson</span></label>
-                    <label><input type="radio" name="q13" value="Florence Nightingale"> <span>C. Florence Nightingale</span></label>
-                    <label><input type="radio" name="q13" value="Clara Barton"> <span>D. Clara Barton</span></label>
+                    <label><input type="radio" name="q13" value="Virginia Henderson"> <span>Virginia Henderson</span></label>
+                    <label><input type="radio" name="q13" value="Jean Watson"> <span>Jean Watson</span></label>
+                    <label><input type="radio" name="q13" value="Florence Nightingale"> <span>Florence Nightingale</span></label>
+                    <label><input type="radio" name="q13" value="Clara Barton"> <span>Clara Barton</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -252,10 +249,10 @@
             <div class="question" id="q14">
                 <h3>14. Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q14" value="Only technical skills"> <span>A. Only technical skills</span></label>
-                    <label><input type="radio" name="q14" value="Both technical and communication skills"> <span>B. Both technical and communication skills</span></label>
-                    <label><input type="radio" name="q14" value="Patient mobility skills"> <span>C. Patient mobility skills</span></label>
-                    <label><input type="radio" name="q14" value="Traditional bedside skills only"> <span>D. Traditional bedside skills only</span></label>
+                    <label><input type="radio" name="q14" value="Only technical skills"> <span>Only technical skills</span></label>
+                    <label><input type="radio" name="q14" value="Both technical and communication skills"> <span>Both technical and communication skills</span></label>
+                    <label><input type="radio" name="q14" value="Patient mobility skills"> <span>Patient mobility skills</span></label>
+                    <label><input type="radio" name="q14" value="Traditional bedside skills only"> <span>Traditional bedside skills only</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -263,10 +260,10 @@
             <div class="question" id="q15">
                 <h3>15. What does health informatics focus on?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q15" value="Studying ancient medical practices"> <span>A. Studying ancient medical practices</span></label>
-                    <label><input type="radio" name="q15" value="Using data analytics and digital records to improve healthcare"> <span>B. Using data analytics and digital records to improve healthcare</span></label>
-                    <label><input type="radio" name="q15" value="Reducing nursing education programs"> <span>C. Reducing nursing education programs</span></label>
-                    <label><input type="radio" name="q15" value="Eliminating the need for patient records"> <span>D. Eliminating the need for patient records</span></label>
+                    <label><input type="radio" name="q15" value="Studying ancient medical practices"> <span>Studying ancient medical practices</span></label>
+                    <label><input type="radio" name="q15" value="Using data analytics and digital records to improve healthcare"> <span>Using data analytics and digital records to improve healthcare</span></label>
+                    <label><input type="radio" name="q15" value="Reducing nursing education programs"> <span>Reducing nursing education programs</span></label>
+                    <label><input type="radio" name="q15" value="Eliminating the need for patient records"> <span>Eliminating the need for patient records</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -274,10 +271,10 @@
             <div class="question" id="q16">
                 <h3>16. In which of the following areas has technology become an integral part of nursing practice?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q16" value="Hygienic practices only"> <span>A. Hygienic practices only</span></label>
-                    <label><input type="radio" name="q16" value="Manual record-keeping"> <span>B. Manual record-keeping</span></label>
-                    <label><input type="radio" name="q16" value="Patient diagnosis and telehealth"> <span>C. Patient diagnosis and telehealth</span></label>
-                    <label><input type="radio" name="q16" value="Physical assistance in surgeries"> <span>D. Physical assistance in surgeries</span></label>
+                    <label><input type="radio" name="q16" value="Hygienic practices only"> <span>Hygienic practices only</span></label>
+                    <label><input type="radio" name="q16" value="Manual record-keeping"> <span>Manual record-keeping</span></label>
+                    <label><input type="radio" name="q16" value="Patient diagnosis and telehealth"> <span>Patient diagnosis and telehealth</span></label>
+                    <label><input type="radio" name="q16" value="Physical assistance in surgeries"> <span>Physical assistance in surgeries</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -285,10 +282,10 @@
             <div class="question" id="q17">
                 <h3>17. Which skill is essential for nurses working with Digital Health and Health Informatics?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q17" value="Only clinical skills"> <span>A. Only clinical skills</span></label>
-                    <label><input type="radio" name="q17" value="Analytical and technical skills"> <span>B. Analytical and technical skills</span></label>
-                    <label><input type="radio" name="q17" value="Only physical assessment skills"> <span>C. Only physical assessment skills</span></label>
-                    <label><input type="radio" name="q17" value="Primarily interpersonal skills"> <span>D. Primarily interpersonal skills</span></label>
+                    <label><input type="radio" name="q17" value="Only clinical skills"> <span>Only clinical skills</span></label>
+                    <label><input type="radio" name="q17" value="Analytical and technical skills"> <span>Analytical and technical skills</span></label>
+                    <label><input type="radio" name="q17" value="Only physical assessment skills"> <span>Only physical assessment skills</span></label>
+                    <label><input type="radio" name="q17" value="Primarily interpersonal skills"> <span>Primarily interpersonal skills</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -296,10 +293,10 @@
             <div class="question" id="q18">
                 <h3>18. Which nursing trend focuses on addressing health disparities and providing resources to underserved populations?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q18" value="Research and Evidence-Based Practice"> <span>A. Research and Evidence-Based Practice</span></label>
-                    <label><input type="radio" name="q18" value="Advocacy and Policy Development"> <span>B. Advocacy and Policy Development</span></label>
-                    <label><input type="radio" name="q18" value="Telemedicine and Telehealth"> <span>C. Telemedicine and Telehealth</span></label>
-                    <label><input type="radio" name="q18" value="Community and Public Health Initiatives"> <span>D. Community and Public Health Initiatives</span></label>
+                    <label><input type="radio" name="q18" value="Research and Evidence-Based Practice"> <span>Research and Evidence-Based Practice</span></label>
+                    <label><input type="radio" name="q18" value="Advocacy and Policy Development"> <span>Advocacy and Policy Development</span></label>
+                    <label><input type="radio" name="q18" value="Telemedicine and Telehealth"> <span>Telemedicine and Telehealth</span></label>
+                    <label><input type="radio" name="q18" value="Community and Public Health Initiatives"> <span>Community and Public Health Initiatives</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -307,10 +304,10 @@
             <div class="question" id="q19">
                 <h3>19. What did the Florence Nightingale School of Nursing, founded in 1860, signify?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q19" value="The beginning of nursing practice"> <span>A. The beginning of nursing practice</span></label>
-                    <label><input type="radio" name="q19" value="The start of formal nursing education"> <span>B. The start of formal nursing education</span></label>
-                    <label><input type="radio" name="q19" value="The start of telehealth nursing"> <span>C. The start of telehealth nursing</span></label>
-                    <label><input type="radio" name="q19" value="The rise of digital health"> <span>D. The rise of digital health</span></label>
+                    <label><input type="radio" name="q19" value="The beginning of nursing practice"> <span>The beginning of nursing practice</span></label>
+                    <label><input type="radio" name="q19" value="The start of formal nursing education"> <span>The start of formal nursing education</span></label>
+                    <label><input type="radio" name="q19" value="The start of telehealth nursing"> <span>The start of telehealth nursing</span></label>
+                    <label><input type="radio" name="q19" value="The rise of digital health"> <span>The rise of digital health</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -318,10 +315,10 @@
             <div class="question" id="q20">
                 <h3>20. In advocating for their profession, how can nurses influence healthcare policies?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q20" value="Focusing solely on clinical practice"> <span>A. Focusing solely on clinical practice</span></label>
-                    <label><input type="radio" name="q20" value="Writing articles and engaging with policymakers"> <span>B. Writing articles and engaging with policymakers</span></label>
-                    <label><input type="radio" name="q20" value="Avoiding public healthcare meetings"> <span>C. Avoiding public healthcare meetings</span></label>
-                    <label><input type="radio" name="q20" value="Ignoring patient advocacy groups"> <span>D. Ignoring patient advocacy groups</span></label>
+                    <label><input type="radio" name="q20" value="Focusing solely on clinical practice"> <span>Focusing solely on clinical practice</span></label>
+                    <label><input type="radio" name="q20" value="Writing articles and engaging with policymakers"> <span>Writing articles and engaging with policymakers</span></label>
+                    <label><input type="radio" name="q20" value="Avoiding public healthcare meetings"> <span>Avoiding public healthcare meetings</span></label>
+                    <label><input type="radio" name="q20" value="Ignoring patient advocacy groups"> <span>Ignoring patient advocacy groups</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -329,10 +326,10 @@
             <div class="question" id="q21">
                 <h3>21. Which skill is vital for nurses to ensure privacy and security during telehealth consultations?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q21" value="Time management"> <span>A. Time management</span></label>
-                    <label><input type="radio" name="q21" value="Communication and digital security understanding"> <span>B. Communication and digital security understanding</span></label>
-                    <label><input type="radio" name="q21" value="Hands-on clinical skills"> <span>C. Hands-on clinical skills</span></label>
-                    <label><input type="radio" name="q21" value="Physical assessment techniques"> <span>D. Physical assessment techniques</span></label>
+                    <label><input type="radio" name="q21" value="Time management"> <span>Time management</span></label>
+                    <label><input type="radio" name="q21" value="Communication and digital security understanding"> <span>Communication and digital security understanding</span></label>
+                    <label><input type="radio" name="q21" value="Hands-on clinical skills"> <span>Hands-on clinical skills</span></label>
+                    <label><input type="radio" name="q21" value="Physical assessment techniques"> <span>Physical assessment techniques</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -340,10 +337,10 @@
             <div class="question" id="q22">
                 <h3>22. Which future direction for nursing involves the use of data to support decisionmaking and patient outcome predictions?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q22" value="Global Health"> <span>A. Global Health</span></label>
-                    <label><input type="radio" name="q22" value="Personalized Medicine"> <span>B. Personalized Medicine</span></label>
-                    <label><input type="radio" name="q22" value="AI and Machine Learning"> <span>C. AI and Machine Learning</span></label>
-                    <label><input type="radio" name="q22" value="Health Informatics"> <span>D. Health Informatics</span></label>
+                    <label><input type="radio" name="q22" value="Global Health"> <span>Global Health</span></label>
+                    <label><input type="radio" name="q22" value="Personalized Medicine"> <span>Personalized Medicine</span></label>
+                    <label><input type="radio" name="q22" value="AI and Machine Learning"> <span>AI and Machine Learning</span></label>
+                    <label><input type="radio" name="q22" value="Health Informatics"> <span>Health Informatics</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -351,10 +348,10 @@
             <div class="question" id="q23">
                 <h3>23. It is the backbone of the globalization?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q23" value="social globalization"> <span>A. social globalization</span></label>
-                    <label><input type="radio" name="q23" value="culture globalization"> <span>B. culture globalization</span></label>
-                    <label><input type="radio" name="q23" value="economical globalization"> <span>C. economical globalization</span></label>
-                    <label><input type="radio" name="q23" value="political globalization"> <span>D. political globalization</span></label>
+                    <label><input type="radio" name="q23" value="social globalization"> <span>social globalization</span></label>
+                    <label><input type="radio" name="q23" value="culture globalization"> <span>culture globalization</span></label>
+                    <label><input type="radio" name="q23" value="economical globalization"> <span>economical globalization</span></label>
+                    <label><input type="radio" name="q23" value="political globalization"> <span>political globalization</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -362,10 +359,10 @@
             <div class="question" id="q24">
                 <h3>24. climate change or wildlife reserves that span several countries is example of……</h3>
                 <div class="options">
-                    <label><input type="radio" name="q24" value="ecological globalization"> <span>A. ecological globalization</span></label>
-                    <label><input type="radio" name="q24" value="culture globalization"> <span>B. culture globalization</span></label>
-                    <label><input type="radio" name="q24" value="economical globalization"> <span>C. economical globalization</span></label>
-                    <label><input type="radio" name="q24" value="political globalization"> <span>D. political globalization</span></label>
+                    <label><input type="radio" name="q24" value="ecological globalization"> <span>ecological globalization</span></label>
+                    <label><input type="radio" name="q24" value="culture globalization"> <span>culture globalization</span></label>
+                    <label><input type="radio" name="q24" value="economical globalization"> <span>economical globalization</span></label>
+                    <label><input type="radio" name="q24" value="political globalization"> <span>political globalization</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -373,10 +370,10 @@
             <div class="question" id="q25">
                 <h3>25. people can have better choice to satisfy their need?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q25" value="Proper use of resources"> <span>A. Proper use of resources</span></label>
-                    <label><input type="radio" name="q25" value="multiple choice"> <span>B. multiple choice</span></label>
-                    <label><input type="radio" name="q25" value="Creates Employment"> <span>C. Creates Employment</span></label>
-                    <label><input type="radio" name="q25" value="technology"> <span>D. technology</span></label>
+                    <label><input type="radio" name="q25" value="Proper use of resources"> <span>Proper use of resources</span></label>
+                    <label><input type="radio" name="q25" value="multiple choice"> <span>multiple choice</span></label>
+                    <label><input type="radio" name="q25" value="Creates Employment"> <span>Creates Employment</span></label>
+                    <label><input type="radio" name="q25" value="technology"> <span>technology</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -384,10 +381,10 @@
             <div class="question" id="q26">
                 <h3>26. ……… is an Organization main priorities for the achievement of the Sustainable?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q26" value="WHO"> <span>A. WHO</span></label>
-                    <label><input type="radio" name="q26" value="UNESEF"> <span>B. UNESEF</span></label>
-                    <label><input type="radio" name="q26" value="UNISCO"> <span>C. UNISCO</span></label>
-                    <label><input type="radio" name="q26" value="ANA"> <span>D. ANA</span></label>
+                    <label><input type="radio" name="q26" value="WHO"> <span>WHO</span></label>
+                    <label><input type="radio" name="q26" value="UNESEF"> <span>UNESEF</span></label>
+                    <label><input type="radio" name="q26" value="UNISCO"> <span>UNISCO</span></label>
+                    <label><input type="radio" name="q26" value="ANA"> <span>ANA</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -395,10 +392,10 @@
             <div class="question" id="q27">
                 <h3>27. ………is the reduction of the worldwide incidence of a disease to zero?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q27" value="Elimination"> <span>A. Elimination</span></label>
-                    <label><input type="radio" name="q27" value="mortality"> <span>B. mortality</span></label>
-                    <label><input type="radio" name="q27" value="morbidity"> <span>C. morbidity</span></label>
-                    <label><input type="radio" name="q27" value="Eradication"> <span>D. Eradication</span></label>
+                    <label><input type="radio" name="q27" value="Elimination"> <span>Elimination</span></label>
+                    <label><input type="radio" name="q27" value="mortality"> <span>mortality</span></label>
+                    <label><input type="radio" name="q27" value="morbidity"> <span>morbidity</span></label>
+                    <label><input type="radio" name="q27" value="Eradication"> <span>Eradication</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -406,10 +403,10 @@
             <div class="question" id="q28">
                 <h3>28. Which of the following is an example of ecological globalization?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q28" value="Trade exchange"> <span>A. Trade exchange</span></label>
-                    <label><input type="radio" name="q28" value="Climate change treaties"> <span>B. Climate change treaties</span></label>
-                    <label><input type="radio" name="q28" value="Spread of democratic ideals"> <span>C. Spread of democratic ideals</span></label>
-                    <label><input type="radio" name="q28" value="Expansion of multinational corporations"> <span>D. Expansion of multinational corporations</span></label>
+                    <label><input type="radio" name="q28" value="Trade exchange"> <span>Trade exchange</span></label>
+                    <label><input type="radio" name="q28" value="Climate change treaties"> <span>Climate change treaties</span></label>
+                    <label><input type="radio" name="q28" value="Spread of democratic ideals"> <span>Spread of democratic ideals</span></label>
+                    <label><input type="radio" name="q28" value="Expansion of multinational corporations"> <span>Expansion of multinational corporations</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -417,10 +414,10 @@
             <div class="question" id="q29">
                 <h3>29. What is a major advantage of globalization?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q29" value="Decrease in employment opportunities"> <span>A. Decrease in employment opportunities</span></label>
-                    <label><input type="radio" name="q29" value="Spread of democratic ideals"> <span>B. Spread of democratic ideals</span></label>
-                    <label><input type="radio" name="q29" value="Increase in cultural barriers"> <span>C. Increase in cultural barriers</span></label>
-                    <label><input type="radio" name="q29" value="Decrease in technological advancements"> <span>D. Decrease in technological advancements</span></label>
+                    <label><input type="radio" name="q29" value="Decrease in employment opportunities"> <span>Decrease in employment opportunities</span></label>
+                    <label><input type="radio" name="q29" value="Spread of democratic ideals"> <span>Spread of democratic ideals</span></label>
+                    <label><input type="radio" name="q29" value="Increase in cultural barriers"> <span>Increase in cultural barriers</span></label>
+                    <label><input type="radio" name="q29" value="Decrease in technological advancements"> <span>Decrease in technological advancements</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -428,10 +425,10 @@
             <div class="question" id="q30">
                 <h3>30. According to WHO, how many nurses are needed globally to meet healthcare requirements by 2030?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q30" value="10 million"> <span>A. 10 million</span></label>
-                    <label><input type="radio" name="q30" value="6 million"> <span>B. 6 million</span></label>
-                    <label><input type="radio" name="q30" value="28 million"> <span>C. 28 million</span></label>
-                    <label><input type="radio" name="q30" value="5 million"> <span>D. 5 million</span></label>
+                    <label><input type="radio" name="q30" value="10 million"> <span>10 million</span></label>
+                    <label><input type="radio" name="q30" value="6 million"> <span>6 million</span></label>
+                    <label><input type="radio" name="q30" value="28 million"> <span>28 million</span></label>
+                    <label><input type="radio" name="q30" value="5 million"> <span>5 million</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -439,10 +436,10 @@
             <div class="question" id="q31">
                 <h3>31. What is the primary benefit of Electronic Health Records (EHR) in nursing practice?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q31" value="Increased paperwork"> <span>A. Increased paperwork</span></label>
-                    <label><input type="radio" name="q31" value="Streamlined documentation"> <span>B. Streamlined documentation</span></label>
-                    <label><input type="radio" name="q31" value="Longer patient wait times"> <span>C. Longer patient wait times</span></label>
-                    <label><input type="radio" name="q31" value="Reduced patient engagement"> <span>D. Reduced patient engagement</span></label>
+                    <label><input type="radio" name="q31" value="Increased paperwork"> <span>Increased paperwork</span></label>
+                    <label><input type="radio" name="q31" value="Streamlined documentation"> <span>Streamlined documentation</span></label>
+                    <label><input type="radio" name="q31" value="Longer patient wait times"> <span>Longer patient wait times</span></label>
+                    <label><input type="radio" name="q31" value="Reduced patient engagement"> <span>Reduced patient engagement</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -450,10 +447,10 @@
             <div class="question" id="q32">
                 <h3>32. Which technology allows nurses to monitor patients’ health remotely?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q32" value="Telehealth"> <span>A. Telehealth</span></label>
-                    <label><input type="radio" name="q32" value="Mobile phones"> <span>B. Mobile phones</span></label>
-                    <label><input type="radio" name="q32" value="Fax machines"> <span>C. Fax machines</span></label>
-                    <label><input type="radio" name="q32" value="Paper charts"> <span>D. Paper charts</span></label>
+                    <label><input type="radio" name="q32" value="Telehealth"> <span>Telehealth</span></label>
+                    <label><input type="radio" name="q32" value="Mobile phones"> <span>Mobile phones</span></label>
+                    <label><input type="radio" name="q32" value="Fax machines"> <span>Fax machines</span></label>
+                    <label><input type="radio" name="q32" value="Paper charts"> <span>Paper charts</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -461,10 +458,10 @@
             <div class="question" id="q33">
                 <h3>33. Clinical Decision Support Systems (CDSS) are designed to:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q33" value="Replace nurses in clinical settings"> <span>A. Replace nurses in clinical settings</span></label>
-                    <label><input type="radio" name="q33" value="Provide evidence-based recommendations to improve patient care"> <span>B. Provide evidence-based recommendations to improve patient care</span></label>
-                    <label><input type="radio" name="q33" value="Increase the complexity of patient data"> <span>C. Increase the complexity of patient data</span></label>
-                    <label><input type="radio" name="q33" value="Limit communication among healthcare providers"> <span>D. Limit communication among healthcare providers</span></label>
+                    <label><input type="radio" name="q33" value="Replace nurses in clinical settings"> <span>Replace nurses in clinical settings</span></label>
+                    <label><input type="radio" name="q33" value="Provide evidence-based recommendations to improve patient care"> <span>Provide evidence-based recommendations to improve patient care</span></label>
+                    <label><input type="radio" name="q33" value="Increase the complexity of patient data"> <span>Increase the complexity of patient data</span></label>
+                    <label><input type="radio" name="q33" value="Limit communication among healthcare providers"> <span>Limit communication among healthcare providers</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -472,10 +469,10 @@
             <div class="question" id="q34">
                 <h3>34. Mobile health applications primarily aim to:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q34" value="Reduce the number of patients seen by nurses"> <span>A. Reduce the number of patients seen by nurses</span></label>
-                    <label><input type="radio" name="q34" value="Enhance patient engagement and self-management"> <span>B. Enhance patient engagement and self-management</span></label>
-                    <label><input type="radio" name="q34" value="Increase hospital admissions"> <span>C. Increase hospital admissions</span></label>
-                    <label><input type="radio" name="q34" value="Replace face-to-face consultations"> <span>D. Replace face-to-face consultations</span></label>
+                    <label><input type="radio" name="q34" value="Reduce the number of patients seen by nurses"> <span>Reduce the number of patients seen by nurses</span></label>
+                    <label><input type="radio" name="q34" value="Enhance patient engagement and self-management"> <span>Enhance patient engagement and self-management</span></label>
+                    <label><input type="radio" name="q34" value="Increase hospital admissions"> <span>Increase hospital admissions</span></label>
+                    <label><input type="radio" name="q34" value="Replace face-to-face consultations"> <span>Replace face-to-face consultations</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -483,10 +480,10 @@
             <div class="question" id="q35">
                 <h3>35. What is a key advantage of using data analytics in nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q35" value="Predicting patient outcomes and optimizing resource allocation"> <span>A. Predicting patient outcomes and optimizing resource allocation</span></label>
-                    <label><input type="radio" name="q35" value="Increasing the workload for nurses"> <span>B. Increasing the workload for nurses</span></label>
-                    <label><input type="radio" name="q35" value="Making patient data less accessible"> <span>C. Making patient data less accessible</span></label>
-                    <label><input type="radio" name="q35" value="Limiting the use of clinical guidelines"> <span>D. Limiting the use of clinical guidelines</span></label>
+                    <label><input type="radio" name="q35" value="Predicting patient outcomes and optimizing resource allocation"> <span>Predicting patient outcomes and optimizing resource allocation</span></label>
+                    <label><input type="radio" name="q35" value="Increasing the workload for nurses"> <span>Increasing the workload for nurses</span></label>
+                    <label><input type="radio" name="q35" value="Making patient data less accessible"> <span>Making patient data less accessible</span></label>
+                    <label><input type="radio" name="q35" value="Limiting the use of clinical guidelines"> <span>Limiting the use of clinical guidelines</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -494,10 +491,10 @@
             <div class="question" id="q36">
                 <h3>36. Simulation technology in nursing education is used to:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q36" value="Provide theoretical knowledge only"> <span>A. Provide theoretical knowledge only</span></label>
-                    <label><input type="radio" name="q36" value="Allow practice of clinical skills in a safe environment"> <span>B. Allow practice of clinical skills in a safe environment</span></label>
-                    <label><input type="radio" name="q36" value="Replace traditional clinical placements"> <span>C. Replace traditional clinical placements</span></label>
-                    <label><input type="radio" name="q36" value="Teach only administrative tasks"> <span>D. Teach only administrative tasks</span></label>
+                    <label><input type="radio" name="q36" value="Provide theoretical knowledge only"> <span>Provide theoretical knowledge only</span></label>
+                    <label><input type="radio" name="q36" value="Allow practice of clinical skills in a safe environment"> <span>Allow practice of clinical skills in a safe environment</span></label>
+                    <label><input type="radio" name="q36" value="Replace traditional clinical placements"> <span>Replace traditional clinical placements</span></label>
+                    <label><input type="radio" name="q36" value="Teach only administrative tasks"> <span>Teach only administrative tasks</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -505,10 +502,10 @@
             <div class="question" id="q37">
                 <h3>37. Which of these technological advancements is aimed at improving hospital design and patient safety?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q37" value="Air conditioning"> <span>A. Air conditioning</span></label>
-                    <label><input type="radio" name="q37" value="Pharmacological advances"> <span>B. Pharmacological advances</span></label>
-                    <label><input type="radio" name="q37" value="Laparoscopic surgery tools"> <span>C. Laparoscopic surgery tools</span></label>
-                    <label><input type="radio" name="q37" value="Effusion pumps"> <span>D. Effusion pumps</span></label>
+                    <label><input type="radio" name="q37" value="Air conditioning"> <span>Air conditioning</span></label>
+                    <label><input type="radio" name="q37" value="Pharmacological advances"> <span>Pharmacological advances</span></label>
+                    <label><input type="radio" name="q37" value="Laparoscopic surgery tools"> <span>Laparoscopic surgery tools</span></label>
+                    <label><input type="radio" name="q37" value="Effusion pumps"> <span>Effusion pumps</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -516,10 +513,10 @@
             <div class="question" id="q38">
                 <h3>38. Interprofessional collaboration tools are designed to:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q38" value="Isolate different healthcare teams"> <span>A. Isolate different healthcare teams</span></label>
-                    <label><input type="radio" name="q38" value="Facilitate better teamwork among healthcare providers"> <span>B. Facilitate better teamwork among healthcare providers</span></label>
-                    <label><input type="radio" name="q38" value="Reduce communication in healthcare settings"> <span>C. Reduce communication in healthcare settings</span></label>
-                    <label><input type="radio" name="q38" value="Create competition among professionals"> <span>D. Create competition among professionals</span></label>
+                    <label><input type="radio" name="q38" value="Isolate different healthcare teams"> <span>Isolate different healthcare teams</span></label>
+                    <label><input type="radio" name="q38" value="Facilitate better teamwork among healthcare providers"> <span>Facilitate better teamwork among healthcare providers</span></label>
+                    <label><input type="radio" name="q38" value="Reduce communication in healthcare settings"> <span>Reduce communication in healthcare settings</span></label>
+                    <label><input type="radio" name="q38" value="Create competition among professionals"> <span>Create competition among professionals</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -527,10 +524,10 @@
             <div class="question" id="q39">
                 <h3>39. The primary focus of HIMSS is to:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q39" value="Increase healthcare costs"> <span>A. Increase healthcare costs</span></label>
-                    <label><input type="radio" name="q39" value="Promote the effective use of health information technology"> <span>B. Promote the effective use of health information technology</span></label>
-                    <label><input type="radio" name="q39" value="Limit access to health information"> <span>C. Limit access to health information</span></label>
-                    <label><input type="radio" name="q39" value="Focus solely on administrative practices"> <span>D. Focus solely on administrative practices</span></label>
+                    <label><input type="radio" name="q39" value="Increase healthcare costs"> <span>Increase healthcare costs</span></label>
+                    <label><input type="radio" name="q39" value="Promote the effective use of health information technology"> <span>Promote the effective use of health information technology</span></label>
+                    <label><input type="radio" name="q39" value="Limit access to health information"> <span>Limit access to health information</span></label>
+                    <label><input type="radio" name="q39" value="Focus solely on administrative practices"> <span>Focus solely on administrative practices</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -538,10 +535,10 @@
             <div class="question" id="q40">
                 <h3>40. What is the primary benefit of technology in nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q40" value="Reducing interaction between students and learning materials"> <span>A. Reducing interaction between students and learning materials</span></label>
-                    <label><input type="radio" name="q40" value="Limiting students’ access to information"> <span>B. Limiting students’ access to information</span></label>
-                    <label><input type="radio" name="q40" value="Assisting in critical thinking development in patient care"> <span>C. Assisting in critical thinking development in patient care</span></label>
-                    <label><input type="radio" name="q40" value="Restricting self-directed learning"> <span>D. Restricting self-directed learning</span></label>
+                    <label><input type="radio" name="q40" value="Reducing interaction between students and learning materials"> <span>Reducing interaction between students and learning materials</span></label>
+                    <label><input type="radio" name="q40" value="Limiting students’ access to information"> <span>Limiting students’ access to information</span></label>
+                    <label><input type="radio" name="q40" value="Assisting in critical thinking development in patient care"> <span>Assisting in critical thinking development in patient care</span></label>
+                    <label><input type="radio" name="q40" value="Restricting self-directed learning"> <span>Restricting self-directed learning</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -549,10 +546,10 @@
             <div class="question" id="q41">
                 <h3>41. Which nursing trend is associated with providing care remotely using digital tools?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q41" value="Traveling Nurses"> <span>A. Traveling Nurses</span></label>
-                    <label><input type="radio" name="q41" value="Nursing Home Staffing Regulation"> <span>B. Nursing Home Staffing Regulation</span></label>
-                    <label><input type="radio" name="q41" value="Virtual Nursing"> <span>C. Virtual Nursing</span></label>
-                    <label><input type="radio" name="q41" value="Entrepreneurship in Nursing"> <span>D. Entrepreneurship in Nursing</span></label>
+                    <label><input type="radio" name="q41" value="Traveling Nurses"> <span>Traveling Nurses</span></label>
+                    <label><input type="radio" name="q41" value="Nursing Home Staffing Regulation"> <span>Nursing Home Staffing Regulation</span></label>
+                    <label><input type="radio" name="q41" value="Virtual Nursing"> <span>Virtual Nursing</span></label>
+                    <label><input type="radio" name="q41" value="Entrepreneurship in Nursing"> <span>Entrepreneurship in Nursing</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -560,10 +557,10 @@
             <div class="question" id="q42">
                 <h3>42. Identify a potential issue of technology in nursing education.</h3>
                 <div class="options">
-                    <label><input type="radio" name="q42" value="Low costs of equipment"> <span>A. Low costs of equipment</span></label>
-                    <label><input type="radio" name="q42" value="Increased in-person communication"> <span>B. Increased in-person communication</span></label>
-                    <label><input type="radio" name="q42" value="Shortage of trained educators to handle new technology"> <span>C. Shortage of trained educators to handle new technology</span></label>
-                    <label><input type="radio" name="q42" value="Technology reducing the workload for teachers"> <span>D. Technology reducing the workload for teachers</span></label>
+                    <label><input type="radio" name="q42" value="Low costs of equipment"> <span>Low costs of equipment</span></label>
+                    <label><input type="radio" name="q42" value="Increased in-person communication"> <span>Increased in-person communication</span></label>
+                    <label><input type="radio" name="q42" value="Shortage of trained educators to handle new technology"> <span>Shortage of trained educators to handle new technology</span></label>
+                    <label><input type="radio" name="q42" value="Technology reducing the workload for teachers"> <span>Technology reducing the workload for teachers</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -571,10 +568,10 @@
             <div class="question" id="q43">
                 <h3>43. What should be Mr. Ali's first priority upon hearing sounds from a patient’s ventilator while he has a scheduled meeting?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q43" value="Attend the meeting with the head of the unit"> <span>A. Attend the meeting with the head of the unit</span></label>
-                    <label><input type="radio" name="q43" value="Ignore the ventilator sound as it is not urgent"> <span>B. Ignore the ventilator sound as it is not urgent</span></label>
-                    <label><input type="radio" name="q43" value="Address the issue with the ventilator immediately"> <span>C. Address the issue with the ventilator immediately</span></label>
-                    <label><input type="radio" name="q43" value="Wait for another nurse to assist the patient's"> <span>D. Wait for another nurse to assist the patient's</span></label>
+                    <label><input type="radio" name="q43" value="Attend the meeting with the head of the unit"> <span>Attend the meeting with the head of the unit</span></label>
+                    <label><input type="radio" name="q43" value="Ignore the ventilator sound as it is not urgent"> <span>Ignore the ventilator sound as it is not urgent</span></label>
+                    <label><input type="radio" name="q43" value="Address the issue with the ventilator immediately"> <span>Address the issue with the ventilator immediately</span></label>
+                    <label><input type="radio" name="q43" value="Wait for another nurse to assist the patient's"> <span>Wait for another nurse to assist the patient's</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -582,10 +579,10 @@
             <div class="question" id="q44">
                 <h3>44. Who is credited with establishing nursing as a distinct profession during the Crimean War?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q44" value="Virginia Henderson"> <span>A. Virginia Henderson</span></label>
-                    <label><input type="radio" name="q44" value="Jean Watson"> <span>B. Jean Watson</span></label>
-                    <label><input type="radio" name="q44" value="Florence Nightingale"> <span>C. Florence Nightingale</span></label>
-                    <label><input type="radio" name="q44" value="Clara Barton"> <span>D. Clara Barton</span></label>
+                    <label><input type="radio" name="q44" value="Virginia Henderson"> <span>Virginia Henderson</span></label>
+                    <label><input type="radio" name="q44" value="Jean Watson"> <span>Jean Watson</span></label>
+                    <label><input type="radio" name="q44" value="Florence Nightingale"> <span>Florence Nightingale</span></label>
+                    <label><input type="radio" name="q44" value="Clara Barton"> <span>Clara Barton</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -593,10 +590,10 @@
             <div class="question" id="q45">
                 <h3>45. Which of the following is NOT a role that evolved in nursing during the 21st century?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q45" value="Nurse practitioners (NPs)"> <span>A. Nurse practitioners (NPs)</span></label>
-                    <label><input type="radio" name="q45" value="Clinical nurse specialists (CNSs)"> <span>B. Clinical nurse specialists (CNSs)</span></label>
-                    <label><input type="radio" name="q45" value="Family caregivers"> <span>C. Family caregivers</span></label>
-                    <label><input type="radio" name="q45" value="Nurse anesthetists (CRNAs)"> <span>D. Nurse anesthetists (CRNAs)</span></label>
+                    <label><input type="radio" name="q45" value="Nurse practitioners (NPs)"> <span>Nurse practitioners (NPs)</span></label>
+                    <label><input type="radio" name="q45" value="Clinical nurse specialists (CNSs)"> <span>Clinical nurse specialists (CNSs)</span></label>
+                    <label><input type="radio" name="q45" value="Family caregivers"> <span>Family caregivers</span></label>
+                    <label><input type="radio" name="q45" value="Nurse anesthetists (CRNAs)"> <span>Nurse anesthetists (CRNAs)</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -604,10 +601,10 @@
             <div class="question" id="q46">
                 <h3>46. Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q46" value="Only technical skills"> <span>A. Only technical skills</span></label>
-                    <label><input type="radio" name="q46" value="Both technical and communication skills"> <span>B. Both technical and communication skills</span></label>
-                    <label><input type="radio" name="q46" value="Patient mobility skills"> <span>C. Patient mobility skills</span></label>
-                    <label><input type="radio" name="q46" value="Traditional bedside skills only"> <span>D. Traditional bedside skills only</span></label>
+                    <label><input type="radio" name="q46" value="Only technical skills"> <span>Only technical skills</span></label>
+                    <label><input type="radio" name="q46" value="Both technical and communication skills"> <span>Both technical and communication skills</span></label>
+                    <label><input type="radio" name="q46" value="Patient mobility skills"> <span>Patient mobility skills</span></label>
+                    <label><input type="radio" name="q46" value="Traditional bedside skills only"> <span>Traditional bedside skills only</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -615,10 +612,10 @@
             <div class="question" id="q47">
                 <h3>47. In which of the following areas has technology become an integral part of nursing practice?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q47" value="Hygienic practices only"> <span>A. Hygienic practices only</span></label>
-                    <label><input type="radio" name="q47" value="Manual record-keeping"> <span>B. Manual record-keeping</span></label>
-                    <label><input type="radio" name="q47" value="Patient diagnosis and telehealth"> <span>C. Patient diagnosis and telehealth</span></label>
-                    <label><input type="radio" name="q47" value="Physical assistance in surgeries"> <span>D. Physical assistance in surgeries</span></label>
+                    <label><input type="radio" name="q47" value="Hygienic practices only"> <span>Hygienic practices only</span></label>
+                    <label><input type="radio" name="q47" value="Manual record-keeping"> <span>Manual record-keeping</span></label>
+                    <label><input type="radio" name="q47" value="Patient diagnosis and telehealth"> <span>Patient diagnosis and telehealth</span></label>
+                    <label><input type="radio" name="q47" value="Physical assistance in surgeries"> <span>Physical assistance in surgeries</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -626,10 +623,10 @@
             <div class="question" id="q48">
                 <h3>48. Which skill is essential for nurses working with Digital Health and Health Informatics?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q48" value="Only clinical skills"> <span>A. Only clinical skills</span></label>
-                    <label><input type="radio" name="q48" value="Analytical and technical skills"> <span>B. Analytical and technical skills</span></label>
-                    <label><input type="radio" name="q48" value="Only physical assessment skills"> <span>C. Only physical assessment skills</span></label>
-                    <label><input type="radio" name="q48" value="Primarily interpersonal skills"> <span>D. Primarily interpersonal skills</span></label>
+                    <label><input type="radio" name="q48" value="Only clinical skills"> <span>Only clinical skills</span></label>
+                    <label><input type="radio" name="q48" value="Analytical and technical skills"> <span>Analytical and technical skills</span></label>
+                    <label><input type="radio" name="q48" value="Only physical assessment skills"> <span>Only physical assessment skills</span></label>
+                    <label><input type="radio" name="q48" value="Primarily interpersonal skills"> <span>Primarily interpersonal skills</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -637,10 +634,10 @@
             <div class="question" id="q49">
                 <h3>49. Which nursing trend focuses on addressing health disparities and providing resources to underserved populations?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q49" value="Research and Evidence-Based Practice"> <span>A. Research and Evidence-Based Practice</span></label>
-                    <label><input type="radio" name="q49" value="Advocacy and Policy Development"> <span>B. Advocacy and Policy Development</span></label>
-                    <label><input type="radio" name="q49" value="Telemedicine and Telehealth"> <span>C. Telemedicine and Telehealth</span></label>
-                    <label><input type="radio" name="q49" value="Community and Public Health Initiatives"> <span>D. Community and Public Health Initiatives</span></label>
+                    <label><input type="radio" name="q49" value="Research and Evidence-Based Practice"> <span>Research and Evidence-Based Practice</span></label>
+                    <label><input type="radio" name="q49" value="Advocacy and Policy Development"> <span>Advocacy and Policy Development</span></label>
+                    <label><input type="radio" name="q49" value="Telemedicine and Telehealth"> <span>Telemedicine and Telehealth</span></label>
+                    <label><input type="radio" name="q49" value="Community and Public Health Initiatives"> <span>Community and Public Health Initiatives</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -648,10 +645,10 @@
             <div class="question" id="q50">
                 <h3>50. What did the Florence Nightingale School of Nursing, founded in 1860, signify?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q50" value="The beginning of nursing practice"> <span>A. The beginning of nursing practice</span></label>
-                    <label><input type="radio" name="q50" value="The start of formal nursing education"> <span>B. The start of formal nursing education</span></label>
-                    <label><input type="radio" name="q50" value="The start of telehealth nursing"> <span>C. The start of telehealth nursing</span></label>
-                    <label><input type="radio" name="q50" value="The rise of digital health"> <span>D. The rise of digital health</span></label>
+                    <label><input type="radio" name="q50" value="The beginning of nursing practice"> <span>The beginning of nursing practice</span></label>
+                    <label><input type="radio" name="q50" value="The start of formal nursing education"> <span>The start of formal nursing education</span></label>
+                    <label><input type="radio" name="q50" value="The start of telehealth nursing"> <span>The start of telehealth nursing</span></label>
+                    <label><input type="radio" name="q50" value="The rise of digital health"> <span>The rise of digital health</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -659,10 +656,10 @@
             <div class="question" id="q51">
                 <h3>51. In advocating for their profession, how can nurses influence healthcare policies?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q51" value="Focusing solely on clinical practice"> <span>A. Focusing solely on clinical practice</span></label>
-                    <label><input type="radio" name="q51" value="Writing articles and engaging with policymakers"> <span>B. Writing articles and engaging with policymakers</span></label>
-                    <label><input type="radio" name="q51" value="Avoiding public healthcare meetings"> <span>C. Avoiding public healthcare meetings</span></label>
-                    <label><input type="radio" name="q51" value="Ignoring patient advocacy groups"> <span>D. Ignoring patient advocacy groups</span></label>
+                    <label><input type="radio" name="q51" value="Focusing solely on clinical practice"> <span>Focusing solely on clinical practice</span></label>
+                    <label><input type="radio" name="q51" value="Writing articles and engaging with policymakers"> <span>Writing articles and engaging with policymakers</span></label>
+                    <label><input type="radio" name="q51" value="Avoiding public healthcare meetings"> <span>Avoiding public healthcare meetings</span></label>
+                    <label><input type="radio" name="q51" value="Ignoring patient advocacy groups"> <span>Ignoring patient advocacy groups</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -670,10 +667,10 @@
             <div class="question" id="q52">
                 <h3>52. What is the definition of a trend in nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q52" value="A random change in healthcare practices"> <span>A. A random change in healthcare practices</span></label>
-                    <label><input type="radio" name="q52" value="A specific law that governs nursing practice"> <span>B. A specific law that governs nursing practice</span></label>
-                    <label><input type="radio" name="q52" value="A general direction in which healthcare or nursing is moving"> <span>C. A general direction in which healthcare or nursing is moving</span></label>
-                    <label><input type="radio" name="q52" value="A temporary fad in the medical field"> <span>D. A temporary fad in the medical field</span></label>
+                    <label><input type="radio" name="q52" value="A random change in healthcare practices"> <span>A random change in healthcare practices</span></label>
+                    <label><input type="radio" name="q52" value="A specific law that governs nursing practice"> <span>A specific law that governs nursing practice</span></label>
+                    <label><input type="radio" name="q52" value="A general direction in which healthcare or nursing is moving"> <span>A general direction in which healthcare or nursing is moving</span></label>
+                    <label><input type="radio" name="q52" value="A temporary fad in the medical field"> <span>A temporary fad in the medical field</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -681,10 +678,10 @@
             <div class="question" id="q53">
                 <h3>53. What is one major reason for the continued nurse shortage?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q53" value="Decrease in patient numbers"> <span>A. Decrease in patient numbers</span></label>
-                    <label><input type="radio" name="q53" value="One-third of nurses are nearing retirement age"> <span>B. One-third of nurses are nearing retirement age</span></label>
-                    <label><input type="radio" name="q53" value="Increase in the number of medical schools"> <span>C. Increase in the number of medical schools</span></label>
-                    <label><input type="radio" name="q53" value="Decrease in healthcare funding"> <span>D. Decrease in healthcare funding</span></label>
+                    <label><input type="radio" name="q53" value="Decrease in patient numbers"> <span>Decrease in patient numbers</span></label>
+                    <label><input type="radio" name="q53" value="One-third of nurses are nearing retirement age"> <span>One-third of nurses are nearing retirement age</span></label>
+                    <label><input type="radio" name="q53" value="Increase in the number of medical schools"> <span>Increase in the number of medical schools</span></label>
+                    <label><input type="radio" name="q53" value="Decrease in healthcare funding"> <span>Decrease in healthcare funding</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -692,10 +689,10 @@
             <div class="question" id="q54">
                 <h3>54. Which trend is contributing to the growth of telehealth nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q54" value="A decrease in technology adoption"> <span>A. A decrease in technology adoption</span></label>
-                    <label><input type="radio" name="q54" value="Patients' reliance on virtual consultations"> <span>B. Patients' reliance on virtual consultations</span></label>
-                    <label><input type="radio" name="q54" value="Reduction in healthcare accessibility"> <span>C. Reduction in healthcare accessibility</span></label>
-                    <label><input type="radio" name="q54" value="Decrease in nursing jobs"> <span>D. Decrease in nursing jobs</span></label>
+                    <label><input type="radio" name="q54" value="A decrease in technology adoption"> <span>A decrease in technology adoption</span></label>
+                    <label><input type="radio" name="q54" value="Patients' reliance on virtual consultations"> <span>Patients' reliance on virtual consultations</span></label>
+                    <label><input type="radio" name="q54" value="Reduction in healthcare accessibility"> <span>Reduction in healthcare accessibility</span></label>
+                    <label><input type="radio" name="q54" value="Decrease in nursing jobs"> <span>Decrease in nursing jobs</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -703,10 +700,10 @@
             <div class="question" id="q55">
                 <h3>55. Which technological advancement has significantly improved nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q55" value="Online and distance learning programs"> <span>A. Online and distance learning programs</span></label>
-                    <label><input type="radio" name="q55" value="A reduction in nursing school admission rates"> <span>B. A reduction in nursing school admission rates</span></label>
-                    <label><input type="radio" name="q55" value="Increased reliance on in-person lectures"> <span>C. Increased reliance on in-person lectures</span></label>
-                    <label><input type="radio" name="q55" value="The elimination of virtual patient simulations"> <span>D. The elimination of virtual patient simulations</span></label>
+                    <label><input type="radio" name="q55" value="Online and distance learning programs"> <span>Online and distance learning programs</span></label>
+                    <label><input type="radio" name="q55" value="A reduction in nursing school admission rates"> <span>A reduction in nursing school admission rates</span></label>
+                    <label><input type="radio" name="q55" value="Increased reliance on in-person lectures"> <span>Increased reliance on in-person lectures</span></label>
+                    <label><input type="radio" name="q55" value="The elimination of virtual patient simulations"> <span>The elimination of virtual patient simulations</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -714,10 +711,10 @@
             <div class="question" id="q56">
                 <h3>56. What is one major challenge of implementing technology in nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q56" value="High cost of technological advances"> <span>A. High cost of technological advances</span></label>
-                    <label><input type="radio" name="q56" value="Decreased accuracy in patient monitoring"> <span>B. Decreased accuracy in patient monitoring</span></label>
-                    <label><input type="radio" name="q56" value="Reduced communication between nurses and doctors"> <span>C. Reduced communication between nurses and doctors</span></label>
-                    <label><input type="radio" name="q56" value="Increased paperwork"> <span>D. Increased paperwork</span></label>
+                    <label><input type="radio" name="q56" value="High cost of technological advances"> <span>High cost of technological advances</span></label>
+                    <label><input type="radio" name="q56" value="Decreased accuracy in patient monitoring"> <span>Decreased accuracy in patient monitoring</span></label>
+                    <label><input type="radio" name="q56" value="Reduced communication between nurses and doctors"> <span>Reduced communication between nurses and doctors</span></label>
+                    <label><input type="radio" name="q56" value="Increased paperwork"> <span>Increased paperwork</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -725,10 +722,10 @@
             <div class="question" id="q57">
                 <h3>57. A nurse caring for patients in a primary care setting submits paperwork for reimbursement from managed care plans for services performed. Which purpose best describes managed care as a framework for health care?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q57" value="A design to control the cost of care while maintaining the quality of care"> <span>A. A design to control the cost of care while maintaining the quality of care</span></label>
-                    <label><input type="radio" name="q57" value="Care coordination to maximize positive outcomes to contain costs"> <span>B. Care coordination to maximize positive outcomes to contain costs</span></label>
-                    <label><input type="radio" name="q57" value="The delivery of services from initial contact through ongoing care"> <span>C. The delivery of services from initial contact through ongoing care</span></label>
-                    <label><input type="radio" name="q57" value="Based on a philosophy of ensuring death in comfort and dignity"> <span>D. Based on a philosophy of ensuring death in comfort and dignity</span></label>
+                    <label><input type="radio" name="q57" value="A design to control the cost of care while maintaining the quality of care"> <span>A design to control the cost of care while maintaining the quality of care</span></label>
+                    <label><input type="radio" name="q57" value="Care coordination to maximize positive outcomes to contain costs"> <span>Care coordination to maximize positive outcomes to contain costs</span></label>
+                    <label><input type="radio" name="q57" value="The delivery of services from initial contact through ongoing care"> <span>The delivery of services from initial contact through ongoing care</span></label>
+                    <label><input type="radio" name="q57" value="Based on a philosophy of ensuring death in comfort and dignity"> <span>Based on a philosophy of ensuring death in comfort and dignity</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -736,10 +733,10 @@
             <div class="question" id="q58">
                 <h3>58. Organizations and initiatives focused on preventing disease and promoting health at a community or population level is an ……?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q58" value="health care facilities"> <span>A. health care facilities</span></label>
-                    <label><input type="radio" name="q58" value="public health"> <span>B. public health</span></label>
-                    <label><input type="radio" name="q58" value="health insurance"> <span>C. health insurance</span></label>
-                    <label><input type="radio" name="q58" value="health equipment's"> <span>D. health equipment's</span></label>
+                    <label><input type="radio" name="q58" value="health care facilities"> <span>health care facilities</span></label>
+                    <label><input type="radio" name="q58" value="public health"> <span>public health</span></label>
+                    <label><input type="radio" name="q58" value="health insurance"> <span>health insurance</span></label>
+                    <label><input type="radio" name="q58" value="health equipment's"> <span>health equipment's</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -747,10 +744,10 @@
             <div class="question" id="q59">
                 <h3>59. health care system in which people pay a fee to a fund that in turn pays health care activities?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q59" value="Bicmarck"> <span>A. Bicmarck</span></label>
-                    <label><input type="radio" name="q59" value="universal system"> <span>B. universal system</span></label>
-                    <label><input type="radio" name="q59" value="Beveridg"> <span>C. Beveridg</span></label>
-                    <label><input type="radio" name="q59" value="National Health Insurance Model"> <span>D. National Health Insurance Model</span></label>
+                    <label><input type="radio" name="q59" value="Bicmarck"> <span>Bicmarck</span></label>
+                    <label><input type="radio" name="q59" value="universal system"> <span>universal system</span></label>
+                    <label><input type="radio" name="q59" value="Beveridg"> <span>Beveridg</span></label>
+                    <label><input type="radio" name="q59" value="National Health Insurance Model"> <span>National Health Insurance Model</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -758,10 +755,10 @@
             <div class="question" id="q60">
                 <h3>60. Which statements describe current U.S. health care delivery practices? Select all that apply.</h3>
                 <div class="options">
-                    <label><input type="radio" name="q60" value="Access to care depends only on the ability to pay, not the availability of services."> <span>A. Access to care depends only on the ability to pay, not the availability of services.</span></label>
-                    <label><input type="radio" name="q60" value="The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations."> <span>B. The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations.</span></label>
-                    <label><input type="radio" name="q60" value="Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits."> <span>C. Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.</span></label>
-                    <label><input type="radio" name="q60" value="The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay."> <span>D. The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay.</span></label>
+                    <label><input type="radio" name="q60" value="Access to care depends only on the ability to pay, not the availability of services."> <span>Access to care depends only on the ability to pay, not the availability of services.</span></label>
+                    <label><input type="radio" name="q60" value="The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations."> <span>The Patient Protection and Affordable Care Act provide private health care insurance to the underserved populations.</span></label>
+                    <label><input type="radio" name="q60" value="Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits."> <span>Every health insurance plan in the Marketplace offers comprehensive coverage, from doctors to medications to hospital visits.</span></label>
+                    <label><input type="radio" name="q60" value="The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay."> <span>The uninsured pay for more than one-third of their care out of pocket and are usually charged lower amounts for their care than the insured pay.</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -769,10 +766,10 @@
             <div class="question" id="q61">
                 <h3>61. Which of the following describes the Beveridge Model?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q61" value="Funded by employer and employee contributions"> <span>A. Funded by employer and employee contributions</span></label>
-                    <label><input type="radio" name="q61" value="Government finances and provides healthcare services"> <span>B. Government finances and provides healthcare services</span></label>
-                    <label><input type="radio" name="q61" value="A mix of private providers and government insurance"> <span>C. A mix of private providers and government insurance</span></label>
-                    <label><input type="radio" name="q61" value="Individuals pay directly for healthcare services"> <span>D. Individuals pay directly for healthcare services</span></label>
+                    <label><input type="radio" name="q61" value="Funded by employer and employee contributions"> <span>Funded by employer and employee contributions</span></label>
+                    <label><input type="radio" name="q61" value="Government finances and provides healthcare services"> <span>Government finances and provides healthcare services</span></label>
+                    <label><input type="radio" name="q61" value="A mix of private providers and government insurance"> <span>A mix of private providers and government insurance</span></label>
+                    <label><input type="radio" name="q61" value="Individuals pay directly for healthcare services"> <span>Individuals pay directly for healthcare services</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -780,10 +777,10 @@
             <div class="question" id="q62">
                 <h3>62. What has led to an increased expectation for nurses to utilize technology effectively in the workforce?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q62" value="Growth in patient numbers"> <span>A. Growth in patient numbers</span></label>
-                    <label><input type="radio" name="q62" value="Technological advancements and virtual learning"> <span>B. Technological advancements and virtual learning</span></label>
-                    <label><input type="radio" name="q62" value="Increased demand for in-person classes"> <span>C. Increased demand for in-person classes</span></label>
-                    <label><input type="radio" name="q62" value="Shortage of nursing faculty"> <span>D. Shortage of nursing faculty</span></label>
+                    <label><input type="radio" name="q62" value="Growth in patient numbers"> <span>Growth in patient numbers</span></label>
+                    <label><input type="radio" name="q62" value="Technological advancements and virtual learning"> <span>Technological advancements and virtual learning</span></label>
+                    <label><input type="radio" name="q62" value="Increased demand for in-person classes"> <span>Increased demand for in-person classes</span></label>
+                    <label><input type="radio" name="q62" value="Shortage of nursing faculty"> <span>Shortage of nursing faculty</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -791,10 +788,10 @@
             <div class="question" id="q63">
                 <h3>63. How are higher education institutions expected to benefit from integrating technology into nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q63" value="By increasing students’ technical knowledge only"> <span>A. By increasing students’ technical knowledge only</span></label>
-                    <label><input type="radio" name="q63" value="By improving scores on certification exams and preparing students for real-world practice"> <span>B. By improving scores on certification exams and preparing students for real-world practice</span></label>
-                    <label><input type="radio" name="q63" value="By replacing in-person instruction completely"> <span>C. By replacing in-person instruction completely</span></label>
-                    <label><input type="radio" name="q63" value="By eliminating the need for faculty members"> <span>D. By eliminating the need for faculty members</span></label>
+                    <label><input type="radio" name="q63" value="By increasing students’ technical knowledge only"> <span>By increasing students’ technical knowledge only</span></label>
+                    <label><input type="radio" name="q63" value="By improving scores on certification exams and preparing students for real-world practice"> <span>By improving scores on certification exams and preparing students for real-world practice</span></label>
+                    <label><input type="radio" name="q63" value="By replacing in-person instruction completely"> <span>By replacing in-person instruction completely</span></label>
+                    <label><input type="radio" name="q63" value="By eliminating the need for faculty members"> <span>By eliminating the need for faculty members</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -802,10 +799,10 @@
             <div class="question" id="q64">
                 <h3>64. What is a potential benefit of using virtual reality in nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q64" value="It allows students to complete coursework without guidance."> <span>A. It allows students to complete coursework without guidance.</span></label>
-                    <label><input type="radio" name="q64" value="It encourages deeper learning through project-based experiences."> <span>B. It encourages deeper learning through project-based experiences.</span></label>
-                    <label><input type="radio" name="q64" value="It eliminates the need for clinical practice."> <span>C. It eliminates the need for clinical practice.</span></label>
-                    <label><input type="radio" name="q64" value="It replaces traditional lab classes entirely."> <span>D. It replaces traditional lab classes entirely.</span></label>
+                    <label><input type="radio" name="q64" value="It allows students to complete coursework without guidance."> <span>It allows students to complete coursework without guidance.</span></label>
+                    <label><input type="radio" name="q64" value="It encourages deeper learning through project-based experiences."> <span>It encourages deeper learning through project-based experiences.</span></label>
+                    <label><input type="radio" name="q64" value="It eliminates the need for clinical practice."> <span>It eliminates the need for clinical practice.</span></label>
+                    <label><input type="radio" name="q64" value="It replaces traditional lab classes entirely."> <span>It replaces traditional lab classes entirely.</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -813,10 +810,10 @@
             <div class="question" id="q65">
                 <h3>65. Which of the following is an emerging trend that improves nursing students' access to learning?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q65" value="Replacing hands-on labs with written exams"> <span>A. Replacing hands-on labs with written exams</span></label>
-                    <label><input type="radio" name="q65" value="Upgrading wireless bandwidth and 3D content for simulations"> <span>B. Upgrading wireless bandwidth and 3D content for simulations</span></label>
-                    <label><input type="radio" name="q65" value="Increasing the number of in-person classes"> <span>C. Increasing the number of in-person classes</span></label>
-                    <label><input type="radio" name="q65" value="Requiring students to attend more lectures"> <span>D. Requiring students to attend more lectures</span></label>
+                    <label><input type="radio" name="q65" value="Replacing hands-on labs with written exams"> <span>Replacing hands-on labs with written exams</span></label>
+                    <label><input type="radio" name="q65" value="Upgrading wireless bandwidth and 3D content for simulations"> <span>Upgrading wireless bandwidth and 3D content for simulations</span></label>
+                    <label><input type="radio" name="q65" value="Increasing the number of in-person classes"> <span>Increasing the number of in-person classes</span></label>
+                    <label><input type="radio" name="q65" value="Requiring students to attend more lectures"> <span>Requiring students to attend more lectures</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -824,10 +821,10 @@
             <div class="question" id="q66">
                 <h3>66. What was one effect of the COVID-19 pandemic on nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q66" value="A return to traditional classroom-only teaching methods"> <span>A. A return to traditional classroom-only teaching methods</span></label>
-                    <label><input type="radio" name="q66" value="A move away from technology use in teaching"> <span>B. A move away from technology use in teaching</span></label>
-                    <label><input type="radio" name="q66" value="Accelerated adoption of remote and online instruction"> <span>C. Accelerated adoption of remote and online instruction</span></label>
-                    <label><input type="radio" name="q66" value="Increased restrictions on virtual learning"> <span>D. Increased restrictions on virtual learning</span></label>
+                    <label><input type="radio" name="q66" value="A return to traditional classroom-only teaching methods"> <span>A return to traditional classroom-only teaching methods</span></label>
+                    <label><input type="radio" name="q66" value="A move away from technology use in teaching"> <span>A move away from technology use in teaching</span></label>
+                    <label><input type="radio" name="q66" value="Accelerated adoption of remote and online instruction"> <span>Accelerated adoption of remote and online instruction</span></label>
+                    <label><input type="radio" name="q66" value="Increased restrictions on virtual learning"> <span>Increased restrictions on virtual learning</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -835,10 +832,10 @@
             <div class="question" id="q67">
                 <h3>67. Which tool mentioned in the document is used for virtual patient assessments?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q67" value="Virtual Reality Simulation"> <span>A. Virtual Reality Simulation</span></label>
-                    <label><input type="radio" name="q67" value="Shadow Health’s Digital Clinical Experience"> <span>B. Shadow Health’s Digital Clinical Experience</span></label>
-                    <label><input type="radio" name="q67" value="Telehealth Consultations"> <span>C. Telehealth Consultations</span></label>
-                    <label><input type="radio" name="q67" value="ExamSoft"> <span>D. ExamSoft</span></label>
+                    <label><input type="radio" name="q67" value="Virtual Reality Simulation"> <span>Virtual Reality Simulation</span></label>
+                    <label><input type="radio" name="q67" value="Shadow Health’s Digital Clinical Experience"> <span>Shadow Health’s Digital Clinical Experience</span></label>
+                    <label><input type="radio" name="q67" value="Telehealth Consultations"> <span>Telehealth Consultations</span></label>
+                    <label><input type="radio" name="q67" value="ExamSoft"> <span>ExamSoft</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -846,10 +843,10 @@
             <div class="question" id="q68">
                 <h3>68. Why is remote monitoring important in nursing telehealth practices?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q68" value="It eliminates the need for patient interaction."> <span>A. It eliminates the need for patient interaction.</span></label>
-                    <label><input type="radio" name="q68" value="It allows nurses to track patients’ vital signs and intervene early if needed."> <span>B. It allows nurses to track patients’ vital signs and intervene early if needed.</span></label>
-                    <label><input type="radio" name="q68" value="It replaces the need for physical exams."> <span>C. It replaces the need for physical exams.</span></label>
-                    <label><input type="radio" name="q68" value="It only benefits patients in emergency situations."> <span>D. It only benefits patients in emergency situations.</span></label>
+                    <label><input type="radio" name="q68" value="It eliminates the need for patient interaction."> <span>It eliminates the need for patient interaction.</span></label>
+                    <label><input type="radio" name="q68" value="It allows nurses to track patients’ vital signs and intervene early if needed."> <span>It allows nurses to track patients’ vital signs and intervene early if needed.</span></label>
+                    <label><input type="radio" name="q68" value="It replaces the need for physical exams."> <span>It replaces the need for physical exams.</span></label>
+                    <label><input type="radio" name="q68" value="It only benefits patients in emergency situations."> <span>It only benefits patients in emergency situations.</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -857,10 +854,10 @@
             <div class="question" id="q69">
                 <h3>69. What challenge is associated with virtual exams in telehealth for nurses?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q69" value="Inability to interpret body language and physical appearance cues effectively"> <span>A. Inability to interpret body language and physical appearance cues effectively</span></label>
-                    <label><input type="radio" name="q69" value="Increased costs compared to in-person exams"> <span>B. Increased costs compared to in-person exams</span></label>
-                    <label><input type="radio" name="q69" value="Lack of technology to conduct exams virtually"> <span>C. Lack of technology to conduct exams virtually</span></label>
-                    <label><input type="radio" name="q69" value="Requirement of more physical space for exams"> <span>D. Requirement of more physical space for exams</span></label>
+                    <label><input type="radio" name="q69" value="Inability to interpret body language and physical appearance cues effectively"> <span>Inability to interpret body language and physical appearance cues effectively</span></label>
+                    <label><input type="radio" name="q69" value="Increased costs compared to in-person exams"> <span>Increased costs compared to in-person exams</span></label>
+                    <label><input type="radio" name="q69" value="Lack of technology to conduct exams virtually"> <span>Lack of technology to conduct exams virtually</span></label>
+                    <label><input type="radio" name="q69" value="Requirement of more physical space for exams"> <span>Requirement of more physical space for exams</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -868,10 +865,10 @@
             <div class="question" id="q70">
                 <h3>70. Which organization recommended that nurse practitioners learn telehealth skills?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q70" value="American Association of Colleges of Nursing"> <span>A. American Association of Colleges of Nursing</span></label>
-                    <label><input type="radio" name="q70" value="National Organization of Nurse Practitioner Faculties (NONPF)"> <span>B. National Organization of Nurse Practitioner Faculties (NONPF)</span></label>
-                    <label><input type="radio" name="q70" value="National League for Nursing"> <span>C. National League for Nursing</span></label>
-                    <label><input type="radio" name="q70" value="American Medical Association"> <span>D. American Medical Association</span></label>
+                    <label><input type="radio" name="q70" value="American Association of Colleges of Nursing"> <span>American Association of Colleges of Nursing</span></label>
+                    <label><input type="radio" name="q70" value="National Organization of Nurse Practitioner Faculties (NONPF)"> <span>National Organization of Nurse Practitioner Faculties (NONPF)</span></label>
+                    <label><input type="radio" name="q70" value="National League for Nursing"> <span>National League for Nursing</span></label>
+                    <label><input type="radio" name="q70" value="American Medical Association"> <span>American Medical Association</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -879,10 +876,10 @@
             <div class="question" id="q71">
                 <h3>71. Duquesne University offers an online post-master’s certificate in nursing education for students who:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q71" value="Have completed a bachelor’s degree in nursing"> <span>A. Have completed a bachelor’s degree in nursing</span></label>
-                    <label><input type="radio" name="q71" value="Have not yet completed any clinical practice"> <span>B. Have not yet completed any clinical practice</span></label>
-                    <label><input type="radio" name="q71" value="Have already earned their MSN"> <span>C. Have already earned their MSN</span></label>
-                    <label><input type="radio" name="q71" value="Are new to virtual learning platforms"> <span>D. Are new to virtual learning platforms</span></label>
+                    <label><input type="radio" name="q71" value="Have completed a bachelor’s degree in nursing"> <span>Have completed a bachelor’s degree in nursing</span></label>
+                    <label><input type="radio" name="q71" value="Have not yet completed any clinical practice"> <span>Have not yet completed any clinical practice</span></label>
+                    <label><input type="radio" name="q71" value="Have already earned their MSN"> <span>Have already earned their MSN</span></label>
+                    <label><input type="radio" name="q71" value="Are new to virtual learning platforms"> <span>Are new to virtual learning platforms</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -890,10 +887,10 @@
             <div class="question" id="q72">
                 <h3>72. What is the primary focus of Evidence-Based Nursing (EBN)?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q72" value="Increasing administrative efficiency in nursing"> <span>A. Increasing administrative efficiency in nursing</span></label>
-                    <label><input type="radio" name="q72" value="Reducing the cost of medical supplies"> <span>B. Reducing the cost of medical supplies</span></label>
-                    <label><input type="radio" name="q72" value="Integrating research evidence with clinical expertise and patient preferences"> <span>C. Integrating research evidence with clinical expertise and patient preferences</span></label>
-                    <label><input type="radio" name="q72" value="Promoting independent decision-making by nurses"> <span>D. Promoting independent decision-making by nurses</span></label>
+                    <label><input type="radio" name="q72" value="Increasing administrative efficiency in nursing"> <span>Increasing administrative efficiency in nursing</span></label>
+                    <label><input type="radio" name="q72" value="Reducing the cost of medical supplies"> <span>Reducing the cost of medical supplies</span></label>
+                    <label><input type="radio" name="q72" value="Integrating research evidence with clinical expertise and patient preferences"> <span>Integrating research evidence with clinical expertise and patient preferences</span></label>
+                    <label><input type="radio" name="q72" value="Promoting independent decision-making by nurses"> <span>Promoting independent decision-making by nurses</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -901,10 +898,10 @@
             <div class="question" id="q73">
                 <h3>73. Which of the following is NOT an objective of Evidence-Based Practice (EBP) in nursing?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q73" value="Improving patient outcomes"> <span>A. Improving patient outcomes</span></label>
-                    <label><input type="radio" name="q73" value="Reducing patient participation in decision-making"> <span>B. Reducing patient participation in decision-making</span></label>
-                    <label><input type="radio" name="q73" value="Promoting continuous learning among nurses"> <span>C. Promoting continuous learning among nurses</span></label>
-                    <label><input type="radio" name="q73" value="Enhancing patient safety"> <span>D. Enhancing patient safety</span></label>
+                    <label><input type="radio" name="q73" value="Improving patient outcomes"> <span>Improving patient outcomes</span></label>
+                    <label><input type="radio" name="q73" value="Reducing patient participation in decision-making"> <span>Reducing patient participation in decision-making</span></label>
+                    <label><input type="radio" name="q73" value="Promoting continuous learning among nurses"> <span>Promoting continuous learning among nurses</span></label>
+                    <label><input type="radio" name="q73" value="Enhancing patient safety"> <span>Enhancing patient safety</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -912,10 +909,10 @@
             <div class="question" id="q74">
                 <h3>74. What is the first step in the Evidence-Based Practice process?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q74" value="Assessing outcomes of new practices"> <span>A. Assessing outcomes of new practices</span></label>
-                    <label><input type="radio" name="q74" value="Applying new information"> <span>B. Applying new information</span></label>
-                    <label><input type="radio" name="q74" value="Asking an appropriate question"> <span>C. Asking an appropriate question</span></label>
-                    <label><input type="radio" name="q74" value="Analyzing information"> <span>D. Analyzing information</span></label>
+                    <label><input type="radio" name="q74" value="Assessing outcomes of new practices"> <span>Assessing outcomes of new practices</span></label>
+                    <label><input type="radio" name="q74" value="Applying new information"> <span>Applying new information</span></label>
+                    <label><input type="radio" name="q74" value="Asking an appropriate question"> <span>Asking an appropriate question</span></label>
+                    <label><input type="radio" name="q74" value="Analyzing information"> <span>Analyzing information</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -923,10 +920,10 @@
             <div class="question" id="q75">
                 <h3>75. Which of the following resources is specifically designed to summarize clinically useful studies for nurses?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q75" value="Clinical trial databases"> <span>A. Clinical trial databases</span></label>
-                    <label><input type="radio" name="q75" value="Evidence-based journals"> <span>B. Evidence-based journals</span></label>
-                    <label><input type="radio" name="q75" value="Hospital patient records"> <span>C. Hospital patient records</span></label>
-                    <label><input type="radio" name="q75" value="General nursing websites"> <span>D. General nursing websites</span></label>
+                    <label><input type="radio" name="q75" value="Clinical trial databases"> <span>Clinical trial databases</span></label>
+                    <label><input type="radio" name="q75" value="Evidence-based journals"> <span>Evidence-based journals</span></label>
+                    <label><input type="radio" name="q75" value="Hospital patient records"> <span>Hospital patient records</span></label>
+                    <label><input type="radio" name="q75" value="General nursing websites"> <span>General nursing websites</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -934,10 +931,10 @@
             <div class="question" id="q76">
                 <h3>76. One barrier to implementing Evidence-Based Nursing (EBN) is:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q76" value="Excessive availability of resources"> <span>A. Excessive availability of resources</span></label>
-                    <label><input type="radio" name="q76" value="Limited understanding of research methods by practitioners"> <span>B. Limited understanding of research methods by practitioners</span></label>
-                    <label><input type="radio" name="q76" value="High levels of clinical expertise among all nurses"> <span>C. High levels of clinical expertise among all nurses</span></label>
-                    <label><input type="radio" name="q76" value="Universal support from healthcare organizations"> <span>D. Universal support from healthcare organizations</span></label>
+                    <label><input type="radio" name="q76" value="Excessive availability of resources"> <span>Excessive availability of resources</span></label>
+                    <label><input type="radio" name="q76" value="Limited understanding of research methods by practitioners"> <span>Limited understanding of research methods by practitioners</span></label>
+                    <label><input type="radio" name="q76" value="High levels of clinical expertise among all nurses"> <span>High levels of clinical expertise among all nurses</span></label>
+                    <label><input type="radio" name="q76" value="Universal support from healthcare organizations"> <span>Universal support from healthcare organizations</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -945,10 +942,10 @@
             <div class="question" id="q77">
                 <h3>77. Which of the following best defines Evidence-Based Nursing (EBN)?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q77" value="A process that relies solely on a nurse’s personal experience"> <span>A. A process that relies solely on a nurse’s personal experience</span></label>
-                    <label><input type="radio" name="q77" value="Combining research evidence, clinical expertise, and patient preferences in care decisions"> <span>B. Combining research evidence, clinical expertise, and patient preferences in care decisions</span></label>
-                    <label><input type="radio" name="q77" value="Prioritizing organizational policies over patient-centered care"> <span>C. Prioritizing organizational policies over patient-centered care</span></label>
-                    <label><input type="radio" name="q77" value="Relying on traditional practices without considering current evidence"> <span>D. Relying on traditional practices without considering current evidence</span></label>
+                    <label><input type="radio" name="q77" value="A process that relies solely on a nurse’s personal experience"> <span>A process that relies solely on a nurse’s personal experience</span></label>
+                    <label><input type="radio" name="q77" value="Combining research evidence, clinical expertise, and patient preferences in care decisions"> <span>Combining research evidence, clinical expertise, and patient preferences in care decisions</span></label>
+                    <label><input type="radio" name="q77" value="Prioritizing organizational policies over patient-centered care"> <span>Prioritizing organizational policies over patient-centered care</span></label>
+                    <label><input type="radio" name="q77" value="Relying on traditional practices without considering current evidence"> <span>Relying on traditional practices without considering current evidence</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -956,10 +953,10 @@
             <div class="question" id="q78">
                 <h3>78. Which of these resources is specifically intended to help nurses stay updated on clinically relevant studies?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q78" value="Hospital policy manuals"> <span>A. Hospital policy manuals</span></label>
-                    <label><input type="radio" name="q78" value="Systematic reviews"> <span>B. Systematic reviews</span></label>
-                    <label><input type="radio" name="q78" value="Evidence-based journals"> <span>C. Evidence-based journals</span></label>
-                    <label><input type="radio" name="q78" value="Standard medical textbooks"> <span>D. Standard medical textbooks</span></label>
+                    <label><input type="radio" name="q78" value="Hospital policy manuals"> <span>Hospital policy manuals</span></label>
+                    <label><input type="radio" name="q78" value="Systematic reviews"> <span>Systematic reviews</span></label>
+                    <label><input type="radio" name="q78" value="Evidence-based journals"> <span>Evidence-based journals</span></label>
+                    <label><input type="radio" name="q78" value="Standard medical textbooks"> <span>Standard medical textbooks</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -967,10 +964,10 @@
             <div class="question" id="q79">
                 <h3>79. What is the first step in the Evidence-Based Practice (EBP) process?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q79" value="Applying new information"> <span>A. Applying new information</span></label>
-                    <label><input type="radio" name="q79" value="Analyzing the outcomes"> <span>B. Analyzing the outcomes</span></label>
-                    <label><input type="radio" name="q79" value="Asking appropriate questions"> <span>C. Asking appropriate questions</span></label>
-                    <label><input type="radio" name="q79" value="Assessing new practices"> <span>D. Assessing new practices</span></label>
+                    <label><input type="radio" name="q79" value="Applying new information"> <span>Applying new information</span></label>
+                    <label><input type="radio" name="q79" value="Analyzing the outcomes"> <span>Analyzing the outcomes</span></label>
+                    <label><input type="radio" name="q79" value="Asking appropriate questions"> <span>Asking appropriate questions</span></label>
+                    <label><input type="radio" name="q79" value="Assessing new practices"> <span>Assessing new practices</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -978,10 +975,10 @@
             <div class="question" id="q80">
                 <h3>80. Which component of Emotional Intelligence involves understanding and managing your own emotions?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q80" value="Empathy"> <span>A. Empathy</span></label>
-                    <label><input type="radio" name="q80" value="Self-Awareness"> <span>B. Self-Awareness</span></label>
-                    <label><input type="radio" name="q80" value="Social Skills"> <span>C. Social Skills</span></label>
-                    <label><input type="radio" name="q80" value="Motivation"> <span>D. Motivation</span></label>
+                    <label><input type="radio" name="q80" value="Empathy"> <span>Empathy</span></label>
+                    <label><input type="radio" name="q80" value="Self-Awareness"> <span>Self-Awareness</span></label>
+                    <label><input type="radio" name="q80" value="Social Skills"> <span>Social Skills</span></label>
+                    <label><input type="radio" name="q80" value="Motivation"> <span>Motivation</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -989,10 +986,10 @@
             <div class="question" id="q81">
                 <h3>81. High emotional intelligence is often associated with:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q81" value="Reduced mental health"> <span>A. Reduced mental health</span></label>
-                    <label><input type="radio" name="q81" value="Better conflict resolution skills"> <span>B. Better conflict resolution skills</span></label>
-                    <label><input type="radio" name="q81" value="Poor workplace relationships"> <span>C. Poor workplace relationships</span></label>
-                    <label><input type="radio" name="q81" value="Decreased adaptability to challenges"> <span>D. Decreased adaptability to challenges</span></label>
+                    <label><input type="radio" name="q81" value="Reduced mental health"> <span>Reduced mental health</span></label>
+                    <label><input type="radio" name="q81" value="Better conflict resolution skills"> <span>Better conflict resolution skills</span></label>
+                    <label><input type="radio" name="q81" value="Poor workplace relationships"> <span>Poor workplace relationships</span></label>
+                    <label><input type="radio" name="q81" value="Decreased adaptability to challenges"> <span>Decreased adaptability to challenges</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -1000,10 +997,10 @@
             <div class="question" id="q82">
                 <h3>82. Which of the following is an application of AI in healthcare?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q82" value="Diagnosis and treatment planning"> <span>A. Diagnosis and treatment planning</span></label>
-                    <label><input type="radio" name="q82" value="Conducting therapy sessions"> <span>B. Conducting therapy sessions</span></label>
-                    <label><input type="radio" name="q82" value="Replacing human healthcare providers entirely"> <span>C. Replacing human healthcare providers entirely</span></label>
-                    <label><input type="radio" name="q82" value="Providing nutritional counseling"> <span>D. Providing nutritional counseling</span></label>
+                    <label><input type="radio" name="q82" value="Diagnosis and treatment planning"> <span>Diagnosis and treatment planning</span></label>
+                    <label><input type="radio" name="q82" value="Conducting therapy sessions"> <span>Conducting therapy sessions</span></label>
+                    <label><input type="radio" name="q82" value="Replacing human healthcare providers entirely"> <span>Replacing human healthcare providers entirely</span></label>
+                    <label><input type="radio" name="q82" value="Providing nutritional counseling"> <span>Providing nutritional counseling</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -1011,10 +1008,10 @@
             <div class="question" id="q83">
                 <h3>83. A major concern with implementing AI in healthcare is:</h3>
                 <div class="options">
-                    <label><input type="radio" name="q83" value="Reduced efficiency"> <span>A. Reduced efficiency</span></label>
-                    <label><input type="radio" name="q83" value="Lack of data availability"> <span>B. Lack of data availability</span></label>
-                    <label><input type="radio" name="q83" value="Bias in AI models"> <span>C. Bias in AI models</span></label>
-                    <label><input type="radio" name="q83" value="Inability to process large datasets"> <span>D. Inability to process large datasets</span></label>
+                    <label><input type="radio" name="q83" value="Reduced efficiency"> <span>Reduced efficiency</span></label>
+                    <label><input type="radio" name="q83" value="Lack of data availability"> <span>Lack of data availability</span></label>
+                    <label><input type="radio" name="q83" value="Bias in AI models"> <span>Bias in AI models</span></label>
+                    <label><input type="radio" name="q83" value="Inability to process large datasets"> <span>Inability to process large datasets</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -1022,10 +1019,10 @@
             <div class="question" id="q84">
                 <h3>84. What has led to an increased expectation for nurses to utilize technology effectively in the workforce?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q84" value="Growth in patient numbers"> <span>A. Growth in patient numbers</span></label>
-                    <label><input type="radio" name="q84" value="Technological advancements and virtual learning"> <span>B. Technological advancements and virtual learning</span></label>
-                    <label><input type="radio" name="q84" value="Increased demand for in-person classes"> <span>C. Increased demand for in-person classes</span></label>
-                    <label><input type="radio" name="q84" value="Shortage of nursing faculty"> <span>D. Shortage of nursing faculty</span></label>
+                    <label><input type="radio" name="q84" value="Growth in patient numbers"> <span>Growth in patient numbers</span></label>
+                    <label><input type="radio" name="q84" value="Technological advancements and virtual learning"> <span>Technological advancements and virtual learning</span></label>
+                    <label><input type="radio" name="q84" value="Increased demand for in-person classes"> <span>Increased demand for in-person classes</span></label>
+                    <label><input type="radio" name="q84" value="Shortage of nursing faculty"> <span>Shortage of nursing faculty</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -1033,10 +1030,10 @@
             <div class="question" id="q85">
                 <h3>85. What is a potential benefit of using virtual reality in nursing education?</h3>
                 <div class="options">
-                    <label><input type="radio" name="q85" value="It allows students to complete coursework without guidance."> <span>A. It allows students to complete coursework without guidance.</span></label>
-                    <label><input type="radio" name="q85" value="It encourages deeper learning through project-based experiences."> <span>B. It encourages deeper learning through project-based experiences.</span></label>
-                    <label><input type="radio" name="q85" value="It eliminates the need for clinical practice."> <span>C. It eliminates the need for clinical practice.</span></label>
-                    <label><input type="radio" name="q85" value="It replaces traditional lab classes entirely."> <span>D. It replaces traditional lab classes entirely.</span></label>
+                    <label><input type="radio" name="q85" value="It allows students to complete coursework without guidance."> <span>It allows students to complete coursework without guidance.</span></label>
+                    <label><input type="radio" name="q85" value="It encourages deeper learning through project-based experiences."> <span>It encourages deeper learning through project-based experiences.</span></label>
+                    <label><input type="radio" name="q85" value="It eliminates the need for clinical practice."> <span>It eliminates the need for clinical practice.</span></label>
+                    <label><input type="radio" name="q85" value="It replaces traditional lab classes entirely."> <span>It replaces traditional lab classes entirely.</span></label>
                 </div>
                 <div class="error-message">Please select an option for this question.</div>
             </div>
@@ -1064,8 +1061,8 @@
             q10: 'Government finances and provides healthcare services',
             q11: 'Florence Nightingale',
             q12: 'Family caregivers',
-            q13: 'Florence Nightingale', // This question text ("Who is known as the founder of modern nursing?") is a duplicate of Q11 in your provided list. If you intend a different question for Q13, please clarify. I'm keeping the given answer based on the text.
-            q14: 'Both technical and communication skills', // Based on context from prior exchanges
+            q13: 'Florence Nightingale', // Question 13 text is "Who is known as the founder of modern nursing?" which is a duplicate of Q11. Re-checking the earlier prompt, it was Q13: "Telemedicine and telehealth have changed nursing by requiring nurses to develop which set of skills?". I will use the answer for that one, but be aware of this potential duplicate if the question number changes.
+            q14: 'Both technical and communication skills', // This was Q14 in the earlier list, and now Q14 in your latest list.
             q15: 'Using data analytics and digital records to improve healthcare',
             q16: 'Patient diagnosis and telehealth',
             q17: 'Analytical and technical skills',
@@ -1148,15 +1145,50 @@
 
         // Function to shuffle the children of a DOM element (the options div)
         function shuffleOptions(containerElement) {
-            for (let i = containerElement.children.length; i >= 0; i--) {
-                containerElement.appendChild(containerElement.children[Math.random() * i | 0]);
+            const children = Array.from(containerElement.children);
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
             }
+            // Append shuffled children back to the container
+            children.forEach(child => containerElement.appendChild(child));
         }
 
-        // Run this when the page loads to shuffle options for each question
+        // Assign A, B, C, D labels after shuffling
+        function assignAlphabeticalLabels() {
+            document.querySelectorAll('.question .options').forEach(optionsDiv => {
+                const optionLabels = Array.from(optionsDiv.querySelectorAll('label span'));
+                const optionLetters = ['A', 'B', 'C', 'D'];
+                optionLabels.forEach((span, index) => {
+                    const originalText = span.textContent;
+                    // Remove any existing A. B. C. D. if present (to avoid double-labeling on re-shuffle/re-load)
+                    const cleanText = originalText.replace(/^[A-D]\.\s/, '');
+                    span.textContent = `${optionLetters[index]}. ${cleanText}`;
+                });
+            });
+        }
+
+        // Run this when the page loads
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.question .options').forEach(optionsDiv => {
                 shuffleOptions(optionsDiv);
+            });
+            assignAlphabeticalLabels(); // Assign labels after initial shuffle
+
+            // Add event listeners to hide error messages when an option is selected
+            document.querySelectorAll('.question input[type="radio"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    // Remove 'selected' class from all labels in this question
+                    this.closest('.options').querySelectorAll('label').forEach(lbl => {
+                        lbl.classList.remove('selected');
+                    });
+                    // Add 'selected' class to the currently chosen label
+                    this.closest('label').classList.add('selected');
+
+                    // Hide error message and remove highlight
+                    this.closest('.question').classList.remove('highlight-error');
+                    this.closest('.question').querySelector('.error-message').style.display = 'none';
+                });
             });
         });
 
